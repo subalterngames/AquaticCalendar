@@ -1,0 +1,11 @@
+Get tidal data
+Plot tidal data
+Plot tidal data per low tide
+Get lunar data
+Map lunar data to tidal data
+Map aquatic calendar to terrestrial calendar
+
+Build to .tex
+
+Include intro
+Include photos
