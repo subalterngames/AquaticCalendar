@@ -1,14 +1,49 @@
 from datetime import datetime, timedelta
-from pytides.tide import Tide
 import numpy as np
 import matplotlib.pyplot as plt
 
 
-def get_next_low(start_index, prediction):
-    for i in range(start_index + 1, len(prediction) - 1):
-        if prediction[i] < prediction[i - 1] and prediction[i] < prediction[i + 1]:
+def get_start_time():
+    for i in range(1, len(heights) - 1):
+        if heights[i] > heights[i - 1] and heights[i] > heights[i + 1]:
             return i
     return -1
+
+def get_next_day(start_time):
+    got_middle_high_tide = False
+    for i in range(start_time + 1, len(heights) - 1):
+        if heights[i] > heights[i - 1] and heights[i] > heights[i + 1]:
+            if got_middle_high_tide:
+                return i
+            else:
+                got_middle_high_tide = True
+    return -1
+
+
+def gregorian_to_aquatic(date):
+    start_of_calendar = datetime(2018, 9, 9, 3)
+    elapsed = timedelta()
+    elapsed.total_seconds()
+    elapsed = (date - start_of_calendar).total_seconds() / 60.0 / 60.0
+    print(elapsed)
+    months = ["Tishrei"]
+
+    print(date)
+
+
+def plot(day):
+    ax = plt.axes([0, 0, 1, 1], frameon=False)
+    ax.get_xaxis().set_visible(False)
+    ax.get_yaxis().set_visible(False)
+    plt.autoscale(tight=True)
+
+    hours = np.arange(len(day))
+
+    lines = plt.plot(hours, day, label="Pytides")
+    plt.setp(lines, linewidth=10)
+    plt.tick_params(axis="both", which="both", bottom=False, top=False, left=False, right=False,
+                    labelbottom=False, labelleft=False)
+    plt.show()
 
 
 heights = []
@@ -25,9 +60,16 @@ with open('CO-OPS__8443970__hr.csv', 'rt') as f:
 heights = np.array(heights)
 t = np.array(t)
 
+t0 = get_start_time()
+t1 = get_next_day(t0)
+
+plot(heights[t0:t1])
+print(t[t0])
+
+"""
 # Absolute starting time.
 t0 = datetime(2018, 9, 8, 19)
-hours = np.arange(7 * 24 * 10)
+
 times = Tide._times(t0, hours)
 
 my_tide = Tide.decompose(heights, t)
@@ -40,5 +82,14 @@ my_prediction = my_prediction[day_start : day_end]
 print(my_prediction)
 hours = np.arange(len(my_prediction))
 
-plt.plot(hours, my_prediction, label="Pytides")
+ax = plt.axes([0, 0, 1, 1], frameon=False)
+ax.get_xaxis().set_visible(False)
+ax.get_yaxis().set_visible(False)
+plt.autoscale(tight=True)
+
+lines = plt.plot(hours, my_prediction, label="Pytides")
+plt.setp(lines, linewidth=10)
+plt.tick_params(axis="both", which="both", bottom=False, top=False, left=False, right=False,
+                labelbottom=False, labelleft=False)
 plt.show()
+"""
