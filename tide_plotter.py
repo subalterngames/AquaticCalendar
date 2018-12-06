@@ -1,35 +1,44 @@
-from datetime import datetime, timedelta
+from datetime import datetime
 import numpy as np
 import matplotlib.pyplot as plt
-from json import loads, dumps
+import decimal
+dec = decimal.Decimal
 
-DAYS_PER_MONTH = 30
+
 MONTHS = ["Tishrei", "Kheshvan", "Kislev", "Tevet", "Shvat", "Adar", "Nisan", "Iyar", "Sivan", "Tammuz", "Av", "Elul"]
+DAYS_OF_WEEK = ["Dag", "Gal", "Khof", "Sa'ar", "Shakhaf", "Melakh", "Shabbat"]
+MOON_PHASES = [r"\CIRCLE", r"\LEFTcircle", r"\Circle", "\RIGHTcircle", r""]
 current_month_index = 0
-current_day_of_month = 0
+current_day_of_month = -1
+current_day_of_week = 0
+
+tex = r"\documentclass[11pt,letterpaper,landscape]{scrbook}\usepackage{cjhebrew}\usepackage{tabularx}\usepackage[letterpaper,bindingoffset=0.2in,left=1in,right=1in,top=.5in,bottom=.5in,footskip=.25in,marginparwidth=5em]{geometry}\usepackage{marginnote}\usepackage{graphicx}\usepackage{wasysym}\usepackage{sectsty}\usepackage{xcolor}\definecolor{hcolor}{HTML}{D3230C}\newcommand{\red}[1]{\textcolor{hcolor}{#1}}\setkomafont{disposition}{\bfseries}\newcommand\Chapter[2]{\chapter[\normalfont#1:{\itshape#2}]{#1\\[1ex]\Large\normalfont#2}}\makeatletter\newcommand{\alephbet}[1]{\c@alephbet{#1}}\newcommand{\c@alephbet}[1]{{\ifcase\number\value{#1}\or\<'>\or\<b>\or\<g>\or\<d>\or\<h>\or\<w>\or\<z>\or\<.h>\or\<.t>\or\<y>\or\<k|>\or\<l>\or\<m|>\or\<n|>\o\<N>\or\<s>\or\<`>\or\<p|>\or\<P>\or\<.s>\or\<q>\or\<r>\or\</s>\or\<t>\fi}}\renewcommand{\partname}{}\renewcommand\thepart{\alephbet{part}}\renewcommand\thechapter{\alephbet{chapter}}\allsectionsfont{\centering}\newcolumntype{Y}{>{\centering\arraybackslash}X}\begin{document}"
+MONTH_TEMPLATE = r"\chapter*{$MONTH}\noindent\begin{tabularx}{\textwidth}{YYYYYYY}"
+
+CELL_TEMPLATE = r"{\huge\textbf{$DAY_OF_MONTH} $MOON_PHASE}\newline {\tiny{\textit{$GREGORIAN_TIME}}}\newline\scriptsize{\textit{YOMTOV}}\newline TIDEIMAGE"
 
 
-class Day:
-    def __init__(self, start, end, day_of_month, month, day_of_week, heights, yom_tov = ""):
-        """
-        A day in the Aquatic Jewish lunitidal calendar.
+def get_lunar_phase(time_index):
+    diff = t[time_index] - datetime(2001, 1, 1)
+    days = dec(diff.days) + (dec(diff.seconds) / dec(86400))
+    lunations = dec("0.20439731") + (days * dec("0.03386319269"))
+    return lunations % dec(1)
 
-        :param start: Start datetime (Gregorian)
-        :param end: End datetime (Gregorian)
-        :param day_of_month: The day of the aquatic month.
-        :param month: The aquatic month.
-        :param day_of_week: The day of the aquatic week.
-        :param heights: The tidal height data.
-        :param yom_tov: Name of yom tov (Default=empty).
-        """
 
-        self.start = start
-        self.end = end
-        self.day_of_month = day_of_month
-        self.month = month
-        self.day_of_week = day_of_week
-        self.heights = heights
-        self.yom_tov = yom_tov
+def get_new_month():
+    """
+    Returns the header for the next month.
+    """
+    month = MONTH_TEMPLATE
+    month = month.replace("$MONTH", MONTHS[current_month_index])
+    for day_of_week, i in zip(DAYS_OF_WEEK, range(len(DAYS_OF_WEEK))):
+        month += r"\huge " + day_of_week
+        if i < len(DAYS_OF_WEEK) - 1:
+            month += "&"
+        else:
+            month += r"\\"
+    month += r"\end{tabularx}\\\noindent\begin{tabularx}{\textwidth}{|X|X|X|X|X|X|X|}\hline"
+    return month
 
 
 def get_start_time():
@@ -58,13 +67,20 @@ def plot(day):
 
     hours = np.arange(len(day))
 
-    lines = plt.plot(hours, day, label="Pytides")
+    lines = plt.plot(hours, day)
     plt.setp(lines, linewidth=10)
     plt.tick_params(axis="both", which="both", bottom=False, top=False, left=False, right=False,
                     labelbottom=False, labelleft=False)
     # plt.show()
 
+def get_end_month():
+    end_of_table = ""
+    for i in range(6 - current_day_of_week):
+        end_of_table += r"&"
+    end_of_table += r"\\\hline\end{tabularx}"
+    return end_of_table
 
+# Parse the csv file.
 heights = []
 t = []
 with open('CO-OPS__8443970__hr.csv', 'rt') as f:
@@ -79,49 +95,59 @@ with open('CO-OPS__8443970__hr.csv', 'rt') as f:
 heights = np.array(heights)
 t = np.array(t)
 
+# Get the first day.
 t0 = get_start_time()
-t1 = get_t1(t0)
-
-days = []
 
 done = False
+first_month = True
 while not done:
     current_day_of_month += 1
-    if current_day_of_month > DAYS_PER_MONTH - 1:
-        current_day_of_month = 0
-        current_month_index += 1
-        if current_month_index > len(MONTHS) - 1:
+
+    t1 = get_t1(t0)
+
+    moon_phase_t0 = get_lunar_phase(t0)
+    moon_phase_t1 = get_lunar_phase(t1)
+
+    # New moon
+    if moon_phase_t0 > 0.75 and moon_phase_t1 < 0.125:
+        moon_phase_index = 0
+        if current_month_index + 1 >= 2:
             done = True
-    if not done:
-        day = Day(t[t0], t[t1], current_day_of_month, MONTHS[current_month_index], "?", heights[t0 : t1])
-        days.append(day)
-        t0 = t1
-print(len(days))
+            tex += get_end_month()
+        else:
+            if first_month:
+                first_month = False
+            else:
+                tex += get_end_month() + r"\\"
+            tex += get_new_month()
+            current_month_index += 1
+    elif moon_phase_t0 < 0.25 and moon_phase_t1 > 0.25:
+        moon_phase_index = 1
+    elif moon_phase_t0 < 0.5 and moon_phase_t1 > 0.5:
+        moon_phase_index = 2
+    elif moon_phase_t0 < 0.75 and moon_phase_t1 > 0.75:
+        moon_phase_index = 3
+    else:
+        moon_phase_index = 4
 
-"""
-# Absolute starting time.
-t0 = datetime(2018, 9, 8, 19)
+    if done:
+        continue
 
-times = Tide._times(t0, hours)
+    calendar_cell = CELL_TEMPLATE
+    calendar_cell = calendar_cell.replace("$DAY_OF_MONTH", str(current_day_of_month))
+    calendar_cell = calendar_cell.replace("$GREGORIAN_TIME", t[t0].strftime("%m.%d.%y %H:%M"))
+    calendar_cell = calendar_cell.replace("$MOON_PHASE", MOON_PHASES[moon_phase_index])
+    # TODO yom tov
+    # TODO tide image
 
-my_tide = Tide.decompose(heights, t)
-my_prediction = my_tide.at(times)
+    tex += calendar_cell
 
-day_start = get_next_low(0, my_prediction)
-day_end = get_next_low(day_start, my_prediction)
-
-my_prediction = my_prediction[day_start : day_end]
-print(my_prediction)
-hours = np.arange(len(my_prediction))
-
-ax = plt.axes([0, 0, 1, 1], frameon=False)
-ax.get_xaxis().set_visible(False)
-ax.get_yaxis().set_visible(False)
-plt.autoscale(tight=True)
-
-lines = plt.plot(hours, my_prediction, label="Pytides")
-plt.setp(lines, linewidth=10)
-plt.tick_params(axis="both", which="both", bottom=False, top=False, left=False, right=False,
-                labelbottom=False, labelleft=False)
-plt.show()
-"""
+    current_day_of_week += 1
+    if current_day_of_week >= len(DAYS_OF_WEEK):
+        tex += r"\\\hline "
+        current_day_of_week = 0
+    else:
+        tex += r"&"
+    t0 = t1
+tex += r"\end{document}"
+print(tex)
