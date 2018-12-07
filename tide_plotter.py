@@ -202,7 +202,7 @@ while not done:
     d = t[t0]
     d = d.replace(tzinfo=to_zone)
     # Add the current time in the Gregorian (secular) calendar.
-    calendar_cell = calendar_cell.replace("$GREGORIAN_TIME", d.strftime("%m.%d.%y %H:%M"))
+    calendar_cell = calendar_cell.replace("$GREGORIAN_TIME", d.strftime("%m.%d.%y %H:%M %p"))
 
     # Add the moon phase, if any.
     calendar_cell = calendar_cell.replace("$MOON_PHASE", r" \hfill " + MOON_PHASES[moon_phase_index])
