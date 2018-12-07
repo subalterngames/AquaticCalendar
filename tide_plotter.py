@@ -19,7 +19,7 @@ image_counter = 0
 tex = r"\documentclass[11pt,letterpaper,landscape,openany]{scrbook}\usepackage{cjhebrew}\usepackage{tabularx}\usepackage[letterpaper,bindingoffset=0.2in,left=1in,right=1in,top=.5in,bottom=.5in,footskip=.25in,marginparwidth=5em]{geometry}\usepackage{marginnote}\usepackage{graphicx}\usepackage{wasysym}\usepackage{sectsty}\usepackage{xcolor}\definecolor{hcolor}{HTML}{D3230C}\newcommand{\red}[1]{\textcolor{hcolor}{#1}}\setkomafont{disposition}{\bfseries}\newcommand\Chapter[2]{\chapter[\normalfont#1:{\itshape#2}]{#1\\[1ex]\Large\normalfont#2}}\makeatletter\newcommand{\alephbet}[1]{\c@alephbet{#1}}\newcommand{\c@alephbet}[1]{{\ifcase\number\value{#1}\or\<'>\or\<b>\or\<g>\or\<d>\or\<h>\or\<w>\or\<z>\or\<.h>\or\<.t>\or\<y>\or\<k|>\or\<l>\or\<m|>\or\<n|>\o\<N>\or\<s>\or\<`>\or\<p|>\or\<P>\or\<.s>\or\<q>\or\<r>\or\</s>\or\<t>\fi}}\renewcommand{\partname}{}\renewcommand\thepart{\alephbet{part}}\renewcommand\thechapter{\alephbet{chapter}}\allsectionsfont{\centering}\newcolumntype{Y}{>{\centering\arraybackslash}X}\begin{document}"
 MONTH_TEMPLATE = r"\chapter*{$MONTH}\noindent\begin{tabularx}{\textwidth}{YYYYYYY}"
 
-CELL_TEMPLATE = r"{\huge\textbf{$DAY_OF_MONTH} $MOON_PHASE}\newline {\tiny{\textit{$GREGORIAN_TIME}}}\newline\scriptsize{\textsc{$YOM_TOV}}\newline TIDEIMAGE"
+CELL_TEMPLATE = r"{\huge\textbf{$DAY_OF_MONTH} $MOON_PHASE}\newline {\tiny{\textit{$GREGORIAN_TIME}}}\newline\scriptsize{\textsc{$YOM_TOV}}\newline $TIDE_IMAGE"
 
 plot_directory = Path("plots")
 if not plot_directory.exists():
@@ -153,21 +153,21 @@ to_zone = tz.gettz('America/New_York')
 
 done = False
 first_month = True
-first = True
 while not done:
+    # Get the ending hour of the day.
     t1 = get_t1(t0)
 
-    if first:
-        first = False
-        plot(np.array(heights[t0:t1]))
-
+    # Increment the day of month.
     current_day_of_month += 1
 
+    # Get the lunar phase at the start and end of the day.
     moon_phase_t0 = get_lunar_phase(t0)
     moon_phase_t1 = get_lunar_phase(t1)
 
-    # New moon
+    # Get the LaTeX symbol for the elapsed phase, if any.
+    # If the phase wrapped around, it is a new month.
     if moon_phase_t0 > 0.75 and moon_phase_t1 < 0.125:
+        # Start the next month.
         moon_phase_index = 0
         if current_month_index + 1 >= len(MONTHS):
             done = True
@@ -184,29 +184,44 @@ while not done:
         moon_phase_index = 2
     elif moon_phase_t0 < 0.75 and moon_phase_t1 > 0.75:
         moon_phase_index = 3
+    # Do not show a lunar symbol.
     else:
         moon_phase_index = 4
 
     if done:
         continue
 
+    # Create a "cell" in the calendar.
     calendar_cell = CELL_TEMPLATE
+
+    # Add the day of month.
     calendar_cell = calendar_cell.replace("$DAY_OF_MONTH", str(current_day_of_month + 1))
 
     # Convert the printed time to the current time zone.
     d = t[t0]
     d = d.replace(tzinfo=to_zone)
-
+    # Add the current time in the Gregorian (secular) calendar.
     calendar_cell = calendar_cell.replace("$GREGORIAN_TIME", d.strftime("%m.%d.%y %H:%M"))
+
+    # Add the moon phase, if any.
     calendar_cell = calendar_cell.replace("$MOON_PHASE", r" \hfill " + MOON_PHASES[moon_phase_index])
 
+    # Add the yom tov reminder, if any.
     y, y_notes, is_y = is_yom_tov()
     if is_y:
         if y_notes != "":
+            # Add a margin note about the yom tov, if any.
             y += r"\marginnote{\tiny{\textbf{" + y + r"}\newline\textit{" + y_notes + r"}}}"
         calendar_cell = calendar_cell.replace("$YOM_TOV", y)
     else:
         calendar_cell = calendar_cell.replace("$YOM_TOV", "")
+
+    # Add the image.
+    calendar_cell = calendar_cell.replace("$TIDE_IMAGE", r"\includegraphics[width=\linewidth]{plots/" + str(image_counter) + r".png}")
+    # Create the image.
+    plot(np.array(heights[t0:t1]))
+    # Create the image.
+
     # TODO tide image
     # TODO a pretty picture of the ocean
     # TODO make everything pretty.
