@@ -16,10 +16,10 @@ current_day_of_week = 0
 
 image_counter = 0
 
-tex = r"\documentclass[11pt,letterpaper,landscape,openany]{scrbook}\usepackage{cjhebrew}\usepackage{tabularx}\usepackage[letterpaper,bindingoffset=0.2in,left=1in,right=1in,top=.5in,bottom=.5in,footskip=.25in,marginparwidth=5em]{geometry}\usepackage{marginnote}\usepackage{graphicx}\usepackage{wasysym}\usepackage{sectsty}\usepackage{xcolor}\definecolor{hcolor}{HTML}{D3230C}\newcommand{\red}[1]{\textcolor{hcolor}{#1}}\setkomafont{disposition}{\bfseries}\newcommand\Chapter[2]{\chapter[\normalfont#1:{\itshape#2}]{#1\\[1ex]\Large\normalfont#2}}\makeatletter\newcommand{\alephbet}[1]{\c@alephbet{#1}}\newcommand{\c@alephbet}[1]{{\ifcase\number\value{#1}\or\<'>\or\<b>\or\<g>\or\<d>\or\<h>\or\<w>\or\<z>\or\<.h>\or\<.t>\or\<y>\or\<k|>\or\<l>\or\<m|>\or\<n|>\o\<N>\or\<s>\or\<`>\or\<p|>\or\<P>\or\<.s>\or\<q>\or\<r>\or\</s>\or\<t>\fi}}\renewcommand{\partname}{}\renewcommand\thepart{\alephbet{part}}\renewcommand\thechapter{\alephbet{chapter}}\allsectionsfont{\centering}\newcolumntype{Y}{>{\centering\arraybackslash}X}\begin{document}"
+tex = r"\documentclass[11pt,letterpaper,landscape,openany]{scrbook}\renewcommand{\familydefault}{\sfdefault}\usepackage{cjhebrew}\usepackage{tabularx}\usepackage[letterpaper,bindingoffset=0.2in,left=1in,right=1in,top=.5in,bottom=.5in,footskip=.25in,marginparwidth=5em]{geometry}\usepackage{marginnote}\usepackage{graphicx}\usepackage{wasysym}\usepackage{sectsty}\usepackage{xcolor}\definecolor{hcolor}{HTML}{D3230C}\newcommand{\red}[1]{\textcolor{hcolor}{#1}}\setkomafont{disposition}{\bfseries}\newcommand\Chapter[2]{\chapter[\normalfont#1:{\itshape#2}]{#1\\[1ex]\Large\normalfont#2}}\makeatletter\newcommand{\alephbet}[1]{\c@alephbet{#1}}\newcommand{\c@alephbet}[1]{{\ifcase\number\value{#1}\or\<'>\or\<b>\or\<g>\or\<d>\or\<h>\or\<w>\or\<z>\or\<.h>\or\<.t>\or\<y>\or\<k|>\or\<l>\or\<m|>\or\<n|>\o\<N>\or\<s>\or\<`>\or\<p|>\or\<P>\or\<.s>\or\<q>\or\<r>\or\</s>\or\<t>\fi}}\renewcommand{\partname}{}\renewcommand\thepart{\alephbet{part}}\renewcommand\thechapter{\alephbet{chapter}}\allsectionsfont{\centering}\newcolumntype{Y}{>{\centering\arraybackslash}X}\begin{document}"
 MONTH_TEMPLATE = r"\chapter*{$MONTH}\noindent\begin{tabularx}{\textwidth}{YYYYYYY}"
 
-CELL_TEMPLATE = r"{\huge\textbf{$DAY_OF_MONTH} $MOON_PHASE}\newline {\tiny{\textit{$GREGORIAN_TIME}}}\newline\scriptsize{\textsc{$YOM_TOV}}\newline $TIDE_IMAGE"
+CELL_TEMPLATE = r"{\huge\textbf{$DAY_OF_MONTH} $MOON_PHASE}\newline {\tiny{$GREGORIAN_TIME}}\newline\scriptsize{\textbf{$YOM_TOV}}\newline $TIDE_IMAGE"
 
 plot_directory = Path("plots")
 if not plot_directory.exists():
@@ -170,7 +170,8 @@ while not done:
     if moon_phase_t0 > 0.75 and moon_phase_t1 < 0.125:
         # Start the next month.
         moon_phase_index = 0
-        if current_month_index + 1 >= len(MONTHS):
+        #if current_month_index + 1 >= len(MONTHS):
+        if current_month_index + 1 >= 1:
             done = True
             tex += get_end_month()
         else:
@@ -195,8 +196,13 @@ while not done:
     # Create a "cell" in the calendar.
     calendar_cell = CELL_TEMPLATE
 
+    calendar_day_of_month = str(current_day_of_month + 1)
+    # Add a bit of vertical padding on the top.
+    if current_day_of_week == 0:
+        calendar_day_of_month += r"\rule{0pt}{2ex}"
+
     # Add the day of month.
-    calendar_cell = calendar_cell.replace("$DAY_OF_MONTH", str(current_day_of_month + 1))
+    calendar_cell = calendar_cell.replace("$DAY_OF_MONTH", calendar_day_of_month)
 
     # Convert the printed time to the current time zone.
     d = t[t0]
@@ -211,8 +217,13 @@ while not done:
     y, y_notes, is_y = is_yom_tov()
     if is_y:
         if y_notes != "":
+            # Remove the word "begins" from the margin note.
+            if y.endswith("begins"):
+                y_name = y.split(" ")[0]
+            else:
+                y_name = y
             # Add a margin note about the yom tov, if any.
-            y += r"\marginnote{\tiny{\textbf{" + y + r"}\newline\textit{" + y_notes + r"}}}"
+            y += r"\marginnote{\tiny{\textbf{" + y_name + r"}\newline\textit{" + y_notes + r"}}}"
         calendar_cell = calendar_cell.replace("$YOM_TOV", y)
     else:
         calendar_cell = calendar_cell.replace("$YOM_TOV", "")
