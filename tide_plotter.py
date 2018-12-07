@@ -15,7 +15,7 @@ from os import listdir
 # The months of the Aquatic Jewish calendar.
 MONTHS = ["Tishrei", "Kheshvan", "Kislev", "Tevet", "Shvat", "Adar", "Nisan", "Iyar", "Sivan", "Tammuz", "Av", "Elul"]
 # The days of the Aquatic Jewish week.
-DAYS_OF_WEEK = ["Dag", "Gal", "Khof", "Sa'ar", "Shakhaf", "Melakh", "Shabbat"]
+DAYS_OF_WEEK = ["Dag", "Gal", "Khof", "Zerem", "Shakhaf", "Melakh", "Shabbat"]
 # LaTeX symbols for printing the moon phase. If the phase isn't one of the quarters, then no symbol is printed.
 MOON_PHASES = [r"\CIRCLE", r"\LEFTcircle", r"\Circle", "\RIGHTcircle", r""]
 # Index of the current month.
@@ -275,16 +275,16 @@ while not done:
         calendar_day_of_month += r"\rule{0pt}{2ex}"
 
     # Add the day of month.
-    calendar_cell = calendar_cell.replace("$DAY_OF_MONTH", calendar_day_of_month)
+    calendar_cell = calendar_cell.replace("$DAY_OF_MONTH", r"\darkblue{" + calendar_day_of_month + r"}")
 
     # Convert the printed time to the current time zone.
     d = t[t0]
     d = d.replace(tzinfo=to_zone)
     # Add the current time in the Gregorian (secular) calendar.
-    calendar_cell = calendar_cell.replace("$GREGORIAN_TIME", d.strftime("%m.%d.%y %H:%M %p"))
+    calendar_cell = calendar_cell.replace("$GREGORIAN_TIME", r"\darkblue{" + d.strftime("%m.%d.%y %H:%M %p") + "}")
 
     # Add the moon phase, if any.
-    calendar_cell = calendar_cell.replace("$MOON_PHASE", r" \hfill " + MOON_PHASES[moon_phase_index])
+    calendar_cell = calendar_cell.replace("$MOON_PHASE", r" \hfill \darkblue{" + MOON_PHASES[moon_phase_index] + r"}")
 
     # Add the yom tov reminder, if any.
     y, y_notes, is_y = is_yom_tov()
@@ -296,7 +296,10 @@ while not done:
             else:
                 y_name = y
             # Add a margin note about the yom tov, if any.
+            y = r"\darkblue{" + y + r"}"
             y += r"}\marginnote{\tiny{\darkblue{\textbf{" + y_name + r"}\newline\textit{" + y_notes + r"}}}"
+        else:
+            y = r"\darkblue{" + y + r"}"
         calendar_cell = calendar_cell.replace("$YOM_TOV", y)
     else:
         calendar_cell = calendar_cell.replace("$YOM_TOV", r"\vphantom{Yom Tov}")
