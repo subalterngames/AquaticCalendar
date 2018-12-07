@@ -42,7 +42,7 @@ tex = r"\documentclass[11pt,letterpaper,landscape,openany]{scrbook}\usepackage{c
 with open("intro.txt", "rt") as f:
     tex += f.read()
 # This is the LaTeX data used to start a month on the page.
-MONTH_TEMPLATE = r"\chapter*{$MONTH}\noindent\begin{tabularx}{\textwidth}{YYYYYYY}"
+MONTH_TEMPLATE = r"\chapter*{\darkblue{$MONTH}}\noindent\begin{tabularx}{\textwidth}{YYYYYYY}"
 # This is the LaTeX data used to insert a day into the calendar page. We'll replace each $VALUE with something useful.
 CELL_TEMPLATE = r"{\normalsize\textbf{$DAY_OF_MONTH} $MOON_PHASE}\newline {\tiny{$GREGORIAN_TIME}}\newline\scriptsize{\textbf{$YOM_TOV}}\newline $TIDE_IMAGE"
 
