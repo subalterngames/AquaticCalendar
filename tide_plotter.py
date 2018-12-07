@@ -1,3 +1,4 @@
+from pathlib import Path
 from datetime import datetime
 import numpy as np
 import matplotlib.pyplot as plt
@@ -13,10 +14,16 @@ current_month_index = -1
 current_day_of_month = -1
 current_day_of_week = 0
 
+image_counter = 0
+
 tex = r"\documentclass[11pt,letterpaper,landscape,openany]{scrbook}\usepackage{cjhebrew}\usepackage{tabularx}\usepackage[letterpaper,bindingoffset=0.2in,left=1in,right=1in,top=.5in,bottom=.5in,footskip=.25in,marginparwidth=5em]{geometry}\usepackage{marginnote}\usepackage{graphicx}\usepackage{wasysym}\usepackage{sectsty}\usepackage{xcolor}\definecolor{hcolor}{HTML}{D3230C}\newcommand{\red}[1]{\textcolor{hcolor}{#1}}\setkomafont{disposition}{\bfseries}\newcommand\Chapter[2]{\chapter[\normalfont#1:{\itshape#2}]{#1\\[1ex]\Large\normalfont#2}}\makeatletter\newcommand{\alephbet}[1]{\c@alephbet{#1}}\newcommand{\c@alephbet}[1]{{\ifcase\number\value{#1}\or\<'>\or\<b>\or\<g>\or\<d>\or\<h>\or\<w>\or\<z>\or\<.h>\or\<.t>\or\<y>\or\<k|>\or\<l>\or\<m|>\or\<n|>\o\<N>\or\<s>\or\<`>\or\<p|>\or\<P>\or\<.s>\or\<q>\or\<r>\or\</s>\or\<t>\fi}}\renewcommand{\partname}{}\renewcommand\thepart{\alephbet{part}}\renewcommand\thechapter{\alephbet{chapter}}\allsectionsfont{\centering}\newcolumntype{Y}{>{\centering\arraybackslash}X}\begin{document}"
 MONTH_TEMPLATE = r"\chapter*{$MONTH}\noindent\begin{tabularx}{\textwidth}{YYYYYYY}"
 
 CELL_TEMPLATE = r"{\huge\textbf{$DAY_OF_MONTH} $MOON_PHASE}\newline {\tiny{\textit{$GREGORIAN_TIME}}}\newline\scriptsize{\textsc{$YOM_TOV}}\newline TIDEIMAGE"
+
+plot_directory = Path("plots")
+if not plot_directory.exists():
+    plot_directory.mkdir()
 
 yom_tov = []
 with open("yom_tov.csv", "rt") as f:
@@ -88,18 +95,30 @@ def get_t1(start_time):
 
 
 def plot(day):
+    """
+    Create a tidal chart of the day.
+    :param day: The day, as represented by an array of heights per hour.
+    """
+
     ax = plt.axes([0, 0, 1, 1], frameon=False)
     ax.get_xaxis().set_visible(False)
     ax.get_yaxis().set_visible(False)
     plt.autoscale(tight=True)
 
     hours = np.arange(len(day))
+    # Plot invisible lines to keep the size of the chart consistent.
+    plt.plot(min_max_range, min_max_heights, color="white")
+    # Plot the heights.
+    lines = plt.plot(hours, day, color="#cfe0e8")
+    plt.setp(lines, linewidth=20)
 
-    lines = plt.plot(hours, day)
-    plt.setp(lines, linewidth=10)
+    # Save the image.
     plt.tick_params(axis="both", which="both", bottom=False, top=False, left=False, right=False,
                     labelbottom=False, labelleft=False)
-    # plt.show()
+    # Save the image.
+    global image_counter
+    plt.savefig(plot_directory.joinpath(str(image_counter) + ".png"))
+    image_counter += 1
 
 def get_end_month():
     end_of_table = ""
@@ -119,6 +138,11 @@ with open('tide_data/boston.csv', 'rt') as f:
         date_string = line[0] + " " + line[1]
         t.append(datetime.strptime(date_string, "%Y/%m/%d %H:%M:%S %p"))
         heights.append(float(line[2]))
+
+# Use the max and min heights to plot consistenty sized charts.
+min_max_heights = np.array([min(heights), max(heights)])
+min_max_range = np.arange(2)
+
 heights = np.array(heights)
 t = np.array(t)
 
@@ -129,8 +153,13 @@ to_zone = tz.gettz('America/New_York')
 
 done = False
 first_month = True
+first = True
 while not done:
     t1 = get_t1(t0)
+
+    if first:
+        first = False
+        plot(np.array(heights[t0:t1]))
 
     current_day_of_month += 1
 
@@ -167,7 +196,7 @@ while not done:
     # Convert the printed time to the current time zone.
     d = t[t0]
     d = d.replace(tzinfo=to_zone)
-    
+
     calendar_cell = calendar_cell.replace("$GREGORIAN_TIME", d.strftime("%m.%d.%y %H:%M"))
     calendar_cell = calendar_cell.replace("$MOON_PHASE", r" \hfill " + MOON_PHASES[moon_phase_index])
 
