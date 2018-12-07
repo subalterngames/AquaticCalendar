@@ -65,7 +65,7 @@ def get_new_month():
     month = MONTH_TEMPLATE
     month = month.replace("$MONTH", MONTHS[current_month_index])
     for day_of_week, i in zip(DAYS_OF_WEEK, range(len(DAYS_OF_WEEK))):
-        month += r"\LARGE " + day_of_week
+        month += r"\normalsize " + day_of_week
         if i < len(DAYS_OF_WEEK) - 1:
             month += "&"
         else:
@@ -118,6 +118,7 @@ def plot(day):
     # Save the image.
     global image_counter
     plt.savefig(plot_directory.joinpath(str(image_counter) + ".png"))
+    plt.clf()
     image_counter += 1
 
 def get_end_month():
@@ -217,12 +218,11 @@ while not done:
         calendar_cell = calendar_cell.replace("$YOM_TOV", "")
 
     # Add the image.
-    calendar_cell = calendar_cell.replace("$TIDE_IMAGE", r"\includegraphics[width=\linewidth]{plots/" + str(image_counter) + r".png}")
+    calendar_cell = calendar_cell.replace("$TIDE_IMAGE", r"\includegraphics[scale=.15]{plots/" + str(image_counter) + r".png}")
+    image_counter += 1
     # Create the image.
-    plot(np.array(heights[t0:t1]))
-    # Create the image.
+    # np.array(heights[t0:t1]))
 
-    # TODO tide image
     # TODO a pretty picture of the ocean
     # TODO make everything pretty.
 
@@ -237,3 +237,8 @@ while not done:
     t0 = t1
 tex += r"\end{document}"
 print(tex)
+
+with open("calendar.tex", "wt") as f:
+    f.write(tex)
+
+print("Done!")
