@@ -16,7 +16,13 @@ current_day_of_week = 0
 
 image_counter = 0
 
+# Begin building the document with the preamble.
 tex = r"\documentclass[11pt,letterpaper,landscape,openany]{scrbook}\renewcommand{\familydefault}{\sfdefault}\usepackage{cjhebrew}\usepackage{tabularx}\usepackage[letterpaper,bindingoffset=0.2in,left=1in,right=1in,top=.5in,bottom=.5in,footskip=.25in,marginparwidth=5em]{geometry}\usepackage{marginnote}\usepackage{graphicx}\usepackage{wasysym}\usepackage{sectsty}\usepackage{xcolor}\definecolor{hcolor}{HTML}{D3230C}\newcommand{\red}[1]{\textcolor{hcolor}{#1}}\setkomafont{disposition}{\bfseries}\newcommand\Chapter[2]{\chapter[\normalfont#1:{\itshape#2}]{#1\\[1ex]\Large\normalfont#2}}\makeatletter\newcommand{\alephbet}[1]{\c@alephbet{#1}}\newcommand{\c@alephbet}[1]{{\ifcase\number\value{#1}\or\<'>\or\<b>\or\<g>\or\<d>\or\<h>\or\<w>\or\<z>\or\<.h>\or\<.t>\or\<y>\or\<k|>\or\<l>\or\<m|>\or\<n|>\o\<N>\or\<s>\or\<`>\or\<p|>\or\<P>\or\<.s>\or\<q>\or\<r>\or\</s>\or\<t>\fi}}\renewcommand{\partname}{}\renewcommand\thepart{\alephbet{part}}\renewcommand\thechapter{\alephbet{chapter}}\allsectionsfont{\centering}\newcolumntype{Y}{>{\centering\arraybackslash}X}\begin{document}"
+
+# Append the introduction.
+with open("intro.txt", "rt") as f:
+    tex += f.read()
+
 MONTH_TEMPLATE = r"\chapter*{$MONTH}\noindent\begin{tabularx}{\textwidth}{YYYYYYY}"
 
 CELL_TEMPLATE = r"{\huge\textbf{$DAY_OF_MONTH} $MOON_PHASE}\newline {\tiny{$GREGORIAN_TIME}}\newline\scriptsize{\textbf{$YOM_TOV}}\newline $TIDE_IMAGE"
@@ -234,8 +240,10 @@ while not done:
     # Create the image.
     # np.array(heights[t0:t1]))
 
-    # TODO a pretty picture of the ocean
-    # TODO make everything pretty.
+    # TODO a pretty picture of the ocean per month.
+    # TODO title page.
+    # TODO blue fonts.
+    # TODO correct size.
 
     tex += calendar_cell
 
