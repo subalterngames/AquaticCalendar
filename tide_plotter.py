@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 from dateutil import tz
 import decimal
 dec = decimal.Decimal
+from os import listdir
 
 
 MONTHS = ["Tishrei", "Kheshvan", "Kislev", "Tevet", "Shvat", "Adar", "Nisan", "Iyar", "Sivan", "Tammuz", "Av", "Elul"]
@@ -16,8 +17,14 @@ current_day_of_week = 0
 
 image_counter = 0
 
+ocean_images_dir = "ocean_images/"
+ocean_images = []
+for o in listdir(str(Path(ocean_images_dir).resolve())):
+    ocean_images.append(ocean_images_dir + o)
+print(ocean_images)
+
 # Begin building the document with the preamble.
-tex = r"\documentclass[11pt,letterpaper,landscape,openany]{scrbook}\renewcommand{\familydefault}{\sfdefault}\usepackage{cjhebrew}\usepackage{tabularx}\usepackage[letterpaper,bindingoffset=0.2in,left=1in,right=1in,top=.5in,bottom=.5in,footskip=.25in,marginparwidth=5em]{geometry}\usepackage{marginnote}\usepackage{graphicx}\usepackage{wasysym}\usepackage{sectsty}\usepackage{xcolor}\definecolor{hcolor}{HTML}{D3230C}\newcommand{\red}[1]{\textcolor{hcolor}{#1}}\setkomafont{disposition}{\bfseries}\newcommand\Chapter[2]{\chapter[\normalfont#1:{\itshape#2}]{#1\\[1ex]\Large\normalfont#2}}\makeatletter\newcommand{\alephbet}[1]{\c@alephbet{#1}}\newcommand{\c@alephbet}[1]{{\ifcase\number\value{#1}\or\<'>\or\<b>\or\<g>\or\<d>\or\<h>\or\<w>\or\<z>\or\<.h>\or\<.t>\or\<y>\or\<k|>\or\<l>\or\<m|>\or\<n|>\o\<N>\or\<s>\or\<`>\or\<p|>\or\<P>\or\<.s>\or\<q>\or\<r>\or\</s>\or\<t>\fi}}\renewcommand{\partname}{}\renewcommand\thepart{\alephbet{part}}\renewcommand\thechapter{\alephbet{chapter}}\allsectionsfont{\centering}\newcolumntype{Y}{>{\centering\arraybackslash}X}\begin{document}"
+tex = r"\documentclass[11pt,letterpaper,landscape,openany]{scrbook}\usepackage{colortbl}\pagenumbering{gobble}\renewcommand{\familydefault}{\sfdefault}\usepackage{cjhebrew}\usepackage{tabularx}\usepackage[letterpaper,bindingoffset=0.2in,left=1in,right=1in,top=.5in,bottom=.5in,footskip=.25in,marginparwidth=5em]{geometry}\usepackage{marginnote}\usepackage{graphicx}\usepackage{wasysym}\usepackage{sectsty}\usepackage{xcolor}\definecolor{hcolor}{HTML}{0A435F}\newcommand{\darkblue}[1]{\textcolor{hcolor}{#1}}\setkomafont{disposition}{\bfseries}\newcommand\Chapter[2]{\chapter[\normalfont#1:{\itshape#2}]{#1\\[1ex]\Large\normalfont#2}}\makeatletter\newcommand{\alephbet}[1]{\c@alephbet{#1}}\newcommand{\c@alephbet}[1]{{\ifcase\number\value{#1}\or\<'>\or\<b>\or\<g>\or\<d>\or\<h>\or\<w>\or\<z>\or\<.h>\or\<.t>\or\<y>\or\<k|>\or\<l>\or\<m|>\or\<n|>\o\<N>\or\<s>\or\<`>\or\<p|>\or\<P>\or\<.s>\or\<q>\or\<r>\or\</s>\or\<t>\fi}}\renewcommand{\partname}{}\renewcommand\thepart{\alephbet{part}}\renewcommand\thechapter{\alephbet{chapter}}\allsectionsfont{\centering}\newcolumntype{Y}{>{\centering\arraybackslash}X}\begin{document}"
 
 # Append the introduction.
 with open("intro.txt", "rt") as f:
@@ -25,7 +32,7 @@ with open("intro.txt", "rt") as f:
 
 MONTH_TEMPLATE = r"\chapter*{$MONTH}\noindent\begin{tabularx}{\textwidth}{YYYYYYY}"
 
-CELL_TEMPLATE = r"{\huge\textbf{$DAY_OF_MONTH} $MOON_PHASE}\newline {\tiny{$GREGORIAN_TIME}}\newline\scriptsize{\textbf{$YOM_TOV}}\newline $TIDE_IMAGE"
+CELL_TEMPLATE = r"{\normalsize\textbf{$DAY_OF_MONTH} $MOON_PHASE}\newline {\tiny{$GREGORIAN_TIME}}\newline\scriptsize{\textbf{$YOM_TOV}}\newline $TIDE_IMAGE"
 
 plot_directory = Path("plots")
 if not plot_directory.exists():
@@ -64,14 +71,15 @@ def get_new_month():
     """
     Returns the header for the next month.
     """
+
     global current_day_of_month
     current_day_of_month = 0
     global current_month_index
     current_month_index += 1
-    month = MONTH_TEMPLATE
+    month = r"\newpage\includegraphics[width=\textwidth,keepaspectratio=true]{" + ocean_images[current_month_index] + r"}\newpage" + MONTH_TEMPLATE
     month = month.replace("$MONTH", MONTHS[current_month_index])
     for day_of_week, i in zip(DAYS_OF_WEEK, range(len(DAYS_OF_WEEK))):
-        month += r"\normalsize " + day_of_week
+        month += r"\small\cellcolor{hcolor}{\color{white}" + day_of_week + "}"
         if i < len(DAYS_OF_WEEK) - 1:
             month += "&"
         else:
@@ -129,6 +137,11 @@ def plot(day):
 
 def get_end_month():
     end_of_table = ""
+    # Do not start an extra row on the last month.
+    if current_month_index == 11:
+        end_of_table += r"\end{tabularx}"
+        return end_of_table
+    # Fill out the last row.
     for i in range(6 - current_day_of_week):
         end_of_table += r"&"
     end_of_table += r"\\\hline\end{tabularx}"
@@ -176,8 +189,8 @@ while not done:
     if moon_phase_t0 > 0.75 and moon_phase_t1 < 0.125:
         # Start the next month.
         moon_phase_index = 0
-        #if current_month_index + 1 >= len(MONTHS):
-        if current_month_index + 1 >= 1:
+        if current_month_index + 1 >= len(MONTHS):
+        #if current_month_index + 1 >= 1:
             done = True
             tex += get_end_month()
         else:
@@ -229,10 +242,10 @@ while not done:
             else:
                 y_name = y
             # Add a margin note about the yom tov, if any.
-            y += r"\marginnote{\tiny{\textbf{" + y_name + r"}\newline\textit{" + y_notes + r"}}}"
+            y += r"}\marginnote{\tiny{\darkblue{\textbf{" + y_name + r"}\newline\textit{" + y_notes + r"}}}"
         calendar_cell = calendar_cell.replace("$YOM_TOV", y)
     else:
-        calendar_cell = calendar_cell.replace("$YOM_TOV", "")
+        calendar_cell = calendar_cell.replace("$YOM_TOV", r"\vphantom{Yom Tov}")
 
     # Add the image.
     calendar_cell = calendar_cell.replace("$TIDE_IMAGE", r"\includegraphics[width=\linewidth,keepaspectratio=true]{plots/" + str(image_counter) + r".png}")
@@ -243,7 +256,7 @@ while not done:
     # TODO a pretty picture of the ocean per month.
     # TODO title page.
     # TODO blue fonts.
-    # TODO correct size.
+    # TODO suppress page numbers
 
     tex += calendar_cell
 
