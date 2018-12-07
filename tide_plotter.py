@@ -235,7 +235,7 @@ while not done:
         calendar_cell = calendar_cell.replace("$YOM_TOV", "")
 
     # Add the image.
-    calendar_cell = calendar_cell.replace("$TIDE_IMAGE", r"\includegraphics[scale=.15]{plots/" + str(image_counter) + r".png}")
+    calendar_cell = calendar_cell.replace("$TIDE_IMAGE", r"\includegraphics[width=\linewidth,keepaspectratio=true]{plots/" + str(image_counter) + r".png}")
     image_counter += 1
     # Create the image.
     # np.array(heights[t0:t1]))
