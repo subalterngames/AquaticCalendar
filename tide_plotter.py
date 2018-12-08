@@ -7,6 +7,9 @@ from os import listdir
 import decimal
 dec = decimal.Decimal
 
+# TODO better margins.
+# TODO larger?
+
 # The months of the Aquatic Jewish calendar.
 MONTHS = ["Tishrei", "Kheshvan", "Kislev", "Tevet", "Shvat", "Adar", "Nisan", "Iyar", "Sivan", "Tammuz", "Av", "Elul"]
 # The days of the Aquatic Jewish week.
