@@ -1,21 +1,16 @@
 from pathlib import Path
-from datetime import datetime
 import numpy as np
 import matplotlib.pyplot as plt
+from dateutil.parser import parse
 from dateutil import tz
+from os import listdir
 import decimal
 dec = decimal.Decimal
-from os import listdir
-
-
-# TODO title page.
-# TODO cleanup preamble.
-# TODO verify that time zone conversion works.
 
 # The months of the Aquatic Jewish calendar.
 MONTHS = ["Tishrei", "Kheshvan", "Kislev", "Tevet", "Shvat", "Adar", "Nisan", "Iyar", "Sivan", "Tammuz", "Av", "Elul"]
 # The days of the Aquatic Jewish week.
-DAYS_OF_WEEK = ["Dag", "Gal", "Khof", "Zerem", "Shakhaf", "Melakh", "Shabbat"]
+DAYS_OF_WEEK = ["Dag", "Gal", "Khof", "Zerem", "Ruakh", "Melakh", "Shabbat"]
 # LaTeX symbols for printing the moon phase. If the phase isn't one of the quarters, then no symbol is printed.
 MOON_PHASES = [r"\CIRCLE", r"\LEFTcircle", r"\Circle", "\RIGHTcircle", r""]
 # Index of the current month.
@@ -35,8 +30,19 @@ for o in listdir(str(Path(ocean_images_dir).resolve())):
     ocean_images.append(ocean_images_dir + o)
 
 # Begin building the document with the LaTeX preamble.
-# Some of what is in here is probably not needed?
-tex = r"\documentclass[11pt,letterpaper,landscape,openany]{scrbook}\usepackage{colortbl}\pagenumbering{gobble}\renewcommand{\familydefault}{\sfdefault}\usepackage{cjhebrew}\usepackage{tabularx}\usepackage[letterpaper,bindingoffset=0.2in,left=1in,right=1in,top=.5in,bottom=.5in,footskip=.25in,marginparwidth=5em]{geometry}\usepackage{marginnote}\usepackage{graphicx}\usepackage{wasysym}\usepackage{sectsty}\usepackage{xcolor}\definecolor{hcolor}{HTML}{0A435F}\newcommand{\darkblue}[1]{\textcolor{hcolor}{#1}}\setkomafont{disposition}{\bfseries}\newcommand\Chapter[2]{\chapter[\normalfont#1:{\itshape#2}]{#1\\[1ex]\Large\normalfont#2}}\makeatletter\newcommand{\alephbet}[1]{\c@alephbet{#1}}\newcommand{\c@alephbet}[1]{{\ifcase\number\value{#1}\or\<'>\or\<b>\or\<g>\or\<d>\or\<h>\or\<w>\or\<z>\or\<.h>\or\<.t>\or\<y>\or\<k|>\or\<l>\or\<m|>\or\<n|>\o\<N>\or\<s>\or\<`>\or\<p|>\or\<P>\or\<.s>\or\<q>\or\<r>\or\</s>\or\<t>\fi}}\renewcommand{\partname}{}\renewcommand\thepart{\alephbet{part}}\renewcommand\thechapter{\alephbet{chapter}}\allsectionsfont{\centering}\newcolumntype{Y}{>{\centering\arraybackslash}X}\begin{document}"
+tex = r"\documentclass[11pt,letterpaper,landscape,openany]{scrbook}\usepackage{colortbl}" \
+      r"\pagenumbering{gobble}\renewcommand{\familydefault}{\sfdefault}\usepackage{tabularx}" \
+      r"\usepackage[letterpaper,bindingoffset=0.2in,left=1in,right=1in,top=.5in,bottom=.5in,footskip=.25in," \
+      r"marginparwidth=5em]{geometry}\usepackage{marginnote}\usepackage{graphicx}\usepackage{wasysym}" \
+      r"\usepackage{sectsty}\usepackage{xcolor}\definecolor{hcolor}{HTML}{0A435F}" \
+      r"\newcommand{\darkblue}[1]{\textcolor{hcolor}{#1}}\setkomafont{disposition}{\bfseries}" \
+      r"\allsectionsfont{\centering}\newcolumntype{Y}{>{\centering\arraybackslash}X}" \
+      r"\usepackage[pages=some]{background}" \
+      r"\backgroundsetup{scale=1,color=black,opacity=0.4,angle=0," \
+      r"contents={\includegraphics[width=\paperwidth,height=\paperheight]{title_page.jpg}}}" \
+      r"\begin{document}" \
+      r"\BgThispage\begin{figure}\begin{center}\Huge\darkblue{\textbf{The Aquatic Jewish Calendar}}\end{center}" \
+      r"\begin{center}\Huge\darkblue{5779}\end{center}\end{figure}\clearpage"
 
 # Append the introduction text.
 with open("intro.txt", "rt") as f:
@@ -44,7 +50,8 @@ with open("intro.txt", "rt") as f:
 # This is the LaTeX data used to start a month on the page.
 MONTH_TEMPLATE = r"\chapter*{\darkblue{$MONTH}}\noindent\begin{tabularx}{\textwidth}{YYYYYYY}"
 # This is the LaTeX data used to insert a day into the calendar page. We'll replace each $VALUE with something useful.
-CELL_TEMPLATE = r"{\normalsize\textbf{$DAY_OF_MONTH} $MOON_PHASE}\newline {\tiny{$GREGORIAN_TIME}}\newline\scriptsize{\textbf{$YOM_TOV}}\newline $TIDE_IMAGE"
+CELL_TEMPLATE = r"{\normalsize\textbf{$DAY_OF_MONTH} $MOON_PHASE}\newline {\tiny{$GREGORIAN_TIME}}" \
+                r"\newline\scriptsize{\textbf{$YOM_TOV}}\newline $TIDE_IMAGE"
 
 # Create a directory for the plots if there isn't one already.
 plot_directory = Path("plots")
@@ -81,7 +88,7 @@ def get_lunar_phase(time_index):
     :param time_index: An index in the list of times.
     """
 
-    diff = t[time_index] - datetime(2001, 1, 1)
+    diff = t[time_index] - parse("2001/01/01 00:00 AM GMT")
     days = dec(diff.days) + (dec(diff.seconds) / dec(86400))
     lunations = dec("0.20439731") + (days * dec("0.03386319269"))
     return lunations % dec(1)
@@ -99,7 +106,8 @@ def get_new_month():
     global current_month_index
     current_month_index += 1
     # Begin building the LaTeX data.
-    month = r"\newpage\includegraphics[width=\textwidth,keepaspectratio=true]{" + ocean_images[current_month_index] + r"}\newpage" + MONTH_TEMPLATE
+    month = r"\newpage\begin{figure}\includegraphics[width=\textwidth,keepaspectratio=true]{" + \
+            ocean_images[current_month_index] + r"}\end{figure}\newpage" + MONTH_TEMPLATE
     # Replace $MONTH with the name of the month.
     month = month.replace("$MONTH", MONTHS[current_month_index])
     # Create the header bar with the names of the days of the week.
@@ -206,7 +214,7 @@ with open('tide_data/boston.csv', 'rt') as f:
         line = line.strip().split(',')
         date_string = line[0] + " " + line[1]
         # Parse the data into a datetime object and append it to t.
-        t.append(datetime.strptime(date_string, "%Y/%m/%d %H:%M:%S %p"))
+        t.append(parse(date_string + " GMT"))
         # Append the height data to heights.
         heights.append(float(line[2]))
 
@@ -221,7 +229,6 @@ t = np.array(t)
 # Get the first day.
 t0 = get_start_time()
 # Use this to set the correct time zone.
-to_zone = tz.gettz('America/New_York')
 
 done = False
 first_month = True
@@ -242,7 +249,6 @@ while not done:
         moon_phase_index = 0
         # If this was the final month, stop!
         if current_month_index + 1 >= len(MONTHS):
-        #if current_month_index + 1 >= 1:
             done = True
             tex += get_end_month()
         else:
@@ -278,10 +284,9 @@ while not done:
     calendar_cell = calendar_cell.replace("$DAY_OF_MONTH", r"\darkblue{" + calendar_day_of_month + r"}")
 
     # Convert the printed time to the current time zone.
-    d = t[t0]
-    d = d.replace(tzinfo=to_zone)
+    d = t[t0].astimezone(tz.gettz("EST"))
     # Add the current time in the Gregorian (secular) calendar.
-    calendar_cell = calendar_cell.replace("$GREGORIAN_TIME", r"\darkblue{" + d.strftime("%m.%d.%y %H:%M %p") + "}")
+    calendar_cell = calendar_cell.replace("$GREGORIAN_TIME", r"\darkblue{" + d.strftime("%m.%d.%y %I:%M %p") + "}")
 
     # Add the moon phase, if any.
     calendar_cell = calendar_cell.replace("$MOON_PHASE", r" \hfill \darkblue{" + MOON_PHASES[moon_phase_index] + r"}")
@@ -305,7 +310,9 @@ while not done:
         calendar_cell = calendar_cell.replace("$YOM_TOV", r"\vphantom{Yom Tov}")
 
     # Add the image.
-    calendar_cell = calendar_cell.replace("$TIDE_IMAGE", r"\includegraphics[width=\linewidth,keepaspectratio=true]{plots/" + str(image_counter) + r".png}")
+    calendar_cell = calendar_cell.replace("$TIDE_IMAGE",
+                                          r"\includegraphics[width=\linewidth,keepaspectratio=true]{plots/" +
+                                          str(image_counter) + r".png}")
     # Update the tidal plot image counter.
     image_counter += 1
 
