@@ -7,9 +7,6 @@ from os import listdir
 import decimal
 dec = decimal.Decimal
 
-# TODO better margins.
-# TODO larger?
-
 # The months of the Aquatic Jewish calendar.
 MONTHS = ["Tishrei", "Kheshvan", "Kislev", "Tevet", "Shvat", "Adar", "Nisan", "Iyar", "Sivan", "Tammuz", "Av", "Elul"]
 # The days of the Aquatic Jewish week.
@@ -35,7 +32,7 @@ for o in listdir(str(Path(ocean_images_dir).resolve())):
 # Begin building the document with the LaTeX preamble.
 tex = r"\documentclass[11pt,letterpaper,landscape,openany]{scrbook}\usepackage{colortbl}" \
       r"\pagenumbering{gobble}\renewcommand{\familydefault}{\sfdefault}\usepackage{tabularx}" \
-      r"\usepackage[letterpaper,bindingoffset=0.2in,left=1in,right=1in,top=.5in,bottom=.5in,footskip=.25in," \
+      r"\usepackage[letterpaper,bindingoffset=0.2in,left=1in,right=1.25in,top=.5in,bottom=.5in,footskip=.25in," \
       r"marginparwidth=5em]{geometry}\usepackage{marginnote}\usepackage{graphicx}\usepackage{wasysym}" \
       r"\usepackage{sectsty}\usepackage{xcolor}\definecolor{hcolor}{HTML}{0A435F}" \
       r"\newcommand{\darkblue}[1]{\textcolor{hcolor}{#1}}\setkomafont{disposition}{\bfseries}" \
@@ -305,7 +302,7 @@ while not done:
                 y_name = y
             # Add a margin note about the yom tov, if any.
             y = r"\darkblue{" + y + r"}"
-            y += r"}\marginnote{\tiny{\darkblue{\textbf{" + y_name + r"}\newline\textit{" + y_notes + r"}}}"
+            y += r"}\marginnote{\scriptsize{\darkblue{\textbf{" + y_name + r"}\newline\textit{" + y_notes + r"}}}"
         else:
             y = r"\darkblue{" + y + r"}"
         calendar_cell = calendar_cell.replace("$YOM_TOV", y)
