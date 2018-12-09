@@ -2,7 +2,7 @@
 
 ![Tishrei](Tishrei.png)
 
-**[Download the calendar here.](https://github.com/subalterngames/AquaticCalendar/releases/tag/v1.0)**
+**[Download the calendar here.](https://github.com/subalterngames/AquaticCalendar/releases/download/v1.0/calendar.pdf)**
 
 I recently attempted to research Aquatic Judaism for a personal project, but soon realized that almost no information about the religion exists on the Internet. In response, I've created this Aquatic Jewish calendar specifically for Terrestrial Jews, as an educational aid to better understand their Aquatic brethren.
 
