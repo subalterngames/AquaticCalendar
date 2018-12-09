@@ -4,8 +4,18 @@ import matplotlib.pyplot as plt
 from dateutil.parser import parse
 from dateutil import tz
 from os import listdir
+from argparse import ArgumentParser
 import decimal
 dec = decimal.Decimal
+
+# Parse arguments.
+parser = ArgumentParser()
+parser.add_argument("-t", dest="tidal_data_path",  type=str, default="tide_data/boston.csv",
+                    help="path/to/your/tide/data.csv")
+parser.add_argument('-p', action='store_true', help="Create new tidal graph images")
+args = parser.parse_args()
+plot_new_graphs = args.p
+tidal_data_path = args.tidal_data_path
 
 # The months of the Aquatic Jewish calendar.
 MONTHS = ["Tishrei", "Kheshvan", "Kislev", "Tevet", "Shvat", "Adar", "Nisan", "Iyar", "Sivan", "Tammuz", "Av", "Elul"]
@@ -194,7 +204,7 @@ def get_end_month():
     end_of_table = ""
     # Do not start an extra row on the last month.
     if current_month_index == 11:
-        end_of_table += r"\end{tabularx}"
+        end_of_table += r"\\\hline\end{tabularx}"
         return end_of_table
     # Fill out the last row.
     for i in range(6 - current_day_of_week):
@@ -207,7 +217,7 @@ heights = []
 # A list of datetimes, mapped to "heights"
 t = []
 # Parse the csv file.
-with open('tide_data/boston.csv', 'rt') as f:
+with open(tidal_data_path, 'rt') as f:
     for i, line in enumerate(f):
         if i == 0:
             continue
@@ -316,8 +326,9 @@ while not done:
     # Update the tidal plot image counter.
     image_counter += 1
 
-    # Un-comment the line below this to output an image of the tidal heights over time.
-    # plot(np.array(heights[t0:t1]))
+    # Create a new tidal plot of the heights between the times t0 and t1.
+    if plot_new_graphs:
+        plot(np.array(heights[t0:t1]))
 
     # Append the day to the LaTeX data.
     tex += calendar_cell
