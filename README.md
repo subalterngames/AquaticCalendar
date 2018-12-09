@@ -35,7 +35,8 @@ To generate new tide graphs:
 
 You can also change the images used by replacing them in the `ocean_images/` folder.
 
-Required software:
+### Required Software
+
 - python3
   - pathlib
   - matplotlib
