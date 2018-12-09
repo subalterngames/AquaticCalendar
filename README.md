@@ -20,14 +20,15 @@ All tidal data was gathered from the [NOAA website](https://tidesandcurrents.noa
 
 This repo contains the tools I used to create my Aquatic Jewish calendar. You might want to generate your own calendar in order to have localized tidal information, to update the year, etc. **Email me at subalterngames at gmail dot com and I'll happily create a calendar for you.** If you want to figure it out yourself, here's how:
 
-To run the program:
+### How to run the program
+
 ```python
 python3 tide_plotter.py
 ```
 
 This will generate a `.tex` file, which you can then turn into a pdf with LaTeX.
 
-To generate new tide graphs:
+### How to generate new tidal graphs
 - Scrape some data from the NOAA website (link above) 
 -  Change line `210` of tide_plotter.py to the name of the file containing the scraped data.
 -  Uncomment line `320` of tide_plotter.py
