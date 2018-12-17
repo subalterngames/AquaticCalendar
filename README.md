@@ -51,7 +51,7 @@ This will generate a `.tex` file, which you can then turn into a pdf with LaTeX.
 | Argument | Description | Default |
 | --- | --- | --- |
 | `-t <path>` | path/to/your/tidal/data.csv | `tide_data/boston.csv` |
-| `-p` | Create new tidal grap images. | `False` |
+| `-p` | Create new tidal graph images. | `False` |
 
 ### Getting tidal data
 This repo does not contain the tools needed to get tidal data. I went to the NOAA website, set the range to 1 year (September 9 2018 to September 9 2019), set the location to Boston, the increment to one hour... And then highlighted the results with my mouse and copy-pasted into Excel.
