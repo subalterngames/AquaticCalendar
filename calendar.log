@@ -1,0 +1,2459 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.25)  25 JUL 2019 15:59
+entering extended mode
+**./calendar.tex
+(calendar.tex
+LaTeX2e <2018-12-01>
+
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrbo
+ok.cls"
+Document Class: scrbook 2019/02/01 v3.26b KOMA-Script document class (book)
+
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrkb
+ase.sty"
+Package: scrkbase 2019/02/01 v3.26b KOMA-Script package (KOMA-Script-dependent 
+basics and keyval usage)
+
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrba
+se.sty"
+Package: scrbase 2019/02/01 v3.26b KOMA-Script package (KOMA-Script-independent
+ basics and keyval usage)
+
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\keyval.s
+ty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrlf
+ile.sty"
+Package: scrlfile 2019/02/01 v3.26b KOMA-Script package (loading files)
+)))
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\tocba
+sic.sty"
+Package: tocbasic 2019/02/01 v3.26b KOMA-Script package (handling toc-files)
+\scr@dte@tocline@numberwidth=\skip41
+\scr@dte@tocline@numbox=\box27
+)
+Package tocbasic Info: omitting babel extension for `toc'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `toc' on input line 136.
+Package scrbook Info: You've used standard option `11pt'.
+(scrbook)             This is correct!
+(scrbook)             Internally I'm using `fontsize=11pt'.
+(scrbook)             If you'd like to set the option with \KOMAoptions,
+(scrbook)             you'd have to use `fontsize=11pt' there
+(scrbook)             instead of `11pt', too.
+Class scrbook Info: You've used standard option `openany'.
+(scrbook)           This is correct!
+(scrbook)           Internally I'm using `open=any'.
+(scrbook)           If you'd like to set the option with \KOMAoptions,
+(scrbook)           you'd have to use `open=any' there
+(scrbook)           instead of `openany', too.
+Class scrbook Info: File `scrsize11pt.clo' used to setup font sizes on input li
+ne 2376.
+
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrsi
+ze11pt.clo"
+File: scrsize11pt.clo 2019/02/01 v3.26b KOMA-Script font size class option (11p
+t)
+)
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\typea
+rea.sty"
+Package: typearea 2019/02/01 v3.26b KOMA-Script package (type area)
+\ta@bcor=\skip42
+\ta@div=\count80
+Package typearea Info: You've used standard option `letterpaper'.
+(typearea)             This is correct!
+(typearea)             Internally I'm using `paper=letter'.
+(typearea)             If you'd like to set the option with \KOMAoptions,
+(typearea)             you'd have to use `paper=letter' there
+(typearea)             instead of `letterpaper', too.
+Package typearea Info: You've used standard option `landscape'.
+(typearea)             This is correct!
+(typearea)             Internally I'm using `paper=landscape'.
+(typearea)             If you'd like to set the option with \KOMAoptions,
+(typearea)             you'd have to use `paper=landscape' there
+(typearea)             instead of `landscape', too.
+\ta@hblk=\skip43
+\ta@vblk=\skip44
+\ta@temp=\skip45
+\footheight=\skip46
+Package typearea Info: With paper sizes other than (almost) `A4' predefined
+(typearea)             DIV values do not exist. Using DIV calculation for good
+(typearea)             line width (unless using `version=3.24` or prior).
+
+DIV calculation for typearea with good linewidth.
+
+Package typearea Warning: Very low DIV value!
+(typearea)                DIV values less than 6 result in textwidth/-height
+(typearea)                smaller than total marginwidth/-height.
+(typearea)                You should e.g. increase DIV, increase fontsize or
+(typearea)                change papersize.
+
+Package typearea Info: These are the values describing the layout:
+(typearea)             DIV  = 5
+(typearea)             BCOR = 0.0pt
+(typearea)             \paperwidth      = 794.96999pt
+(typearea)              \textwidth      = 317.98802pt
+(typearea)              DIV departure   = 11%
+(typearea)              \evensidemargin = 245.71799pt
+(typearea)              \oddsidemargin  = 86.724pt
+(typearea)             \paperheight     = 614.295pt
+(typearea)              \textheight     = 255.80011pt
+(typearea)              \topmargin      = 13.189pt
+(typearea)              \headheight     = 17.0pt
+(typearea)              \headsep        = 20.40001pt
+(typearea)              \topskip        = 11.0pt
+(typearea)              \footskip       = 47.6pt
+(typearea)              \baselineskip   = 13.6pt
+(typearea)              on input line 1715.
+)
+\c@part=\count81
+\c@chapter=\count82
+\c@section=\count83
+\c@subsection=\count84
+\c@subsubsection=\count85
+\c@paragraph=\count86
+\c@subparagraph=\count87
+\scr@dte@chapter@maxnumwidth=\skip47
+Class scrbook Info: using compatibility default `afterindent=bysign'
+(scrbook)           for `\chapter on input line 5303.
+\scr@dte@section@maxnumwidth=\skip48
+Class scrbook Info: using compatibility default `runin=bysign'
+(scrbook)           for `\section on input line 5313.
+Class scrbook Info: using compatibility default `afterindent=bysign'
+(scrbook)           for `\section on input line 5313.
+\scr@dte@part@maxnumwidth=\skip49
+Class scrbook Info: using compatibility default `afterindent=true'
+(scrbook)           for `\part on input line 5322.
+\scr@dte@subsection@maxnumwidth=\skip50
+Class scrbook Info: using compatibility default `runin=bysign'
+(scrbook)           for `\subsection on input line 5332.
+Class scrbook Info: using compatibility default `afterindent=bysign'
+(scrbook)           for `\subsection on input line 5332.
+\scr@dte@subsubsection@maxnumwidth=\skip51
+Class scrbook Info: using compatibility default `runin=bysign'
+(scrbook)           for `\subsubsection on input line 5342.
+Class scrbook Info: using compatibility default `afterindent=bysign'
+(scrbook)           for `\subsubsection on input line 5342.
+\scr@dte@paragraph@maxnumwidth=\skip52
+Class scrbook Info: using compatibility default `runin=bysign'
+(scrbook)           for `\paragraph on input line 5352.
+Class scrbook Info: using compatibility default `afterindent=bysign'
+(scrbook)           for `\paragraph on input line 5352.
+\scr@dte@subparagraph@maxnumwidth=\skip53
+Class scrbook Info: using compatibility default `runin=bysign'
+(scrbook)           for `\subparagraph on input line 5362.
+Class scrbook Info: using compatibility default `afterindent=bysign'
+(scrbook)           for `\subparagraph on input line 5362.
+\abovecaptionskip=\skip54
+\belowcaptionskip=\skip55
+\c@pti@nb@sid@b@x=\box28
+Package tocbasic Info: omitting babel extension for `lof'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `lof' on input line 6617.
+\scr@dte@figure@maxnumwidth=\skip56
+\c@figure=\count88
+Package tocbasic Info: omitting babel extension for `lot'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `lot' on input line 6638.
+\scr@dte@table@maxnumwidth=\skip57
+\c@table=\count89
+Class scrbook Info: Redefining `\numberline' on input line 6811.
+\bibindent=\dimen102
+)
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/colortbl\colortbl
+.sty"
+Package: colortbl 2018/12/12 v1.0d Color table columns (DPC)
+
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\array.sty"
+Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
+\col@sep=\dimen103
+\ar@mcellbox=\box29
+\extrarowheight=\dimen104
+\NC@list=\toks15
+\extratabsurround=\skip58
+\backup@length=\skip59
+\ar@cellbox=\box30
+)
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\color.st
+y"
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\colo
+r.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-def\pdft
+ex.def"
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\everycr=\toks16
+\minrowclearance=\skip60
+)
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\tabularx.st
+y"
+Package: tabularx 2016/02/03 v2.11b `tabularx' package (DPC)
+\TX@col@width=\dimen105
+\TX@old@table=\dimen106
+\TX@old@col=\dimen107
+\TX@target=\dimen108
+\TX@delta=\dimen109
+\TX@cols=\count90
+\TX@ftn=\toks17
+)
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geometry
+.sty"
+Package: geometry 2018/04/16 v5.8 Page Geometry
+
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ifpdf.
+sty"
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+)
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ifvtex
+.sty"
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/ifxetex\ifxetex
+.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count91
+\Gm@cntv=\count92
+\c@Gm@tempcnt=\count93
+\Gm@bindingoffset=\dimen110
+\Gm@wd@mp=\dimen111
+\Gm@odd@mp=\dimen112
+\Gm@even@mp=\dimen113
+\Gm@layoutwidth=\dimen114
+\Gm@layoutheight=\dimen115
+\Gm@layouthoffset=\dimen116
+\Gm@layoutvoffset=\dimen117
+\Gm@dimlist=\toks18
+
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geometry
+.cfg"))
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/marginnote\margin
+note.sty"
+Package: marginnote 2018/08/09 v1.4b non floating margin notes for LaTeX
+\c@mn@abspage=\count94
+)
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphicx
+.sty"
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphics
+.sty"
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\trig.sty
+"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\grap
+hics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+)
+\Gin@req@height=\dimen118
+\Gin@req@width=\dimen119
+)
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/wasysym\wasysym.s
+ty"
+Package: wasysym 2003/10/30 v2.0 Wasy-2 symbol support package
+\symwasy=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
+(Font)                  U/wasy/m/n --> U/wasy/b/n on input line 90.
+)
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/sectsty\sectsty.s
+ty"
+Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
+les
+)
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xcolor\xcolor.sty
+"
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\colo
+r.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+LaTeX Info: Redefining \color on input line 709.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/background\backgr
+ound.sty"
+Package: background 2014/03/04 v2.1 background material
+
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xkeyval\xkeyval.s
+ty"
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/xkeyval\xkeyval
+.tex"
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/xkeyval\xkvutil
+s.tex"
+\XKV@toks=\toks19
+\XKV@tempa@toks=\toks20
+)
+\XKV@depth=\count95
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/frontendlayer
+\tikz.sty"
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/basiclayer\pg
+f.sty"
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/utilities\pgf
+rcs.sty"
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\p
+gfutil-common.tex"
+\pgfutil@everybye=\toks21
+\pgfutil@tempdima=\dimen120
+\pgfutil@tempdimb=\dimen121
+
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\p
+gfutil-common-lists.tex"))
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\p
+gfutil-latex.def"
+\pgfutil@abb=\box31
+
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ms\everyshi.sty"
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\p
+gfrcs.code.tex"
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf\pgf.revisio
+n.tex")
+Package: pgfrcs 2019/07/17 v3.1.4a (3.1.4a)
+))
+Package: pgf 2019/07/17 v3.1.4a (3.1.4a)
+
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/basiclayer\pg
+fcore.sty"
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/systemlayer\p
+gfsys.sty"
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systemlayer
+\pgfsys.code.tex"
+Package: pgfsys 2019/07/17 v3.1.4a (3.1.4a)
+
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\p
+gfkeys.code.tex"
+\pgfkeys@pathtoks=\toks22
+\pgfkeys@temptoks=\toks23
+
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\p
+gfkeysfiltered.code.tex"
+\pgfkeys@tmptoks=\toks24
+))
+\pgf@x=\dimen122
+\pgf@y=\dimen123
+\pgf@xa=\dimen124
+\pgf@ya=\dimen125
+\pgf@xb=\dimen126
+\pgf@yb=\dimen127
+\pgf@xc=\dimen128
+\pgf@yc=\dimen129
+\pgf@xd=\dimen130
+\pgf@yd=\dimen131
+\w@pgf@writea=\write3
+\r@pgf@reada=\read1
+\c@pgf@counta=\count96
+\c@pgf@countb=\count97
+\c@pgf@countc=\count98
+\c@pgf@countd=\count99
+\t@pgf@toka=\toks25
+\t@pgf@tokb=\toks26
+\t@pgf@tokc=\toks27
+\pgf@sys@id@count=\count100
+
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systemlayer
+\pgf.cfg"
+File: pgf.cfg 2019/07/17 v3.1.4a (3.1.4a)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systemlayer
+\pgfsys-pdftex.def"
+File: pgfsys-pdftex.def 2019/07/17 v3.1.4a (3.1.4a)
+
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systemlayer
+\pgfsys-common-pdf.def"
+File: pgfsys-common-pdf.def 2019/07/17 v3.1.4a (3.1.4a)
+)))
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systemlayer
+\pgfsyssoftpath.code.tex"
+File: pgfsyssoftpath.code.tex 2019/07/17 v3.1.4a (3.1.4a)
+\pgfsyssoftpath@smallbuffer@items=\count101
+\pgfsyssoftpath@bigbuffer@items=\count102
+)
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systemlayer
+\pgfsysprotocol.code.tex"
+File: pgfsysprotocol.code.tex 2019/07/17 v3.1.4a (3.1.4a)
+))
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
+pgfcore.code.tex"
+Package: pgfcore 2019/07/17 v3.1.4a (3.1.4a)
+
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
+h.code.tex"
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
+hcalc.code.tex"
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
+hutil.code.tex")
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
+hparser.code.tex"
+\pgfmath@dimen=\dimen132
+\pgfmath@count=\count103
+\pgfmath@box=\box32
+\pgfmath@toks=\toks28
+\pgfmath@stack@operand=\toks29
+\pgfmath@stack@operation=\toks30
+)
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
+hfunctions.code.tex"
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
+hfunctions.basic.code.tex")
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
+hfunctions.trigonometric.code.tex")
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
+hfunctions.random.code.tex")
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
+hfunctions.comparison.code.tex")
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
+hfunctions.base.code.tex")
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
+hfunctions.round.code.tex")
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
+hfunctions.misc.code.tex")
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
+hfunctions.integerarithmetics.code.tex")))
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
+hfloat.code.tex"
+\c@pgfmathroundto@lastzeros=\count104
+))
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfint
+.code.tex")
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
+pgfcorepoints.code.tex"
+File: pgfcorepoints.code.tex 2019/07/17 v3.1.4a (3.1.4a)
+\pgf@picminx=\dimen133
+\pgf@picmaxx=\dimen134
+\pgf@picminy=\dimen135
+\pgf@picmaxy=\dimen136
+\pgf@pathminx=\dimen137
+\pgf@pathmaxx=\dimen138
+\pgf@pathminy=\dimen139
+\pgf@pathmaxy=\dimen140
+\pgf@xx=\dimen141
+\pgf@xy=\dimen142
+\pgf@yx=\dimen143
+\pgf@yy=\dimen144
+\pgf@zx=\dimen145
+\pgf@zy=\dimen146
+)
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
+pgfcorepathconstruct.code.tex"
+File: pgfcorepathconstruct.code.tex 2019/07/17 v3.1.4a (3.1.4a)
+\pgf@path@lastx=\dimen147
+\pgf@path@lasty=\dimen148
+)
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
+pgfcorepathusage.code.tex"
+File: pgfcorepathusage.code.tex 2019/07/17 v3.1.4a (3.1.4a)
+\pgf@shorten@end@additional=\dimen149
+\pgf@shorten@start@additional=\dimen150
+)
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
+pgfcorescopes.code.tex"
+File: pgfcorescopes.code.tex 2019/07/17 v3.1.4a (3.1.4a)
+\pgfpic=\box33
+\pgf@hbox=\box34
+\pgf@layerbox@main=\box35
+\pgf@picture@serial@count=\count105
+)
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
+pgfcoregraphicstate.code.tex"
+File: pgfcoregraphicstate.code.tex 2019/07/17 v3.1.4a (3.1.4a)
+\pgflinewidth=\dimen151
+)
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
+pgfcoretransformations.code.tex"
+File: pgfcoretransformations.code.tex 2019/07/17 v3.1.4a (3.1.4a)
+\pgf@pt@x=\dimen152
+\pgf@pt@y=\dimen153
+\pgf@pt@temp=\dimen154
+)
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
+pgfcorequick.code.tex"
+File: pgfcorequick.code.tex 2019/07/17 v3.1.4a (3.1.4a)
+)
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
+pgfcoreobjects.code.tex"
+File: pgfcoreobjects.code.tex 2019/07/17 v3.1.4a (3.1.4a)
+)
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
+pgfcorepathprocessing.code.tex"
+File: pgfcorepathprocessing.code.tex 2019/07/17 v3.1.4a (3.1.4a)
+)
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
+pgfcorearrows.code.tex"
+File: pgfcorearrows.code.tex 2019/07/17 v3.1.4a (3.1.4a)
+\pgfarrowsep=\dimen155
+)
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
+pgfcoreshade.code.tex"
+File: pgfcoreshade.code.tex 2019/07/17 v3.1.4a (3.1.4a)
+\pgf@max=\dimen156
+\pgf@sys@shading@range@num=\count106
+\pgf@shadingcount=\count107
+)
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
+pgfcoreimage.code.tex"
+File: pgfcoreimage.code.tex 2019/07/17 v3.1.4a (3.1.4a)
+
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
+pgfcoreexternal.code.tex"
+File: pgfcoreexternal.code.tex 2019/07/17 v3.1.4a (3.1.4a)
+\pgfexternal@startupbox=\box36
+))
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
+pgfcorelayers.code.tex"
+File: pgfcorelayers.code.tex 2019/07/17 v3.1.4a (3.1.4a)
+)
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
+pgfcoretransparency.code.tex"
+File: pgfcoretransparency.code.tex 2019/07/17 v3.1.4a (3.1.4a)
+)
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
+pgfcorepatterns.code.tex"
+File: pgfcorepatterns.code.tex 2019/07/17 v3.1.4a (3.1.4a)
+)
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
+pgfcorerdf.code.tex"
+File: pgfcorerdf.code.tex 2019/07/17 v3.1.4a (3.1.4a)
+)))
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/modules\pgf
+moduleshapes.code.tex"
+File: pgfmoduleshapes.code.tex 2019/07/17 v3.1.4a (3.1.4a)
+\pgfnodeparttextbox=\box37
+)
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/modules\pgf
+moduleplot.code.tex"
+File: pgfmoduleplot.code.tex 2019/07/17 v3.1.4a (3.1.4a)
+)
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/compatibility
+\pgfcomp-version-0-65.sty"
+Package: pgfcomp-version-0-65 2019/07/17 v3.1.4a (3.1.4a)
+\pgf@nodesepstart=\dimen157
+\pgf@nodesepend=\dimen158
+)
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/compatibility
+\pgfcomp-version-1-18.sty"
+Package: pgfcomp-version-1-18 2019/07/17 v3.1.4a (3.1.4a)
+))
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/utilities\pgf
+for.sty"
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/utilities\pgf
+keys.sty"
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\p
+gfkeys.code.tex"))
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/math\pgfmath.
+sty"
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
+h.code.tex"))
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\p
+gffor.code.tex"
+Package: pgffor 2019/07/17 v3.1.4a (3.1.4a)
+
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
+h.code.tex")
+\pgffor@iter=\dimen159
+\pgffor@skip=\dimen160
+\pgffor@stack=\toks31
+\pgffor@toks=\toks32
+))
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlay
+er/tikz\tikz.code.tex"
+Package: tikz 2019/07/17 v3.1.4a (3.1.4a)
+
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libraries\p
+gflibraryplothandlers.code.tex"
+File: pgflibraryplothandlers.code.tex 2019/07/17 v3.1.4a (3.1.4a)
+\pgf@plot@mark@count=\count108
+\pgfplotmarksize=\dimen161
+)
+\tikz@lastx=\dimen162
+\tikz@lasty=\dimen163
+\tikz@lastxsaved=\dimen164
+\tikz@lastysaved=\dimen165
+\tikz@lastmovetox=\dimen166
+\tikz@lastmovetoy=\dimen167
+\tikzleveldistance=\dimen168
+\tikzsiblingdistance=\dimen169
+\tikz@figbox=\box38
+\tikz@figbox@bg=\box39
+\tikz@tempbox=\box40
+\tikz@tempbox@bg=\box41
+\tikztreelevel=\count109
+\tikznumberofchildren=\count110
+\tikznumberofcurrentchild=\count111
+\tikz@fig@count=\count112
+
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/modules\pgf
+modulematrix.code.tex"
+File: pgfmodulematrix.code.tex 2019/07/17 v3.1.4a (3.1.4a)
+\pgfmatrixcurrentrow=\count113
+\pgfmatrixcurrentcolumn=\count114
+\pgf@matrix@numberofcolumns=\count115
+)
+\tikz@expandcount=\count116
+
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlay
+er/tikz/libraries\tikzlibrarytopaths.code.tex"
+File: tikzlibrarytopaths.code.tex 2019/07/17 v3.1.4a (3.1.4a)
+)))
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/everypage\everypa
+ge.sty"
+Package: everypage 2007/06/20 1.1 Hooks to run on every page
+)
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\afterpage.s
+ty"
+Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
+\AP@output=\toks33
+\AP@partial=\box42
+\AP@footins=\box43
+)) (calendar.aux)
+\openout1 = `calendar.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 1.
+LaTeX Font Info:    ... okay on input line 1.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 1.
+LaTeX Font Info:    ... okay on input line 1.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 1.
+LaTeX Font Info:    ... okay on input line 1.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 1.
+LaTeX Font Info:    ... okay on input line 1.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 1.
+LaTeX Font Info:    ... okay on input line 1.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 1.
+LaTeX Font Info:    ... okay on input line 1.
+
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-
+pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count117
+\scratchdimen=\dimen170
+\scratchbox=\box44
+\nofMPsegments=\count118
+\nofMParguments=\count119
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count120
+\MPscratchDim=\dimen171
+\MPnumerator=\count121
+\makeMPintoPDFobject=\count122
+\everyMPtoPDFconversion=\toks35
+)
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\epstopdf
+-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\infwar
+err.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\grfext.s
+ty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\kvdefi
+nekeys.sty"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ltxcmd
+s.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\kvoption
+s.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\kvsetk
+eys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\etexcm
+ds.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ifluat
+ex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+))))
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\pdftex
+cmds.sty"
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* bindingoffset: 14.45377pt
+* modes: landscape twoside 
+* h-part:(L,W,R)=(72.26999pt, 617.90874pt, 90.3375pt)
+* v-part:(T,H,B)=(36.135pt, 542.02501pt, 36.135pt)
+* \paperwidth=794.96999pt
+* \paperheight=614.295pt
+* \textwidth=617.90874pt
+* \textheight=542.02501pt
+* \oddsidemargin=14.45377pt
+* \evensidemargin=18.0675pt
+* \topmargin=-73.535pt
+* \headheight=17.0pt
+* \headsep=20.40001pt
+* \topskip=11.0pt
+* \footskip=18.06749pt
+* \marginparwidth=54.75014pt
+* \marginparsep=12.8401pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+ABD: EveryShipout initializing macros
+<title_page.jpg, id=4, 3973.84625pt x 2815.51875pt>
+File: title_page.jpg Graphic file (type jpg)
+<use title_page.jpg>
+Package pdftex.def Info: title_page.jpg  used on input line 1.
+(pdftex.def)             Requested size: 794.93709pt x 614.2607pt.
+ [1{C:/Users/alters/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./title
+_page.jpg>]
+
+LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <12> not available
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 1.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+
+ []
+
+
+Overfull \hbox (9.7358pt too wide) in paragraph at lines 1--1
+\OT1/cmss/m/n/12 All tidal data was gath-ered from the NOAA web-site: \OT1/cmtt
+/m/n/12 https://tidesandcurrents.noaa.gov/waterlevels.html?id=8443970 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+
+ []
+
+[2
+
+
+
+] [3]
+<ocean_images/ap32_73_1.jpg, id=20, 2814.515pt x 1629.08624pt>
+File: ocean_images/ap32_73_1.jpg Graphic file (type jpg)
+<use ocean_images/ap32_73_1.jpg>
+Package pdftex.def Info: ocean_images/ap32_73_1.jpg  used on input line 2.
+(pdftex.def)             Requested size: 617.90874pt x 357.65434pt.
+ [4 <./ocean_images/ap32_73_1.jpg>]
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/wasysym\uwasy.fd"
+)
+Package marginnote Info: Margin note 5.7 is on absolute page 5 on input line 2.
+
+Package marginnote Info: xpos seems to be 149.73738pt on input line 2.
+File: plots/0.png Graphic file (type png)
+<use plots/0.png>
+Package pdftex.def Info: plots/0.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/1.png Graphic file (type png)
+<use plots/1.png>
+Package pdftex.def Info: plots/1.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/2.png Graphic file (type png)
+<use plots/2.png>
+Package pdftex.def Info: plots/2.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/3.png Graphic file (type png)
+<use plots/3.png>
+Package pdftex.def Info: plots/3.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/4.png Graphic file (type png)
+<use plots/4.png>
+Package pdftex.def Info: plots/4.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/5.png Graphic file (type png)
+<use plots/5.png>
+Package pdftex.def Info: plots/5.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/6.png Graphic file (type png)
+<use plots/6.png>
+Package pdftex.def Info: plots/6.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/7.png Graphic file (type png)
+<use plots/7.png>
+Package pdftex.def Info: plots/7.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+Package marginnote Info: Margin note 5.8 is on absolute page 5 on input line 2.
+
+Package marginnote Info: xpos seems to be 225.33951pt on input line 2.
+File: plots/8.png Graphic file (type png)
+<use plots/8.png>
+Package pdftex.def Info: plots/8.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/9.png Graphic file (type png)
+<use plots/9.png>
+Package pdftex.def Info: plots/9.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/10.png Graphic file (type png)
+<use plots/10.png>
+Package pdftex.def Info: plots/10.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/11.png Graphic file (type png)
+<use plots/11.png>
+Package pdftex.def Info: plots/11.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/12.png Graphic file (type png)
+<use plots/12.png>
+Package pdftex.def Info: plots/12.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/13.png Graphic file (type png)
+<use plots/13.png>
+Package pdftex.def Info: plots/13.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+Package marginnote Info: Margin note 5.9 is on absolute page 5 on input line 2.
+
+Package marginnote Info: xpos seems to be 140.39732pt on input line 2.
+File: plots/14.png Graphic file (type png)
+<use plots/14.png>
+Package pdftex.def Info: plots/14.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/15.png Graphic file (type png)
+<use plots/15.png>
+Package pdftex.def Info: plots/15.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/16.png Graphic file (type png)
+<use plots/16.png>
+Package pdftex.def Info: plots/16.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/17.png Graphic file (type png)
+<use plots/17.png>
+Package pdftex.def Info: plots/17.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/18.png Graphic file (type png)
+<use plots/18.png>
+Package pdftex.def Info: plots/18.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/19.png Graphic file (type png)
+<use plots/19.png>
+Package pdftex.def Info: plots/19.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/20.png Graphic file (type png)
+<use plots/20.png>
+Package pdftex.def Info: plots/20.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/21.png Graphic file (type png)
+<use plots/21.png>
+Package pdftex.def Info: plots/21.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/22.png Graphic file (type png)
+<use plots/22.png>
+Package pdftex.def Info: plots/22.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/23.png Graphic file (type png)
+<use plots/23.png>
+Package pdftex.def Info: plots/23.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/24.png Graphic file (type png)
+<use plots/24.png>
+Package pdftex.def Info: plots/24.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/25.png Graphic file (type png)
+<use plots/25.png>
+Package pdftex.def Info: plots/25.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/26.png Graphic file (type png)
+<use plots/26.png>
+Package pdftex.def Info: plots/26.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/27.png Graphic file (type png)
+<use plots/27.png>
+Package pdftex.def Info: plots/27.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--2
+
+ []
+
+[5
+
+ <./plots/0.png> <./plots/1.png> <./plots/2.png> <./plots/3.png> <./plots/4.png
+> <./plots/5.png> <./plots/6.png> <./plots/7.png> <./plots/8.png> <./plots/9.pn
+g> <./plots/10.png> <./plots/11.png> <./plots/12.png> <./plots/13.png> <./plots
+/14.png> <./plots/15.png> <./plots/16.png> <./plots/17.png> <./plots/18.png> <.
+/plots/19.png> <./plots/20.png> <./plots/21.png> <./plots/22.png> <./plots/23.p
+ng> <./plots/24.png> <./plots/25.png> <./plots/26.png> <./plots/27.png>]
+<ocean_images/ap74_6.jpg, id=88, 2915.89375pt x 1880.02374pt>
+File: ocean_images/ap74_6.jpg Graphic file (type jpg)
+<use ocean_images/ap74_6.jpg>
+Package pdftex.def Info: ocean_images/ap74_6.jpg  used on input line 2.
+(pdftex.def)             Requested size: 617.90874pt x 398.37381pt.
+
+[6 <./ocean_images/ap74_6.jpg>]
+File: plots/28.png Graphic file (type png)
+<use plots/28.png>
+Package pdftex.def Info: plots/28.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/29.png Graphic file (type png)
+<use plots/29.png>
+Package pdftex.def Info: plots/29.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/30.png Graphic file (type png)
+<use plots/30.png>
+Package pdftex.def Info: plots/30.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/31.png Graphic file (type png)
+<use plots/31.png>
+Package pdftex.def Info: plots/31.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/32.png Graphic file (type png)
+<use plots/32.png>
+Package pdftex.def Info: plots/32.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/33.png Graphic file (type png)
+<use plots/33.png>
+Package pdftex.def Info: plots/33.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/34.png Graphic file (type png)
+<use plots/34.png>
+Package pdftex.def Info: plots/34.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/35.png Graphic file (type png)
+<use plots/35.png>
+Package pdftex.def Info: plots/35.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/36.png Graphic file (type png)
+<use plots/36.png>
+Package pdftex.def Info: plots/36.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/37.png Graphic file (type png)
+<use plots/37.png>
+Package pdftex.def Info: plots/37.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/38.png Graphic file (type png)
+<use plots/38.png>
+Package pdftex.def Info: plots/38.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/39.png Graphic file (type png)
+<use plots/39.png>
+Package pdftex.def Info: plots/39.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/40.png Graphic file (type png)
+<use plots/40.png>
+Package pdftex.def Info: plots/40.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/41.png Graphic file (type png)
+<use plots/41.png>
+Package pdftex.def Info: plots/41.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+Package marginnote Info: Margin note 7.3 is on absolute page 7 on input line 2.
+
+Package marginnote Info: xpos seems to be 118.50833pt on input line 2.
+File: plots/42.png Graphic file (type png)
+<use plots/42.png>
+Package pdftex.def Info: plots/42.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/43.png Graphic file (type png)
+<use plots/43.png>
+Package pdftex.def Info: plots/43.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/44.png Graphic file (type png)
+<use plots/44.png>
+Package pdftex.def Info: plots/44.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/45.png Graphic file (type png)
+<use plots/45.png>
+Package pdftex.def Info: plots/45.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/46.png Graphic file (type png)
+<use plots/46.png>
+Package pdftex.def Info: plots/46.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/47.png Graphic file (type png)
+<use plots/47.png>
+Package pdftex.def Info: plots/47.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/48.png Graphic file (type png)
+<use plots/48.png>
+Package pdftex.def Info: plots/48.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/49.png Graphic file (type png)
+<use plots/49.png>
+Package pdftex.def Info: plots/49.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/50.png Graphic file (type png)
+<use plots/50.png>
+Package pdftex.def Info: plots/50.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/51.png Graphic file (type png)
+<use plots/51.png>
+Package pdftex.def Info: plots/51.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/52.png Graphic file (type png)
+<use plots/52.png>
+Package pdftex.def Info: plots/52.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/53.png Graphic file (type png)
+<use plots/53.png>
+Package pdftex.def Info: plots/53.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/54.png Graphic file (type png)
+<use plots/54.png>
+Package pdftex.def Info: plots/54.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/55.png Graphic file (type png)
+<use plots/55.png>
+Package pdftex.def Info: plots/55.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--2
+
+ []
+
+[7
+
+ <./plots/28.png> <./plots/29.png> <./plots/30.png> <./plots/31.png> <./plots/3
+2.png> <./plots/33.png> <./plots/34.png> <./plots/35.png> <./plots/36.png> <./p
+lots/37.png> <./plots/38.png> <./plots/39.png> <./plots/40.png> <./plots/41.png
+> <./plots/42.png> <./plots/43.png> <./plots/44.png> <./plots/45.png> <./plots/
+46.png> <./plots/47.png> <./plots/48.png> <./plots/49.png> <./plots/50.png> <./
+plots/51.png> <./plots/52.png> <./plots/53.png> <./plots/54.png> <./plots/55.pn
+g>]
+<ocean_images/DP161239.jpg, id=152, 1836.1398pt x 1384.6932pt>
+File: ocean_images/DP161239.jpg Graphic file (type jpg)
+<use ocean_images/DP161239.jpg>
+Package pdftex.def Info: ocean_images/DP161239.jpg  used on input line 2.
+(pdftex.def)             Requested size: 617.90874pt x 465.97212pt.
+ [8 <./ocean_images/DP161239.jpg>]
+File: plots/56.png Graphic file (type png)
+<use plots/56.png>
+Package pdftex.def Info: plots/56.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/57.png Graphic file (type png)
+<use plots/57.png>
+Package pdftex.def Info: plots/57.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/58.png Graphic file (type png)
+<use plots/58.png>
+Package pdftex.def Info: plots/58.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/59.png Graphic file (type png)
+<use plots/59.png>
+Package pdftex.def Info: plots/59.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/60.png Graphic file (type png)
+<use plots/60.png>
+Package pdftex.def Info: plots/60.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/61.png Graphic file (type png)
+<use plots/61.png>
+Package pdftex.def Info: plots/61.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/62.png Graphic file (type png)
+<use plots/62.png>
+Package pdftex.def Info: plots/62.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/63.png Graphic file (type png)
+<use plots/63.png>
+Package pdftex.def Info: plots/63.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/64.png Graphic file (type png)
+<use plots/64.png>
+Package pdftex.def Info: plots/64.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/65.png Graphic file (type png)
+<use plots/65.png>
+Package pdftex.def Info: plots/65.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/66.png Graphic file (type png)
+<use plots/66.png>
+Package pdftex.def Info: plots/66.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/67.png Graphic file (type png)
+<use plots/67.png>
+Package pdftex.def Info: plots/67.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/68.png Graphic file (type png)
+<use plots/68.png>
+Package pdftex.def Info: plots/68.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/69.png Graphic file (type png)
+<use plots/69.png>
+Package pdftex.def Info: plots/69.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/70.png Graphic file (type png)
+<use plots/70.png>
+Package pdftex.def Info: plots/70.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/71.png Graphic file (type png)
+<use plots/71.png>
+Package pdftex.def Info: plots/71.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/72.png Graphic file (type png)
+<use plots/72.png>
+Package pdftex.def Info: plots/72.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/73.png Graphic file (type png)
+<use plots/73.png>
+Package pdftex.def Info: plots/73.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/74.png Graphic file (type png)
+<use plots/74.png>
+Package pdftex.def Info: plots/74.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/75.png Graphic file (type png)
+<use plots/75.png>
+Package pdftex.def Info: plots/75.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/76.png Graphic file (type png)
+<use plots/76.png>
+Package pdftex.def Info: plots/76.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/77.png Graphic file (type png)
+<use plots/77.png>
+Package pdftex.def Info: plots/77.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/78.png Graphic file (type png)
+<use plots/78.png>
+Package pdftex.def Info: plots/78.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/79.png Graphic file (type png)
+<use plots/79.png>
+Package pdftex.def Info: plots/79.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+Package marginnote Info: Margin note 9.3 is on absolute page 9 on input line 2.
+
+Package marginnote Info: xpos seems to be 424.65517pt on input line 2.
+File: plots/80.png Graphic file (type png)
+<use plots/80.png>
+Package pdftex.def Info: plots/80.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/81.png Graphic file (type png)
+<use plots/81.png>
+Package pdftex.def Info: plots/81.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/82.png Graphic file (type png)
+<use plots/82.png>
+Package pdftex.def Info: plots/82.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/83.png Graphic file (type png)
+<use plots/83.png>
+Package pdftex.def Info: plots/83.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/84.png Graphic file (type png)
+<use plots/84.png>
+Package pdftex.def Info: plots/84.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--2
+
+ []
+
+[9
+
+ <./plots/56.png> <./plots/57.png> <./plots/58.png> <./plots/59.png> <./plots/6
+0.png> <./plots/61.png> <./plots/62.png> <./plots/63.png> <./plots/64.png> <./p
+lots/65.png> <./plots/66.png> <./plots/67.png> <./plots/68.png> <./plots/69.png
+> <./plots/70.png> <./plots/71.png> <./plots/72.png> <./plots/73.png> <./plots/
+74.png> <./plots/75.png> <./plots/76.png> <./plots/77.png> <./plots/78.png> <./
+plots/79.png> <./plots/80.png> <./plots/81.png> <./plots/82.png> <./plots/83.pn
+g> <./plots/84.png>]
+<ocean_images/DP169651.jpg, id=217, 3915.62875pt x 1951.29pt>
+File: ocean_images/DP169651.jpg Graphic file (type jpg)
+<use ocean_images/DP169651.jpg>
+Package pdftex.def Info: ocean_images/DP169651.jpg  used on input line 2.
+(pdftex.def)             Requested size: 617.90874pt x 307.9253pt.
+ [10 <./ocean_images/DP169651.jpg>]
+File: plots/85.png Graphic file (type png)
+<use plots/85.png>
+Package pdftex.def Info: plots/85.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/86.png Graphic file (type png)
+<use plots/86.png>
+Package pdftex.def Info: plots/86.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/87.png Graphic file (type png)
+<use plots/87.png>
+Package pdftex.def Info: plots/87.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/88.png Graphic file (type png)
+<use plots/88.png>
+Package pdftex.def Info: plots/88.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/89.png Graphic file (type png)
+<use plots/89.png>
+Package pdftex.def Info: plots/89.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/90.png Graphic file (type png)
+<use plots/90.png>
+Package pdftex.def Info: plots/90.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/91.png Graphic file (type png)
+<use plots/91.png>
+Package pdftex.def Info: plots/91.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/92.png Graphic file (type png)
+<use plots/92.png>
+Package pdftex.def Info: plots/92.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/93.png Graphic file (type png)
+<use plots/93.png>
+Package pdftex.def Info: plots/93.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/94.png Graphic file (type png)
+<use plots/94.png>
+Package pdftex.def Info: plots/94.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/95.png Graphic file (type png)
+<use plots/95.png>
+Package pdftex.def Info: plots/95.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/96.png Graphic file (type png)
+<use plots/96.png>
+Package pdftex.def Info: plots/96.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/97.png Graphic file (type png)
+<use plots/97.png>
+Package pdftex.def Info: plots/97.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/98.png Graphic file (type png)
+<use plots/98.png>
+Package pdftex.def Info: plots/98.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/99.png Graphic file (type png)
+<use plots/99.png>
+Package pdftex.def Info: plots/99.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/100.png Graphic file (type png)
+<use plots/100.png>
+Package pdftex.def Info: plots/100.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/101.png Graphic file (type png)
+<use plots/101.png>
+Package pdftex.def Info: plots/101.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/102.png Graphic file (type png)
+<use plots/102.png>
+Package pdftex.def Info: plots/102.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/103.png Graphic file (type png)
+<use plots/103.png>
+Package pdftex.def Info: plots/103.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/104.png Graphic file (type png)
+<use plots/104.png>
+Package pdftex.def Info: plots/104.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/105.png Graphic file (type png)
+<use plots/105.png>
+Package pdftex.def Info: plots/105.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/106.png Graphic file (type png)
+<use plots/106.png>
+Package pdftex.def Info: plots/106.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/107.png Graphic file (type png)
+<use plots/107.png>
+Package pdftex.def Info: plots/107.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/108.png Graphic file (type png)
+<use plots/108.png>
+Package pdftex.def Info: plots/108.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/109.png Graphic file (type png)
+<use plots/109.png>
+Package pdftex.def Info: plots/109.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/110.png Graphic file (type png)
+<use plots/110.png>
+Package pdftex.def Info: plots/110.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/111.png Graphic file (type png)
+<use plots/111.png>
+Package pdftex.def Info: plots/111.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/112.png Graphic file (type png)
+<use plots/112.png>
+Package pdftex.def Info: plots/112.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/113.png Graphic file (type png)
+<use plots/113.png>
+Package pdftex.def Info: plots/113.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--2
+
+ []
+
+[11
+
+ <./plots/85.png> <./plots/86.png> <./plots/87.png> <./plots/88.png> <./plots/8
+9.png> <./plots/90.png> <./plots/91.png> <./plots/92.png> <./plots/93.png> <./p
+lots/94.png> <./plots/95.png> <./plots/96.png> <./plots/97.png> <./plots/98.png
+> <./plots/99.png> <./plots/100.png> <./plots/101.png> <./plots/102.png> <./plo
+ts/103.png> <./plots/104.png> <./plots/105.png> <./plots/106.png> <./plots/107.
+png> <./plots/108.png> <./plots/109.png> <./plots/110.png> <./plots/111.png> <.
+/plots/112.png> <./plots/113.png>]
+<ocean_images/DP801248.jpg, id=282, 3635.5825pt x 2519.4125pt>
+File: ocean_images/DP801248.jpg Graphic file (type jpg)
+<use ocean_images/DP801248.jpg>
+Package pdftex.def Info: ocean_images/DP801248.jpg  used on input line 2.
+(pdftex.def)             Requested size: 617.90874pt x 428.17914pt.
+ [12 <./ocean_images/DP801248.jpg>]
+File: plots/114.png Graphic file (type png)
+<use plots/114.png>
+Package pdftex.def Info: plots/114.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/115.png Graphic file (type png)
+<use plots/115.png>
+Package pdftex.def Info: plots/115.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/116.png Graphic file (type png)
+<use plots/116.png>
+Package pdftex.def Info: plots/116.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/117.png Graphic file (type png)
+<use plots/117.png>
+Package pdftex.def Info: plots/117.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/118.png Graphic file (type png)
+<use plots/118.png>
+Package pdftex.def Info: plots/118.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/119.png Graphic file (type png)
+<use plots/119.png>
+Package pdftex.def Info: plots/119.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/120.png Graphic file (type png)
+<use plots/120.png>
+Package pdftex.def Info: plots/120.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/121.png Graphic file (type png)
+<use plots/121.png>
+Package pdftex.def Info: plots/121.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/122.png Graphic file (type png)
+<use plots/122.png>
+Package pdftex.def Info: plots/122.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/123.png Graphic file (type png)
+<use plots/123.png>
+Package pdftex.def Info: plots/123.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/124.png Graphic file (type png)
+<use plots/124.png>
+Package pdftex.def Info: plots/124.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/125.png Graphic file (type png)
+<use plots/125.png>
+Package pdftex.def Info: plots/125.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/126.png Graphic file (type png)
+<use plots/126.png>
+Package pdftex.def Info: plots/126.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/127.png Graphic file (type png)
+<use plots/127.png>
+Package pdftex.def Info: plots/127.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+Package marginnote Info: Margin note 13.3 is on absolute page 13 on input line 
+2.
+Package marginnote Info: xpos seems to be 309.85504pt on input line 2.
+File: plots/128.png Graphic file (type png)
+<use plots/128.png>
+Package pdftex.def Info: plots/128.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/129.png Graphic file (type png)
+<use plots/129.png>
+Package pdftex.def Info: plots/129.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/130.png Graphic file (type png)
+<use plots/130.png>
+Package pdftex.def Info: plots/130.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/131.png Graphic file (type png)
+<use plots/131.png>
+Package pdftex.def Info: plots/131.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/132.png Graphic file (type png)
+<use plots/132.png>
+Package pdftex.def Info: plots/132.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/133.png Graphic file (type png)
+<use plots/133.png>
+Package pdftex.def Info: plots/133.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/134.png Graphic file (type png)
+<use plots/134.png>
+Package pdftex.def Info: plots/134.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/135.png Graphic file (type png)
+<use plots/135.png>
+Package pdftex.def Info: plots/135.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/136.png Graphic file (type png)
+<use plots/136.png>
+Package pdftex.def Info: plots/136.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/137.png Graphic file (type png)
+<use plots/137.png>
+Package pdftex.def Info: plots/137.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/138.png Graphic file (type png)
+<use plots/138.png>
+Package pdftex.def Info: plots/138.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/139.png Graphic file (type png)
+<use plots/139.png>
+Package pdftex.def Info: plots/139.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/140.png Graphic file (type png)
+<use plots/140.png>
+Package pdftex.def Info: plots/140.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/141.png Graphic file (type png)
+<use plots/141.png>
+Package pdftex.def Info: plots/141.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--2
+
+ []
+
+[13
+
+ <./plots/114.png> <./plots/115.png> <./plots/116.png> <./plots/117.png> <./plo
+ts/118.png> <./plots/119.png> <./plots/120.png> <./plots/121.png> <./plots/122.
+png> <./plots/123.png> <./plots/124.png> <./plots/125.png> <./plots/126.png> <.
+/plots/127.png> <./plots/128.png> <./plots/129.png> <./plots/130.png> <./plots/
+131.png> <./plots/132.png> <./plots/133.png> <./plots/134.png> <./plots/135.png
+> <./plots/136.png> <./plots/137.png> <./plots/138.png> <./plots/139.png> <./pl
+ots/140.png> <./plots/141.png>]
+<ocean_images/DP803996.jpg, id=346, 3553.275pt x 2632.83624pt>
+File: ocean_images/DP803996.jpg Graphic file (type jpg)
+<use ocean_images/DP803996.jpg>
+Package pdftex.def Info: ocean_images/DP803996.jpg  used on input line 2.
+(pdftex.def)             Requested size: 617.90874pt x 457.82056pt.
+ [14 <./ocean_images/DP803996.jpg>]
+File: plots/142.png Graphic file (type png)
+<use plots/142.png>
+Package pdftex.def Info: plots/142.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/143.png Graphic file (type png)
+<use plots/143.png>
+Package pdftex.def Info: plots/143.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/144.png Graphic file (type png)
+<use plots/144.png>
+Package pdftex.def Info: plots/144.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/145.png Graphic file (type png)
+<use plots/145.png>
+Package pdftex.def Info: plots/145.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/146.png Graphic file (type png)
+<use plots/146.png>
+Package pdftex.def Info: plots/146.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/147.png Graphic file (type png)
+<use plots/147.png>
+Package pdftex.def Info: plots/147.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/148.png Graphic file (type png)
+<use plots/148.png>
+Package pdftex.def Info: plots/148.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/149.png Graphic file (type png)
+<use plots/149.png>
+Package pdftex.def Info: plots/149.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/150.png Graphic file (type png)
+<use plots/150.png>
+Package pdftex.def Info: plots/150.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/151.png Graphic file (type png)
+<use plots/151.png>
+Package pdftex.def Info: plots/151.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/152.png Graphic file (type png)
+<use plots/152.png>
+Package pdftex.def Info: plots/152.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/153.png Graphic file (type png)
+<use plots/153.png>
+Package pdftex.def Info: plots/153.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/154.png Graphic file (type png)
+<use plots/154.png>
+Package pdftex.def Info: plots/154.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+Package marginnote Info: Margin note 15.3 is on absolute page 15 on input line 
+2.
+Package marginnote Info: xpos seems to be 203.40607pt on input line 2.
+File: plots/155.png Graphic file (type png)
+<use plots/155.png>
+Package pdftex.def Info: plots/155.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/156.png Graphic file (type png)
+<use plots/156.png>
+Package pdftex.def Info: plots/156.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/157.png Graphic file (type png)
+<use plots/157.png>
+Package pdftex.def Info: plots/157.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/158.png Graphic file (type png)
+<use plots/158.png>
+Package pdftex.def Info: plots/158.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/159.png Graphic file (type png)
+<use plots/159.png>
+Package pdftex.def Info: plots/159.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/160.png Graphic file (type png)
+<use plots/160.png>
+Package pdftex.def Info: plots/160.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/161.png Graphic file (type png)
+<use plots/161.png>
+Package pdftex.def Info: plots/161.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/162.png Graphic file (type png)
+<use plots/162.png>
+Package pdftex.def Info: plots/162.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/163.png Graphic file (type png)
+<use plots/163.png>
+Package pdftex.def Info: plots/163.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/164.png Graphic file (type png)
+<use plots/164.png>
+Package pdftex.def Info: plots/164.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/165.png Graphic file (type png)
+<use plots/165.png>
+Package pdftex.def Info: plots/165.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/166.png Graphic file (type png)
+<use plots/166.png>
+Package pdftex.def Info: plots/166.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/167.png Graphic file (type png)
+<use plots/167.png>
+Package pdftex.def Info: plots/167.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/168.png Graphic file (type png)
+<use plots/168.png>
+Package pdftex.def Info: plots/168.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/169.png Graphic file (type png)
+<use plots/169.png>
+Package pdftex.def Info: plots/169.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/170.png Graphic file (type png)
+<use plots/170.png>
+Package pdftex.def Info: plots/170.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--2
+
+ []
+
+[15
+
+ <./plots/142.png> <./plots/143.png> <./plots/144.png> <./plots/145.png> <./plo
+ts/146.png> <./plots/147.png> <./plots/148.png> <./plots/149.png> <./plots/150.
+png> <./plots/151.png> <./plots/152.png> <./plots/153.png> <./plots/154.png> <.
+/plots/155.png> <./plots/156.png> <./plots/157.png> <./plots/158.png> <./plots/
+159.png> <./plots/160.png> <./plots/161.png> <./plots/162.png> <./plots/163.png
+> <./plots/164.png> <./plots/165.png> <./plots/166.png> <./plots/167.png> <./pl
+ots/168.png> <./plots/169.png> <./plots/170.png>]
+<ocean_images/DP804730.jpg, id=411, 3551.2675pt x 2374.8725pt>
+File: ocean_images/DP804730.jpg Graphic file (type jpg)
+<use ocean_images/DP804730.jpg>
+Package pdftex.def Info: ocean_images/DP804730.jpg  used on input line 2.
+(pdftex.def)             Requested size: 617.90874pt x 413.21724pt.
+ [16 <./ocean_images/DP804730.jpg>]
+File: plots/171.png Graphic file (type png)
+<use plots/171.png>
+Package pdftex.def Info: plots/171.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/172.png Graphic file (type png)
+<use plots/172.png>
+Package pdftex.def Info: plots/172.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/173.png Graphic file (type png)
+<use plots/173.png>
+Package pdftex.def Info: plots/173.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/174.png Graphic file (type png)
+<use plots/174.png>
+Package pdftex.def Info: plots/174.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/175.png Graphic file (type png)
+<use plots/175.png>
+Package pdftex.def Info: plots/175.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/176.png Graphic file (type png)
+<use plots/176.png>
+Package pdftex.def Info: plots/176.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/177.png Graphic file (type png)
+<use plots/177.png>
+Package pdftex.def Info: plots/177.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/178.png Graphic file (type png)
+<use plots/178.png>
+Package pdftex.def Info: plots/178.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/179.png Graphic file (type png)
+<use plots/179.png>
+Package pdftex.def Info: plots/179.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/180.png Graphic file (type png)
+<use plots/180.png>
+Package pdftex.def Info: plots/180.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/181.png Graphic file (type png)
+<use plots/181.png>
+Package pdftex.def Info: plots/181.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/182.png Graphic file (type png)
+<use plots/182.png>
+Package pdftex.def Info: plots/182.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/183.png Graphic file (type png)
+<use plots/183.png>
+Package pdftex.def Info: plots/183.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/184.png Graphic file (type png)
+<use plots/184.png>
+Package pdftex.def Info: plots/184.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+Package marginnote Info: Margin note 17.3 is on absolute page 17 on input line 
+2.
+Package marginnote Info: xpos seems to be 409.27287pt on input line 2.
+File: plots/185.png Graphic file (type png)
+<use plots/185.png>
+Package pdftex.def Info: plots/185.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/186.png Graphic file (type png)
+<use plots/186.png>
+Package pdftex.def Info: plots/186.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/187.png Graphic file (type png)
+<use plots/187.png>
+Package pdftex.def Info: plots/187.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/188.png Graphic file (type png)
+<use plots/188.png>
+Package pdftex.def Info: plots/188.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/189.png Graphic file (type png)
+<use plots/189.png>
+Package pdftex.def Info: plots/189.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/190.png Graphic file (type png)
+<use plots/190.png>
+Package pdftex.def Info: plots/190.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/191.png Graphic file (type png)
+<use plots/191.png>
+Package pdftex.def Info: plots/191.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/192.png Graphic file (type png)
+<use plots/192.png>
+Package pdftex.def Info: plots/192.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/193.png Graphic file (type png)
+<use plots/193.png>
+Package pdftex.def Info: plots/193.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/194.png Graphic file (type png)
+<use plots/194.png>
+Package pdftex.def Info: plots/194.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/195.png Graphic file (type png)
+<use plots/195.png>
+Package pdftex.def Info: plots/195.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/196.png Graphic file (type png)
+<use plots/196.png>
+Package pdftex.def Info: plots/196.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/197.png Graphic file (type png)
+<use plots/197.png>
+Package pdftex.def Info: plots/197.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/198.png Graphic file (type png)
+<use plots/198.png>
+Package pdftex.def Info: plots/198.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--2
+
+ []
+
+[17
+
+ <./plots/171.png> <./plots/172.png> <./plots/173.png> <./plots/174.png> <./plo
+ts/175.png> <./plots/176.png> <./plots/177.png> <./plots/178.png> <./plots/179.
+png> <./plots/180.png> <./plots/181.png> <./plots/182.png> <./plots/183.png> <.
+/plots/184.png> <./plots/185.png> <./plots/186.png> <./plots/187.png> <./plots/
+188.png> <./plots/189.png> <./plots/190.png> <./plots/191.png> <./plots/192.png
+> <./plots/193.png> <./plots/194.png> <./plots/195.png> <./plots/196.png> <./pl
+ots/197.png> <./plots/198.png>]
+<ocean_images/DT1966.jpg, id=474, 1833.249pt x 1505.625pt>
+File: ocean_images/DT1966.jpg Graphic file (type jpg)
+<use ocean_images/DT1966.jpg>
+Package pdftex.def Info: ocean_images/DT1966.jpg  used on input line 2.
+(pdftex.def)             Requested size: 617.90874pt x 507.49474pt.
+ [18 <./ocean_images/DT1966.jpg>]
+File: plots/199.png Graphic file (type png)
+<use plots/199.png>
+Package pdftex.def Info: plots/199.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/200.png Graphic file (type png)
+<use plots/200.png>
+Package pdftex.def Info: plots/200.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/201.png Graphic file (type png)
+<use plots/201.png>
+Package pdftex.def Info: plots/201.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/202.png Graphic file (type png)
+<use plots/202.png>
+Package pdftex.def Info: plots/202.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/203.png Graphic file (type png)
+<use plots/203.png>
+Package pdftex.def Info: plots/203.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/204.png Graphic file (type png)
+<use plots/204.png>
+Package pdftex.def Info: plots/204.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/205.png Graphic file (type png)
+<use plots/205.png>
+Package pdftex.def Info: plots/205.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/206.png Graphic file (type png)
+<use plots/206.png>
+Package pdftex.def Info: plots/206.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/207.png Graphic file (type png)
+<use plots/207.png>
+Package pdftex.def Info: plots/207.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/208.png Graphic file (type png)
+<use plots/208.png>
+Package pdftex.def Info: plots/208.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/209.png Graphic file (type png)
+<use plots/209.png>
+Package pdftex.def Info: plots/209.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/210.png Graphic file (type png)
+<use plots/210.png>
+Package pdftex.def Info: plots/210.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/211.png Graphic file (type png)
+<use plots/211.png>
+Package pdftex.def Info: plots/211.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/212.png Graphic file (type png)
+<use plots/212.png>
+Package pdftex.def Info: plots/212.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/213.png Graphic file (type png)
+<use plots/213.png>
+Package pdftex.def Info: plots/213.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/214.png Graphic file (type png)
+<use plots/214.png>
+Package pdftex.def Info: plots/214.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/215.png Graphic file (type png)
+<use plots/215.png>
+Package pdftex.def Info: plots/215.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+Package marginnote Info: Margin note 19.3 is on absolute page 19 on input line 
+2.
+Package marginnote Info: xpos seems to be 670.08395pt on input line 2.
+File: plots/216.png Graphic file (type png)
+<use plots/216.png>
+Package pdftex.def Info: plots/216.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/217.png Graphic file (type png)
+<use plots/217.png>
+Package pdftex.def Info: plots/217.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/218.png Graphic file (type png)
+<use plots/218.png>
+Package pdftex.def Info: plots/218.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/219.png Graphic file (type png)
+<use plots/219.png>
+Package pdftex.def Info: plots/219.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/220.png Graphic file (type png)
+<use plots/220.png>
+Package pdftex.def Info: plots/220.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/221.png Graphic file (type png)
+<use plots/221.png>
+Package pdftex.def Info: plots/221.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/222.png Graphic file (type png)
+<use plots/222.png>
+Package pdftex.def Info: plots/222.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/223.png Graphic file (type png)
+<use plots/223.png>
+Package pdftex.def Info: plots/223.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/224.png Graphic file (type png)
+<use plots/224.png>
+Package pdftex.def Info: plots/224.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/225.png Graphic file (type png)
+<use plots/225.png>
+Package pdftex.def Info: plots/225.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/226.png Graphic file (type png)
+<use plots/226.png>
+Package pdftex.def Info: plots/226.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/227.png Graphic file (type png)
+<use plots/227.png>
+Package pdftex.def Info: plots/227.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--2
+
+ []
+
+[19
+
+ <./plots/199.png> <./plots/200.png> <./plots/201.png> <./plots/202.png> <./plo
+ts/203.png> <./plots/204.png> <./plots/205.png> <./plots/206.png> <./plots/207.
+png> <./plots/208.png> <./plots/209.png> <./plots/210.png> <./plots/211.png> <.
+/plots/212.png> <./plots/213.png> <./plots/214.png> <./plots/215.png> <./plots/
+216.png> <./plots/217.png> <./plots/218.png> <./plots/219.png> <./plots/220.png
+> <./plots/221.png> <./plots/222.png> <./plots/223.png> <./plots/224.png> <./pl
+ots/225.png> <./plots/226.png> <./plots/227.png>]
+<ocean_images/DT1973.jpg, id=540, 1834.2126pt x 1496.4708pt>
+File: ocean_images/DT1973.jpg Graphic file (type jpg)
+<use ocean_images/DT1973.jpg>
+Package pdftex.def Info: ocean_images/DT1973.jpg  used on input line 2.
+(pdftex.def)             Requested size: 617.90874pt x 504.13515pt.
+ [20 <./ocean_images/DT1973.jpg>]
+File: plots/228.png Graphic file (type png)
+<use plots/228.png>
+Package pdftex.def Info: plots/228.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/229.png Graphic file (type png)
+<use plots/229.png>
+Package pdftex.def Info: plots/229.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/230.png Graphic file (type png)
+<use plots/230.png>
+Package pdftex.def Info: plots/230.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/231.png Graphic file (type png)
+<use plots/231.png>
+Package pdftex.def Info: plots/231.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/232.png Graphic file (type png)
+<use plots/232.png>
+Package pdftex.def Info: plots/232.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/233.png Graphic file (type png)
+<use plots/233.png>
+Package pdftex.def Info: plots/233.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/234.png Graphic file (type png)
+<use plots/234.png>
+Package pdftex.def Info: plots/234.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/235.png Graphic file (type png)
+<use plots/235.png>
+Package pdftex.def Info: plots/235.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/236.png Graphic file (type png)
+<use plots/236.png>
+Package pdftex.def Info: plots/236.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/237.png Graphic file (type png)
+<use plots/237.png>
+Package pdftex.def Info: plots/237.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/238.png Graphic file (type png)
+<use plots/238.png>
+Package pdftex.def Info: plots/238.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/239.png Graphic file (type png)
+<use plots/239.png>
+Package pdftex.def Info: plots/239.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/240.png Graphic file (type png)
+<use plots/240.png>
+Package pdftex.def Info: plots/240.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/241.png Graphic file (type png)
+<use plots/241.png>
+Package pdftex.def Info: plots/241.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/242.png Graphic file (type png)
+<use plots/242.png>
+Package pdftex.def Info: plots/242.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/243.png Graphic file (type png)
+<use plots/243.png>
+Package pdftex.def Info: plots/243.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/244.png Graphic file (type png)
+<use plots/244.png>
+Package pdftex.def Info: plots/244.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/245.png Graphic file (type png)
+<use plots/245.png>
+Package pdftex.def Info: plots/245.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/246.png Graphic file (type png)
+<use plots/246.png>
+Package pdftex.def Info: plots/246.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/247.png Graphic file (type png)
+<use plots/247.png>
+Package pdftex.def Info: plots/247.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/248.png Graphic file (type png)
+<use plots/248.png>
+Package pdftex.def Info: plots/248.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/249.png Graphic file (type png)
+<use plots/249.png>
+Package pdftex.def Info: plots/249.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/250.png Graphic file (type png)
+<use plots/250.png>
+Package pdftex.def Info: plots/250.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/251.png Graphic file (type png)
+<use plots/251.png>
+Package pdftex.def Info: plots/251.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/252.png Graphic file (type png)
+<use plots/252.png>
+Package pdftex.def Info: plots/252.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/253.png Graphic file (type png)
+<use plots/253.png>
+Package pdftex.def Info: plots/253.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/254.png Graphic file (type png)
+<use plots/254.png>
+Package pdftex.def Info: plots/254.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/255.png Graphic file (type png)
+<use plots/255.png>
+Package pdftex.def Info: plots/255.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--2
+
+ []
+
+[21
+
+ <./plots/228.png> <./plots/229.png> <./plots/230.png> <./plots/231.png> <./plo
+ts/232.png> <./plots/233.png> <./plots/234.png> <./plots/235.png> <./plots/236.
+png> <./plots/237.png> <./plots/238.png> <./plots/239.png> <./plots/240.png> <.
+/plots/241.png> <./plots/242.png> <./plots/243.png> <./plots/244.png> <./plots/
+245.png> <./plots/246.png> <./plots/247.png> <./plots/248.png> <./plots/249.png
+> <./plots/250.png> <./plots/251.png> <./plots/252.png> <./plots/253.png> <./pl
+ots/254.png> <./plots/255.png>]
+<ocean_images/DT2150.jpg, id=603, 1836.1398pt x 1123.5576pt>
+File: ocean_images/DT2150.jpg Graphic file (type jpg)
+<use ocean_images/DT2150.jpg>
+Package pdftex.def Info: ocean_images/DT2150.jpg  used on input line 2.
+(pdftex.def)             Requested size: 617.90874pt x 378.09569pt.
+ [22 <./ocean_images/DT2150.jpg>]
+File: plots/256.png Graphic file (type png)
+<use plots/256.png>
+Package pdftex.def Info: plots/256.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/257.png Graphic file (type png)
+<use plots/257.png>
+Package pdftex.def Info: plots/257.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/258.png Graphic file (type png)
+<use plots/258.png>
+Package pdftex.def Info: plots/258.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/259.png Graphic file (type png)
+<use plots/259.png>
+Package pdftex.def Info: plots/259.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/260.png Graphic file (type png)
+<use plots/260.png>
+Package pdftex.def Info: plots/260.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/261.png Graphic file (type png)
+<use plots/261.png>
+Package pdftex.def Info: plots/261.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/262.png Graphic file (type png)
+<use plots/262.png>
+Package pdftex.def Info: plots/262.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/263.png Graphic file (type png)
+<use plots/263.png>
+Package pdftex.def Info: plots/263.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/264.png Graphic file (type png)
+<use plots/264.png>
+Package pdftex.def Info: plots/264.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/265.png Graphic file (type png)
+<use plots/265.png>
+Package pdftex.def Info: plots/265.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/266.png Graphic file (type png)
+<use plots/266.png>
+Package pdftex.def Info: plots/266.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/267.png Graphic file (type png)
+<use plots/267.png>
+Package pdftex.def Info: plots/267.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/268.png Graphic file (type png)
+<use plots/268.png>
+Package pdftex.def Info: plots/268.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/269.png Graphic file (type png)
+<use plots/269.png>
+Package pdftex.def Info: plots/269.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/270.png Graphic file (type png)
+<use plots/270.png>
+Package pdftex.def Info: plots/270.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/271.png Graphic file (type png)
+<use plots/271.png>
+Package pdftex.def Info: plots/271.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/272.png Graphic file (type png)
+<use plots/272.png>
+Package pdftex.def Info: plots/272.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/273.png Graphic file (type png)
+<use plots/273.png>
+Package pdftex.def Info: plots/273.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/274.png Graphic file (type png)
+<use plots/274.png>
+Package pdftex.def Info: plots/274.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/275.png Graphic file (type png)
+<use plots/275.png>
+Package pdftex.def Info: plots/275.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/276.png Graphic file (type png)
+<use plots/276.png>
+Package pdftex.def Info: plots/276.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/277.png Graphic file (type png)
+<use plots/277.png>
+Package pdftex.def Info: plots/277.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/278.png Graphic file (type png)
+<use plots/278.png>
+Package pdftex.def Info: plots/278.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/279.png Graphic file (type png)
+<use plots/279.png>
+Package pdftex.def Info: plots/279.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/280.png Graphic file (type png)
+<use plots/280.png>
+Package pdftex.def Info: plots/280.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/281.png Graphic file (type png)
+<use plots/281.png>
+Package pdftex.def Info: plots/281.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/282.png Graphic file (type png)
+<use plots/282.png>
+Package pdftex.def Info: plots/282.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/283.png Graphic file (type png)
+<use plots/283.png>
+Package pdftex.def Info: plots/283.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/284.png Graphic file (type png)
+<use plots/284.png>
+Package pdftex.def Info: plots/284.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--2
+
+ []
+
+[23
+
+ <./plots/256.png> <./plots/257.png> <./plots/258.png> <./plots/259.png> <./plo
+ts/260.png> <./plots/261.png> <./plots/262.png> <./plots/263.png> <./plots/264.
+png> <./plots/265.png> <./plots/266.png> <./plots/267.png> <./plots/268.png> <.
+/plots/269.png> <./plots/270.png> <./plots/271.png> <./plots/272.png> <./plots/
+273.png> <./plots/274.png> <./plots/275.png> <./plots/276.png> <./plots/277.png
+> <./plots/278.png> <./plots/279.png> <./plots/280.png> <./plots/281.png> <./pl
+ots/282.png> <./plots/283.png> <./plots/284.png>]
+<ocean_images/DT226485.jpg, id=668, 3825.29124pt x 2606.73875pt>
+File: ocean_images/DT226485.jpg Graphic file (type jpg)
+<use ocean_images/DT226485.jpg>
+Package pdftex.def Info: ocean_images/DT226485.jpg  used on input line 2.
+(pdftex.def)             Requested size: 617.90874pt x 421.06429pt.
+ [24 <./ocean_images/DT226485.jpg>]
+File: plots/285.png Graphic file (type png)
+<use plots/285.png>
+Package pdftex.def Info: plots/285.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/286.png Graphic file (type png)
+<use plots/286.png>
+Package pdftex.def Info: plots/286.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/287.png Graphic file (type png)
+<use plots/287.png>
+Package pdftex.def Info: plots/287.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/288.png Graphic file (type png)
+<use plots/288.png>
+Package pdftex.def Info: plots/288.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/289.png Graphic file (type png)
+<use plots/289.png>
+Package pdftex.def Info: plots/289.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/290.png Graphic file (type png)
+<use plots/290.png>
+Package pdftex.def Info: plots/290.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/291.png Graphic file (type png)
+<use plots/291.png>
+Package pdftex.def Info: plots/291.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/292.png Graphic file (type png)
+<use plots/292.png>
+Package pdftex.def Info: plots/292.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+Package marginnote Info: Margin note 25.3 is on absolute page 25 on input line 
+2.
+Package marginnote Info: xpos seems to be 662.12389pt on input line 2.
+File: plots/293.png Graphic file (type png)
+<use plots/293.png>
+Package pdftex.def Info: plots/293.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/294.png Graphic file (type png)
+<use plots/294.png>
+Package pdftex.def Info: plots/294.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/295.png Graphic file (type png)
+<use plots/295.png>
+Package pdftex.def Info: plots/295.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/296.png Graphic file (type png)
+<use plots/296.png>
+Package pdftex.def Info: plots/296.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/297.png Graphic file (type png)
+<use plots/297.png>
+Package pdftex.def Info: plots/297.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/298.png Graphic file (type png)
+<use plots/298.png>
+Package pdftex.def Info: plots/298.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/299.png Graphic file (type png)
+<use plots/299.png>
+Package pdftex.def Info: plots/299.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/300.png Graphic file (type png)
+<use plots/300.png>
+Package pdftex.def Info: plots/300.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/301.png Graphic file (type png)
+<use plots/301.png>
+Package pdftex.def Info: plots/301.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/302.png Graphic file (type png)
+<use plots/302.png>
+Package pdftex.def Info: plots/302.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/303.png Graphic file (type png)
+<use plots/303.png>
+Package pdftex.def Info: plots/303.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/304.png Graphic file (type png)
+<use plots/304.png>
+Package pdftex.def Info: plots/304.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/305.png Graphic file (type png)
+<use plots/305.png>
+Package pdftex.def Info: plots/305.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/306.png Graphic file (type png)
+<use plots/306.png>
+Package pdftex.def Info: plots/306.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/307.png Graphic file (type png)
+<use plots/307.png>
+Package pdftex.def Info: plots/307.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/308.png Graphic file (type png)
+<use plots/308.png>
+Package pdftex.def Info: plots/308.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/309.png Graphic file (type png)
+<use plots/309.png>
+Package pdftex.def Info: plots/309.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/310.png Graphic file (type png)
+<use plots/310.png>
+Package pdftex.def Info: plots/310.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/311.png Graphic file (type png)
+<use plots/311.png>
+Package pdftex.def Info: plots/311.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/312.png Graphic file (type png)
+<use plots/312.png>
+Package pdftex.def Info: plots/312.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--2
+
+ []
+
+[25
+
+ <./plots/285.png> <./plots/286.png> <./plots/287.png> <./plots/288.png> <./plo
+ts/289.png> <./plots/290.png> <./plots/291.png> <./plots/292.png> <./plots/293.
+png> <./plots/294.png> <./plots/295.png> <./plots/296.png> <./plots/297.png> <.
+/plots/298.png> <./plots/299.png> <./plots/300.png> <./plots/301.png> <./plots/
+302.png> <./plots/303.png> <./plots/304.png> <./plots/305.png> <./plots/306.png
+> <./plots/307.png> <./plots/308.png> <./plots/309.png> <./plots/310.png> <./pl
+ots/311.png> <./plots/312.png>]
+<ocean_images/DT9508.jpg, id=732, 1836.1398pt x 1350.0036pt>
+File: ocean_images/DT9508.jpg Graphic file (type jpg)
+<use ocean_images/DT9508.jpg>
+Package pdftex.def Info: ocean_images/DT9508.jpg  used on input line 2.
+(pdftex.def)             Requested size: 617.90874pt x 454.29851pt.
+ [26 <./ocean_images/DT9508.jpg>]
+File: plots/313.png Graphic file (type png)
+<use plots/313.png>
+Package pdftex.def Info: plots/313.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/314.png Graphic file (type png)
+<use plots/314.png>
+Package pdftex.def Info: plots/314.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/315.png Graphic file (type png)
+<use plots/315.png>
+Package pdftex.def Info: plots/315.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/316.png Graphic file (type png)
+<use plots/316.png>
+Package pdftex.def Info: plots/316.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/317.png Graphic file (type png)
+<use plots/317.png>
+Package pdftex.def Info: plots/317.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/318.png Graphic file (type png)
+<use plots/318.png>
+Package pdftex.def Info: plots/318.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/319.png Graphic file (type png)
+<use plots/319.png>
+Package pdftex.def Info: plots/319.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/320.png Graphic file (type png)
+<use plots/320.png>
+Package pdftex.def Info: plots/320.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/321.png Graphic file (type png)
+<use plots/321.png>
+Package pdftex.def Info: plots/321.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/322.png Graphic file (type png)
+<use plots/322.png>
+Package pdftex.def Info: plots/322.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/323.png Graphic file (type png)
+<use plots/323.png>
+Package pdftex.def Info: plots/323.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/324.png Graphic file (type png)
+<use plots/324.png>
+Package pdftex.def Info: plots/324.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/325.png Graphic file (type png)
+<use plots/325.png>
+Package pdftex.def Info: plots/325.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/326.png Graphic file (type png)
+<use plots/326.png>
+Package pdftex.def Info: plots/326.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/327.png Graphic file (type png)
+<use plots/327.png>
+Package pdftex.def Info: plots/327.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/328.png Graphic file (type png)
+<use plots/328.png>
+Package pdftex.def Info: plots/328.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/329.png Graphic file (type png)
+<use plots/329.png>
+Package pdftex.def Info: plots/329.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/330.png Graphic file (type png)
+<use plots/330.png>
+Package pdftex.def Info: plots/330.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/331.png Graphic file (type png)
+<use plots/331.png>
+Package pdftex.def Info: plots/331.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/332.png Graphic file (type png)
+<use plots/332.png>
+Package pdftex.def Info: plots/332.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/333.png Graphic file (type png)
+<use plots/333.png>
+Package pdftex.def Info: plots/333.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/334.png Graphic file (type png)
+<use plots/334.png>
+Package pdftex.def Info: plots/334.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/335.png Graphic file (type png)
+<use plots/335.png>
+Package pdftex.def Info: plots/335.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/336.png Graphic file (type png)
+<use plots/336.png>
+Package pdftex.def Info: plots/336.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/337.png Graphic file (type png)
+<use plots/337.png>
+Package pdftex.def Info: plots/337.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/338.png Graphic file (type png)
+<use plots/338.png>
+Package pdftex.def Info: plots/338.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/339.png Graphic file (type png)
+<use plots/339.png>
+Package pdftex.def Info: plots/339.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/340.png Graphic file (type png)
+<use plots/340.png>
+Package pdftex.def Info: plots/340.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+File: plots/341.png Graphic file (type png)
+<use plots/341.png>
+Package pdftex.def Info: plots/341.png  used on input line 2.
+(pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
+ [27
+
+ <./plots/313.png> <./plots/314.png> <./plots/315.png> <./plots/316.png> <./plo
+ts/317.png> <./plots/318.png> <./plots/319.png> <./plots/320.png> <./plots/321.
+png> <./plots/322.png> <./plots/323.png> <./plots/324.png> <./plots/325.png> <.
+/plots/326.png> <./plots/327.png> <./plots/328.png> <./plots/329.png> <./plots/
+330.png> <./plots/331.png> <./plots/332.png> <./plots/333.png> <./plots/334.png
+> <./plots/335.png> <./plots/336.png> <./plots/337.png> <./plots/338.png> <./pl
+ots/339.png> <./plots/340.png> <./plots/341.png>] (calendar.aux) ) 
+Here is how much of TeX's memory you used:
+ 17029 strings out of 492895
+ 337841 string characters out of 3123268
+ 512409 words of memory out of 3000000
+ 20296 multiletter control sequences out of 15000+200000
+ 11560 words of font info for 41 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 73i,19n,66p,89034b,737s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/alt
+ers/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb
+><C:/Users/alters/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmss12.pfb><C:/Users/alters/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmss17.pfb><C:/Users/alters/AppData/Local/Programs/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/alters/AppData/Local/Progra
+ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/alters/AppD
+ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi12.pfb><C:/Us
+ers/alters/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cms
+si8.pfb><C:/Users/alters/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmtt12.pfb><C:/Users/alters/AppData/Local/Programs/MiKTeX 2.9/fonts/
+type1/public/wasy/wasy10.pfb>
+Output written on calendar.pdf (27 pages, 36351802 bytes).
+PDF statistics:
+ 826 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1788 words of extra memory for PDF output out of 10000 (max. 10000000)
+
