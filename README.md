@@ -66,10 +66,14 @@ This will generate a `.tex` file, which you can then turn into a pdf with LaTeX.
 
 - Re-plotted the year for 5780.
 - Rewrote the "Getting tidal data" section in this README.
+- Revised the "intro" section of the calendar.
 - Added `tide_data/boston_5780_raw.txt` (raw NOAA data).
 - Added `tide_data/boston_5780.csv` (processed NOAA data).
 - Renamed `tide_data/boston.csv` to `tide_data/boston_5779.csv`.
 - Added `raw_parser.py` to parse raw NOAA data.
-- Fixed some typos in the yom tov descriptions.
-- Fixed a bug in the tidal image generator that resulted in too many images.
+- Expanded some yom tov descriptions.
 - Made the calculation of the first hour of the year more flexible.
+- Fixed: Typos in the yom tov descriptions.
+- Fixed: Inconsistent orthography for ח (was a mix of "ch" and "kh"; now, it is always "kh").
+- Fixed: The tidal image generator sometimes generates too many images.
+- Fixed: If the last week of the month ends on Shabbat, an extra blank row is generated.

@@ -173,7 +173,7 @@ def get_t1(start_time):
             # Skip the first high tide.
             else:
                 got_middle_high_tide = True
-    # This should never happene! If it does, then the dataset is too small.
+    # This should never happen! If it does, then the dataset is too small.
     return -1
 
 
@@ -212,11 +212,13 @@ def get_end_month():
     if current_month_index == 11:
         end_of_table += r"\\\hline\end{tabularx}"
         return end_of_table
-    # Fill out the last row.
-    for i in range(6 - current_day_of_week):
-        end_of_table += r"&"
+    if current_day_of_week > 0:
+        # Fill out the last row.
+        for i in range(6 - current_day_of_week):
+            end_of_table += r"&"
     end_of_table += r"\\\hline\end{tabularx}"
     return end_of_table
+
 
 # A list of tidal heights, mapped to "t"
 heights = []
@@ -234,7 +236,7 @@ with open(tidal_data_path, 'rt') as f:
         # Append the height data to heights.
         heights.append(float(line[2]))
 
-# Use the max and min heights to plot consistenty sized charts.
+# Use the max and min heights to plot consistently sized charts.
 min_max_heights = np.array([min(heights), max(heights)])
 min_max_range = np.arange(2)
 
@@ -261,7 +263,9 @@ while not done:
 
     # Get the LaTeX symbol for the elapsed phase, if any.
     # If the phase wrapped around, it is a new month.
+    end_of_month = False
     if first_month or (moon_phase_t0 > 0.75 and moon_phase_t1 < 0.125):
+        end_of_month = True
         moon_phase_index = 0
         # If this was the final month, stop!
         if current_month_index + 1 >= len(MONTHS):
@@ -273,6 +277,8 @@ while not done:
                 first_month = False
             else:
                 tex += get_end_month() + r"\\"
+            # Remove a blank row, if any.
+            tex = tex.replace(r"\\\hline \\\hline", r"\\\hline")
             tex += get_new_month()
     # Get half and quarter moon phases.
     elif moon_phase_t0 < 0.25 and moon_phase_t1 > 0.25:

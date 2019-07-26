@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.25)  25 JUL 2019 15:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.25)  26 JUL 2019 10:01
 entering extended mode
 **./calendar.tex
 (calendar.tex
@@ -781,9 +781,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--1
  []
 
 
-Overfull \hbox (9.7358pt too wide) in paragraph at lines 1--1
-\OT1/cmss/m/n/12 All tidal data was gath-ered from the NOAA web-site: \OT1/cmtt
-/m/n/12 https://tidesandcurrents.noaa.gov/waterlevels.html?id=8443970 
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+
  []
 
 
@@ -1687,7 +1686,7 @@ Package pdftex.def Info: plots/184.png  used on input line 2.
 (pdftex.def)             Requested size: 75.81555pt x 56.85954pt.
 Package marginnote Info: Margin note 17.3 is on absolute page 17 on input line 
 2.
-Package marginnote Info: xpos seems to be 409.27287pt on input line 2.
+Package marginnote Info: xpos seems to be 409.6062pt on input line 2.
 File: plots/185.png Graphic file (type png)
 <use plots/185.png>
 Package pdftex.def Info: plots/185.png  used on input line 2.
@@ -2438,7 +2437,7 @@ Here is how much of TeX's memory you used:
  20296 multiletter control sequences out of 15000+200000
  11560 words of font info for 41 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 73i,19n,66p,89034b,737s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 73i,19n,66p,89123b,737s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/alt
 ers/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb
 ><C:/Users/alters/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
@@ -2451,7 +2450,7 @@ ers/alters/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cms
 si8.pfb><C:/Users/alters/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/a
 msfonts/cm/cmtt12.pfb><C:/Users/alters/AppData/Local/Programs/MiKTeX 2.9/fonts/
 type1/public/wasy/wasy10.pfb>
-Output written on calendar.pdf (27 pages, 36351802 bytes).
+Output written on calendar.pdf (27 pages, 36351559 bytes).
 PDF statistics:
  826 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
