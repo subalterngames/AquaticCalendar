@@ -13,6 +13,7 @@ parser = ArgumentParser()
 parser.add_argument("-t", dest="tidal_data_path",  type=str, default="tide_data/boston.csv",
                     help="path/to/your/tide/data.csv")
 parser.add_argument('-p', action='store_true', help="Create new tidal graph images")
+parser.add_argument('-y', type=int, default=5780, help="Year")
 args = parser.parse_args()
 plot_new_graphs = args.p
 tidal_data_path = args.tidal_data_path
@@ -52,7 +53,7 @@ tex = r"\documentclass[11pt,letterpaper,landscape,openany]{scrbook}\usepackage{c
       r"contents={\includegraphics[width=\paperwidth,height=\paperheight]{title_page.jpg}}}" \
       r"\begin{document}" \
       r"\BgThispage\begin{figure}\begin{center}\Huge\darkblue{\textbf{The Aquatic Jewish Calendar}}\end{center}" \
-      r"\begin{center}\Huge\darkblue{5779}\end{center}\end{figure}\clearpage"
+      r"\begin{center}\Huge\darkblue{" + str(args.y) + r"}\end{center}\end{figure}\clearpage"
 
 # Append the introduction text.
 with open("intro.txt", "rt") as f:
@@ -141,8 +142,15 @@ def get_start_time():
     Returns the starting time of the calendar.
     """
 
+    # Get the start of the new moon.
+    q = 0
+    while q < len(heights):
+        if get_lunar_phase(q) < 0.001:
+            break
+        q += 1
+
     # Get the first high tide in the tidal height data.
-    for i in range(1, len(heights) - 1):
+    for i in range(q, len(heights) - 1):
         if heights[i] > heights[i - 1] and heights[i] > heights[i + 1]:
             return i
     # Oops something very bad happened.
@@ -165,7 +173,7 @@ def get_t1(start_time):
             # Skip the first high tide.
             else:
                 got_middle_high_tide = True
-    # This should never happene! If it does, then the dataset is too small.
+    # This should never happen! If it does, then the dataset is too small.
     return -1
 
 
@@ -191,10 +199,8 @@ def plot(day):
     plt.tick_params(axis="both", which="both", bottom=False, top=False, left=False, right=False,
                     labelbottom=False, labelleft=False)
     # Save the image.
-    global image_counter
-    plt.savefig(plot_directory.joinpath(str(image_counter) + ".png"))
+    plt.savefig(plot_directory.joinpath(str(image_counter - 1) + ".png"))
     plt.clf()
-    image_counter += 1
 
 
 def get_end_month():
@@ -206,11 +212,13 @@ def get_end_month():
     if current_month_index == 11:
         end_of_table += r"\\\hline\end{tabularx}"
         return end_of_table
-    # Fill out the last row.
-    for i in range(6 - current_day_of_week):
-        end_of_table += r"&"
+    if current_day_of_week > 0:
+        # Fill out the last row.
+        for i in range(6 - current_day_of_week):
+            end_of_table += r"&"
     end_of_table += r"\\\hline\end{tabularx}"
     return end_of_table
+
 
 # A list of tidal heights, mapped to "t"
 heights = []
@@ -228,7 +236,7 @@ with open(tidal_data_path, 'rt') as f:
         # Append the height data to heights.
         heights.append(float(line[2]))
 
-# Use the max and min heights to plot consistenty sized charts.
+# Use the max and min heights to plot consistently sized charts.
 min_max_heights = np.array([min(heights), max(heights)])
 min_max_range = np.arange(2)
 
@@ -255,7 +263,9 @@ while not done:
 
     # Get the LaTeX symbol for the elapsed phase, if any.
     # If the phase wrapped around, it is a new month.
-    if moon_phase_t0 > 0.75 and moon_phase_t1 < 0.125:
+    end_of_month = False
+    if first_month or (moon_phase_t0 > 0.75 and moon_phase_t1 < 0.125):
+        end_of_month = True
         moon_phase_index = 0
         # If this was the final month, stop!
         if current_month_index + 1 >= len(MONTHS):
@@ -267,6 +277,8 @@ while not done:
                 first_month = False
             else:
                 tex += get_end_month() + r"\\"
+            # Remove a blank row, if any.
+            tex = tex.replace(r"\\\hline \\\hline", r"\\\hline")
             tex += get_new_month()
     # Get half and quarter moon phases.
     elif moon_phase_t0 < 0.25 and moon_phase_t1 > 0.25:
@@ -342,7 +354,6 @@ while not done:
         tex += r"&"
     t0 = t1
 tex += r"\end{document}"
-print(tex)
 
 # Write the LaTeX data to a file. You must compile it externally.
 with open("calendar.tex", "wt") as f:
