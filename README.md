@@ -14,9 +14,15 @@ All images in this calendar are from the [Met's open access collection](https://
 
 All tidal data was gathered from the [NOAA website](https://opendap.co-ops.nos.noaa.gov/axis/webservices/predictions/index.jsp)
 
+## Contact Me
+
+- [Twitter](https://twitter.com/subalterngames)
+- [Email](subalterngames@gmail.com)
+- [My website](https://subalterngames.com)
+
 ## Creating Your Own Aquatic Calendar
 
-**Email subalterngames at gmail dot com and I'll happily create a calendar for you.** 
+**[Email me](subalterngames@gmail.com) and I'll happily create a calendar for you.** 
 
 If you want to try making your own calendar, this repo contains most of the tools required.
 
@@ -73,6 +79,7 @@ This will generate a `.tex` file, which you can then turn into a pdf with LaTeX.
 - Update this README:
   - Rewrote the "Getting tidal data" section.
   - Updated image of Tishrei.
+  - Added more contact information.
 - Improved tidal data parsing.
   - Added `tide_data/boston_5780_raw.txt` (raw NOAA data).
   - Added `tide_data/boston_5780.csv` (processed NOAA data).
