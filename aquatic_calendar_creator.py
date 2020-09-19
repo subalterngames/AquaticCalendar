@@ -5,25 +5,77 @@ from dateutil.parser import parse
 from dateutil import tz
 from os import listdir
 from argparse import ArgumentParser
-import decimal
-dec = decimal.Decimal
+from datetime import datetime, timedelta
+from json import loads
+from requests import get
+import pylunar
+import re
+
 
 # Parse arguments.
 parser = ArgumentParser()
-parser.add_argument("-t", dest="tidal_data_path",  type=str, default="tide_data/boston.csv",
-                    help="path/to/your/tide/data.csv")
 parser.add_argument('-p', action='store_true', help="Create new tidal graph images")
-parser.add_argument('-y', type=int, default=5780, help="Year")
+parser.add_argument("-s", type=str, default="8443970", help="Tidal station ID")
 args = parser.parse_args()
 plot_new_graphs = args.p
-tidal_data_path = args.tidal_data_path
+
+# Get the date of Rosh Hashanah.
+erev_rosh_hashanah = ""
+resp = loads(get("https://www.hebcal.com/hebcal?v=1&cfg=json&year=now&maj=on").content.decode("utf-8"))
+for item in resp["items"]:
+    if item["title"] == "Erev Rosh Hashana":
+        erev_rosh_hashanah = item["date"]
+        break
+assert erev_rosh_hashanah != "", "Couldn't get the date for Erev Rosh Hashana!"
+# Start a few days earlier to deal with apparent/absolute new moons.
+start_day = datetime.fromisoformat(erev_rosh_hashanah) - timedelta(days=4)
+# Get the secular year.
+secular_year = int(erev_rosh_hashanah.split("-")[0])
+print(f"Got the start day (secular): {start_day}")
+
+# Get the Jewish year.
+resp = loads(get(f"https://www.hebcal.com/converter?cfg=json&gy={secular_year}").content.decode("utf-8"))
+jewish_year = resp["hy"]
+print(f"Got the Jewish year: {jewish_year}")
+
+erev_rosh_hashanah = ""
+resp = loads(get(f"https://www.hebcal.com/hebcal?v=1&cfg=json&year={secular_year + 1}&maj=on").content.decode("utf-8"))
+for item in resp["items"]:
+    if item["title"] == "Erev Rosh Hashana":
+        erev_rosh_hashanah = item["date"]
+        break
+assert erev_rosh_hashanah != "", "Couldn't get the date for Erev Rosh Hashana (next year)!"
+end_day = datetime.fromisoformat(erev_rosh_hashanah) + timedelta(days=3)
+print(f"Got the end day (secular): {end_day}")
+
+start_day = str(start_day).split(" ")[0].replace("-", "")
+end_day = str(end_day).split(" ")[0].replace("-", "")
+
+# Get the tidal data.
+url = f"https://opendap.co-ops.nos.noaa.gov/axis/webservices/predictions/response.jsp?stationId={args.s}&" \
+    f"beginDate={start_day}&endDate={end_day}&datum=MLLW&unit=0&timeZone=0&dataInterval=60&format=text&Submit=Submit"
+resp = get(url).content.decode("utf-8")
+
+print(f"Got tidal data for station {args.s}")
+# Get the longitude and latitude.
+latitude = re.search(r"   Latitude           :   (.*)", resp).group(1)
+latitude = (int(latitude.split(".")[0]), int(latitude[-4:]), int(latitude[-2:]))
+longitude = re.search(r"   Longitude          :   (.*)", resp).group(1)
+longitude = (int(longitude.split(".")[0]), int(longitude[-4:]), int(longitude[-2:]))
+# Load the lunar data.
+mi = pylunar.MoonInfo(latitude, longitude)
+mi_start = (int(start_day[:4]), int(start_day[4:6], int(start_day[6:8])), 0, 0, 0)
+mi.update(mi_start)
+print("Got the lunar data.")
+
+tidal_data = resp.split("<pre>")[-1].replace("</pre>", "")
 
 # The months of the Aquatic Jewish calendar.
 MONTHS = ["Tishrei", "Kheshvan", "Kislev", "Tevet", "Shvat", "Adar", "Nisan", "Iyar", "Sivan", "Tammuz", "Av", "Elul"]
 # The days of the Aquatic Jewish week.
 DAYS_OF_WEEK = ["Dag", "Gal", "Khof", "Zerem", "Ruakh", "Melakh", "Shabbat"]
 # LaTeX symbols for printing the moon phase. If the phase isn't one of the quarters, then no symbol is printed.
-MOON_PHASES = [r"\CIRCLE", r"\LEFTcircle", r"\Circle", "\RIGHTcircle", r""]
+MOON_PHASES = [r"\CIRCLE", r"\LEFTcircle", r"\Circle", r"\RIGHTcircle", r""]
 # Index of the current month.
 current_month_index = -1
 # The current day of the month.
@@ -53,7 +105,7 @@ tex = r"\documentclass[11pt,letterpaper,landscape,openany]{scrbook}\usepackage{c
       r"contents={\includegraphics[width=\paperwidth,height=\paperheight]{title_page.jpg}}}" \
       r"\begin{document}" \
       r"\BgThispage\begin{figure}\begin{center}\Huge\darkblue{\textbf{The Aquatic Jewish Calendar}}\end{center}" \
-      r"\begin{center}\Huge\darkblue{" + str(args.y) + r"}\end{center}\end{figure}\clearpage"
+      r"\begin{center}\Huge\darkblue{" + str(jewish_year) + r"}\end{center}\end{figure}\clearpage"
 
 # Append the introduction text.
 with open("intro.txt", "rt") as f:
@@ -99,10 +151,9 @@ def get_lunar_phase(time_index):
     :param time_index: An index in the list of times.
     """
 
-    diff = t[time_index] - parse("2001/01/01 00:00 AM GMT")
-    days = dec(diff.days) + (dec(diff.seconds) / dec(86400))
-    lunations = dec("0.20439731") + (days * dec("0.03386319269"))
-    return lunations % dec(1)
+    lt = t[time_index]
+    mi.update((lt.year, lt.month, lt.day, lt.hour, 0, 0))
+    return mi.fractional_phase(), mi.phase_name()
 
 
 def get_new_month():
@@ -145,7 +196,7 @@ def get_start_time():
     # Get the start of the new moon.
     q = 0
     while q < len(heights):
-        if get_lunar_phase(q) < 0.001:
+        if get_lunar_phase(q)[1] == "NEW_MOON":
             break
         q += 1
 
@@ -224,17 +275,19 @@ def get_end_month():
 heights = []
 # A list of datetimes, mapped to "heights"
 t = []
-# Parse the csv file.
-with open(tidal_data_path, 'rt') as f:
-    for i, line in enumerate(f):
-        if i == 0:
-            continue
-        line = line.strip().split(',')
-        date_string = line[0] + " " + line[1]
-        # Parse the data into a datetime object and append it to t.
-        t.append(parse(date_string + " GMT"))
-        # Append the height data to heights.
-        heights.append(float(line[2]))
+# Parse the tidal file.
+for i, line in enumerate(tidal_data.split("\n")):
+    if line == "":
+        continue
+    line = line.strip().split(' ')[1:]
+    line = [q for q in line if q != ""]
+    if len(line) == 0:
+        continue
+    date_string = line[0] + " " + line[1]
+    # Parse the data into a datetime object and append it to t.
+    t.append(parse(date_string + " GMT"))
+    # Append the height data to heights.
+    heights.append(float(line[2]))
 
 # Use the max and min heights to plot consistently sized charts.
 min_max_heights = np.array([min(heights), max(heights)])
@@ -264,7 +317,9 @@ while not done:
     # Get the LaTeX symbol for the elapsed phase, if any.
     # If the phase wrapped around, it is a new month.
     end_of_month = False
-    if first_month or (moon_phase_t0 > 0.75 and moon_phase_t1 < 0.125):
+    if first_month or (moon_phase_t0[1] == "WANING_CRESCENT" and moon_phase_t1[1] == "WAXING_CRESCENT") or\
+            moon_phase_t1[1] == "NEW_MOON":
+        print(t[t1])
         end_of_month = True
         moon_phase_index = 0
         # If this was the final month, stop!
@@ -281,11 +336,11 @@ while not done:
             tex = tex.replace(r"\\\hline \\\hline", r"\\\hline")
             tex += get_new_month()
     # Get half and quarter moon phases.
-    elif moon_phase_t0 < 0.25 and moon_phase_t1 > 0.25:
+    elif moon_phase_t0[1] == "WAXING_CRESCENT" and moon_phase_t1[1] == "WAXING_GIBBOUS":
         moon_phase_index = 1
-    elif moon_phase_t0 < 0.5 and moon_phase_t1 > 0.5:
+    elif moon_phase_t0[1] == "WAXING_GIBBOUS" and moon_phase_t1[1] == "WANING_GIBBOUS":
         moon_phase_index = 2
-    elif moon_phase_t0 < 0.75 and moon_phase_t1 > 0.75:
+    elif moon_phase_t0[1] == "WANING_GIBBOUS" and moon_phase_t1[1] == "WANING_CRESCENT":
         moon_phase_index = 3
     # Do not show a lunar symbol.
     else:

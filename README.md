@@ -29,10 +29,10 @@ If you want to try making your own calendar, this repo contains most of the tool
 ### Required Software
 
 - python3
-  - pathlib
   - matplotlib
-  - dateutil
-  - argparse
+  - numpy
+  - requests
+  - pylunar
 - LaTeX
   - scrbook
   - colortbl
@@ -56,17 +56,21 @@ This will generate a `.tex` file, which you can then turn into a pdf with LaTeX.
 
 | Argument | Description | Default |
 | --- | --- | --- |
-| `-t <path>` | path/to/your/tidal/data.csv | `tide_data/boston_5780.csv` |
+| `-s` | [Tidal station ID](https://tidesandcurrents.noaa.gov/stations.html?type=Water+Levels) | `8443970` (Boston) |
 | `-p` | Create new tidal graph images. | `False` |
-| `-y` | The year. | `5780` |
-
-### Getting tidal data
-
-1. Go to [this website](https://opendap.co-ops.nos.noaa.gov/axis/webservices/predictions/index.jsp) and gather all tidal data from one Rosh Hashanah to the next (add a few days on either end). Download the data as a text file. The station ID for Boston is: 8443970 
-2. Run `raw_parser.py`, which will output a usable .csv file (you'll need to rename the file).
 
 
 # Changelog
+
+#### 5781
+
+- Removed arguments `-y` and `-t` (no longer needed).
+- Added argument `-s` (station ID)
+- Improved lunar phase accuracy
+- Removed `raw_parser.py`.
+- Removed all files in  `tide_data/`
+- Tidal data is downloaded at runtime given the station ID.
+- Jewish year is determined at runtime given the current year.
 
 #### 5780
 
