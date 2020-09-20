@@ -28,49 +28,40 @@ If you want to try making your own calendar, this repo contains most of the tool
 
 ### Required Software
 
-- python3
-  - matplotlib
-  - numpy
-  - requests
-  - pylunar
+- Python 3.7+
 - LaTeX
-  - scrbook
-  - colortbl
-  - tabularx
-  - marginnote
-  - graphicx
-  - wasysym
-  - sectsty
-  - xcolor 
-  - background
 
 ### How to run the program
 
 ```python
-python3 aquatic_calendar_creator.py
+python3 aquatic_calendar_creator.py -s [TIDAL STATION ID]
 ```
 
-This will generate a `.tex` file, which you can then turn into a pdf with LaTeX.
+This will generate a `calendar.pdf` file.
 
 ### Optional arguments
 
 | Argument | Description | Default |
 | --- | --- | --- |
 | `-s` | [Tidal station ID](https://tidesandcurrents.noaa.gov/stations.html?type=Water+Levels) | `8443970` (Boston) |
-| `-p` | Create new tidal graph images. | `False` |
 
 
 # Changelog
 
 #### 5781
 
-- Removed arguments `-y` and `-t` (no longer needed).
-- Added argument `-s` (station ID)
-- Improved lunar phase accuracy
-- Removed `raw_parser.py`.
-- Removed all files in  `tide_data/`
-- Tidal data is downloaded at runtime given the station ID.
-- Jewish year is determined at runtime given the current year.
+- Updated the calendar for the year 5781.
+- **Tidal data is automatically downloaded at runtime.**
+  - Removed `raw_parser.py`, all files in `tide_data/`, and the `-t` argument  (you no longer need to download tidal data and convert it to a csv file.)
+  - Added argument `-s` (tidal stationID). 
+- The (terrestrial) Jewish year is automatically determined via an online API.
+  - Removed the `-y` argument (no longer needed).
+- Missing Python modules are now automatically installed at runtime.
+- Missing LaTeX packages are now automatically installed at runtime.
+- calendar.pdf is now automatically created (rather than having to run pdflatex externally).
+- Removed argument `-p` (now, tidal plots are always automatically generated).
+- Fixed: Lunar phase is inaccurate (now using `pylunar` module)
+- Fixed: Rare bug in which there could be too many high tides in a day.
 
 #### 5780
 

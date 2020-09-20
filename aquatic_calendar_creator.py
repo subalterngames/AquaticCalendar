@@ -1,3 +1,16 @@
+from os import devnull
+import pkg_resources
+from subprocess import call, check_output
+from platform import system
+# Install missing Python modules.
+for package in ['requests', 'numpy', 'matplotlib', 'pylunar', 'python-dateutil']:
+    try:
+        pkg_resources.get_distribution(package)
+    except pkg_resources.DistributionNotFound:
+        if system() == "Windows":
+            call(["pip3", "install", package, "--user"])
+        else:
+            call(["sudo", "pip3", "install", package])
 from pathlib import Path
 import numpy as np
 import matplotlib.pyplot as plt
@@ -14,10 +27,8 @@ import re
 
 # Parse arguments.
 parser = ArgumentParser()
-parser.add_argument('-p', action='store_true', help="Create new tidal graph images")
 parser.add_argument("-s", type=str, default="8443970", help="Tidal station ID")
 args = parser.parse_args()
-plot_new_graphs = args.p
 
 # Get the date of Rosh Hashanah.
 erev_rosh_hashanah = ""
@@ -58,9 +69,9 @@ resp = get(url).content.decode("utf-8")
 
 print(f"Got tidal data for station {args.s}")
 # Get the longitude and latitude.
-latitude = re.search(r"   Latitude           :   (.*)", resp).group(1)
+latitude = re.search(r"\s+Latitude\s+:\s+(.*)", resp).group(1)
 latitude = (int(latitude.split(".")[0]), int(latitude[-4:]), int(latitude[-2:]))
-longitude = re.search(r"   Longitude          :   (.*)", resp).group(1)
+longitude = re.search(r"\s+Longitude\s+:\s+(.*)", resp).group(1)
 longitude = (int(longitude.split(".")[0]), int(longitude[-4:]), int(longitude[-2:]))
 # Load the lunar data.
 mi = pylunar.MoonInfo(latitude, longitude)
@@ -153,7 +164,7 @@ def get_lunar_phase(time_index):
 
     lt = t[time_index]
     mi.update((lt.year, lt.month, lt.day, lt.hour, 0, 0))
-    return mi.fractional_phase(), mi.phase_name()
+    return mi.phase_name()
 
 
 def get_new_month():
@@ -196,14 +207,14 @@ def get_start_time():
     # Get the start of the new moon.
     q = 0
     while q < len(heights):
-        if get_lunar_phase(q)[1] == "NEW_MOON":
+        if get_lunar_phase(q) == "NEW_MOON":
             break
         q += 1
 
     # Get the first high tide in the tidal height data.
-    for i in range(q, len(heights) - 1):
-        if heights[i] > heights[i - 1] and heights[i] > heights[i + 1]:
-            return i
+    for j in range(q, len(heights) - 1):
+        if heights[j] > heights[j - 1] and heights[j] > heights[j + 1]:
+            return j
     # Oops something very bad happened.
     return -1
 
@@ -216,11 +227,11 @@ def get_t1(start_time):
     """
 
     got_middle_high_tide = False
-    for i in range(start_time + 1, len(heights) - 1):
-        if heights[i] > heights[i - 1] and heights[i] > heights[i + 1]:
+    for j in range(start_time + 1, len(heights) - 1):
+        if heights[j] >= heights[j - 1] and heights[j] > heights[j + 1]:
             # Return the second high tide.
             if got_middle_high_tide:
-                return i
+                return j
             # Skip the first high tide.
             else:
                 got_middle_high_tide = True
@@ -317,9 +328,8 @@ while not done:
     # Get the LaTeX symbol for the elapsed phase, if any.
     # If the phase wrapped around, it is a new month.
     end_of_month = False
-    if first_month or (moon_phase_t0[1] == "WANING_CRESCENT" and moon_phase_t1[1] == "WAXING_CRESCENT") or\
-            moon_phase_t1[1] == "NEW_MOON":
-        print(t[t1])
+    if first_month or (moon_phase_t0 == "WANING_CRESCENT" and moon_phase_t1 == "WAXING_CRESCENT") or\
+            moon_phase_t1 == "NEW_MOON":
         end_of_month = True
         moon_phase_index = 0
         # If this was the final month, stop!
@@ -335,12 +345,14 @@ while not done:
             # Remove a blank row, if any.
             tex = tex.replace(r"\\\hline \\\hline", r"\\\hline")
             tex += get_new_month()
+        if not done:
+            print(f"{MONTHS[current_month_index]}: {t[t1]}")
     # Get half and quarter moon phases.
-    elif moon_phase_t0[1] == "WAXING_CRESCENT" and moon_phase_t1[1] == "WAXING_GIBBOUS":
+    elif moon_phase_t0 == "WAXING_CRESCENT" and moon_phase_t1 == "WAXING_GIBBOUS":
         moon_phase_index = 1
-    elif moon_phase_t0[1] == "WAXING_GIBBOUS" and moon_phase_t1[1] == "WANING_GIBBOUS":
+    elif moon_phase_t0 == "WAXING_GIBBOUS" and moon_phase_t1 == "WANING_GIBBOUS":
         moon_phase_index = 2
-    elif moon_phase_t0[1] == "WANING_GIBBOUS" and moon_phase_t1[1] == "WANING_CRESCENT":
+    elif moon_phase_t0 == "WANING_GIBBOUS" and moon_phase_t1 == "WANING_CRESCENT":
         moon_phase_index = 3
     # Do not show a lunar symbol.
     else:
@@ -394,8 +406,7 @@ while not done:
     image_counter += 1
 
     # Create a new tidal plot of the heights between the times t0 and t1.
-    if plot_new_graphs:
-        plot(np.array(heights[t0:t1]))
+    plot(np.array(heights[t0:t1]))
 
     # Append the day to the LaTeX data.
     tex += calendar_cell
@@ -414,4 +425,30 @@ tex += r"\end{document}"
 with open("calendar.tex", "wt") as f:
     f.write(tex)
 
+print("Generated calendar.tex")
+
+# Get all of the packages used in the .tex file.
+latex_packages = re.findall(r"\\usepackage{(.*?)}", tex)
+any_missing = False
+# Install missing LaTeX packages.
+for p in latex_packages:
+    if system() == "Windows":
+        installed_latex = check_output(["findtexmf", p + ".sty"])
+        if installed_latex == b'':
+            call(["mpm", f"--install={p}"])
+            any_missing = True
+    else:
+        installed_latex = check_output(["kpsewhich", p + ".sty"])
+        if installed_latex == b'':
+            call(["tlmgr", "install", p])
+            any_missing = True
+if any_missing:
+    print("Installed missing LaTeX packages")
+
+# Generate the pdf.
+print("Generating pdf (this may take a while)...")
+if system() == "Windows":
+    call(["pdflatex", "-jobname", "calendar", "calendar.tex"], stdout=open(devnull, "wb"))
+else:
+    call(["pdflatex", "-job-name=calendar", "calendar.tex"], stdout=open(devnull, "wb"))
 print("Done!")
