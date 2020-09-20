@@ -29,7 +29,7 @@ If you want to try making your own calendar, this repo contains most of the tool
 ### Required Software
 
 - Python 3.7+
-- LaTeX
+- XeLaTeX
 
 ### How to run the program
 

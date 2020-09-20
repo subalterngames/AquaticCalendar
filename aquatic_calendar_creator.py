@@ -448,7 +448,7 @@ if any_missing:
 # Generate the pdf.
 print("Generating pdf (this may take a while)...")
 if system() == "Windows":
-    call(["pdflatex", "-jobname", "calendar", "calendar.tex"], stdout=open(devnull, "wb"))
+    call(["xelatex", "-jobname", "calendar", "calendar.tex"], stdout=open(devnull, "wb"))
 else:
-    call(["pdflatex", "-job-name=calendar", "calendar.tex"], stdout=open(devnull, "wb"))
+    call(["xelatex", "-job-name=calendar", "calendar.tex"], stdout=open(devnull, "wb"))
 print("Done!")
