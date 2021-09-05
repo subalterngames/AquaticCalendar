@@ -1,41 +1,72 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7140 64-bit) (preloaded format=xelatex 2019.9.4)  20 SEP 2020 11:18
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.6.29) (preloaded format=xelatex 2020.7.6)  5 SEP 2021 14:33
 entering extended mode
 **./calendar.tex
 (calendar.tex
-LaTeX2e <2018-12-01>
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-06-18>
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrbo
+ok.cls"
+Document Class: scrbook 2020/09/21 v3.32 KOMA-Script document class (book)
 
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\s
-crbook.cls"
-Document Class: scrbook 2019/02/01 v3.26b KOMA-Script document class (book)
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrkb
+ase.sty"
+Package: scrkbase 2020/09/21 v3.32 KOMA-Script package (KOMA-Script-dependent b
+asics and keyval usage)
 
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\s
-crkbase.sty"
-Package: scrkbase 2019/02/01 v3.26b KOMA-Script package (KOMA-Script-dependent 
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrba
+se.sty"
+Package: scrbase 2020/09/21 v3.32 KOMA-Script package (KOMA-Script-independent 
 basics and keyval usage)
 
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\s
-crbase.sty"
-Package: scrbase 2019/02/01 v3.26b KOMA-Script package (KOMA-Script-independent
- basics and keyval usage)
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlf
+ile.sty"
+Package: scrlfile 2020/09/21 v3.32 KOMA-Script package (file load hooks)
 
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\keyv
-al.sty"
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks14
-)
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\s
-crlfile.sty"
-Package: scrlfile 2019/02/01 v3.26b KOMA-Script package (loading files)
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlf
+ile-patcholdlatex.sty"
+Package: scrlfile-patcholdlatex 2020/09/21 v3.32 KOMA-Script package (patching 
+old LaTeX kernels)
+
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlo
+go.sty"
+Package: scrlogo 2020/09/21 v3.32 KOMA-Script package (logo)
+))
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse
+\xparse.sty"
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.st
+y"
+Package: expl3 2020-06-18 L3 programming layer (loader) 
+
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backe
+nd-xdvipdfmx.def"
+File: l3backend-xdvipdfmx.def 2020-06-29 L3 backend support: xdvipdfmx
+\g__graphics_track_int=\count163
+\l__pdf_internal_box=\box45
+\g__pdf_backend_object_int=\count164
+\g__pdf_backend_annotation_int=\count165
+))
+Package: xparse 2020-05-15 L3 Experimental document command parser
+
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse
+\xparse-generic.tex"
+\l__xparse_current_arg_int=\count166
+\g__xparse_grabber_int=\count167
+\l__xparse_m_args_int=\count168
+\l__xparse_v_nesting_int=\count169
 )))
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\t
-ocbasic.sty"
-Package: tocbasic 2019/02/01 v3.26b KOMA-Script package (handling toc-files)
-\scr@dte@tocline@numberwidth=\skip41
-\scr@dte@tocline@numbox=\box27
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.s
+ty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)))
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\tocba
+sic.sty"
+Package: tocbasic 2020/09/21 v3.32 KOMA-Script package (handling toc-files)
+\scr@dte@tocline@numberwidth=\skip47
+\scr@dte@tocline@numbox=\box46
 )
-Package tocbasic Info: omitting babel extension for `toc'
-(tocbasic)             because of feature `nobabel' available
-(tocbasic)             for `toc' on input line 136.
+Package tocbasic Info: babel extension for `toc' omitted
+(tocbasic)             because of missing \bbl@set@language on input line 137.
 Package scrbook Info: You've used standard option `11pt'.
 (scrbook)             This is correct!
 (scrbook)             Internally I'm using `fontsize=11pt'.
@@ -49,18 +80,18 @@ Class scrbook Info: You've used standard option `openany'.
 (scrbook)           you'd have to use `open=any' there
 (scrbook)           instead of `openany', too.
 Class scrbook Info: File `scrsize11pt.clo' used to setup font sizes on input li
-ne 2376.
+ne 2437.
 
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\s
-crsize11pt.clo"
-File: scrsize11pt.clo 2019/02/01 v3.26b KOMA-Script font size class option (11p
-t)
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrsi
+ze11pt.clo"
+File: scrsize11pt.clo 2020/09/21 v3.32 KOMA-Script font size class option (11pt
 )
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\t
-ypearea.sty"
-Package: typearea 2019/02/01 v3.26b KOMA-Script package (type area)
-\ta@bcor=\skip42
-\ta@div=\count80
+)
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\typea
+rea.sty"
+Package: typearea 2020/09/21 v3.32 KOMA-Script package (type area)
+\ta@bcor=\skip48
+\ta@div=\count170
 Package typearea Info: You've used standard option `letterpaper'.
 (typearea)             This is correct!
 (typearea)             Internally I'm using `paper=letter'.
@@ -73,10 +104,10 @@ Package typearea Info: You've used standard option `landscape'.
 (typearea)             If you'd like to set the option with \KOMAoptions,
 (typearea)             you'd have to use `paper=landscape' there
 (typearea)             instead of `landscape', too.
-\ta@hblk=\skip43
-\ta@vblk=\skip44
-\ta@temp=\skip45
-\footheight=\skip46
+\ta@hblk=\skip49
+\ta@vblk=\skip50
+\ta@temp=\skip51
+\footheight=\skip52
 Package typearea Info: With paper sizes other than (almost) `A4' predefined
 (typearea)             DIV values do not exist. Using DIV calculation for good
 (typearea)             line width (unless using `version=3.24` or prior).
@@ -105,181 +136,197 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 11.0pt
 (typearea)              \footskip       = 47.6pt
 (typearea)              \baselineskip   = 13.6pt
-(typearea)              on input line 1715.
+(typearea)              on input line 1740.
 )
-\c@part=\count81
-\c@chapter=\count82
-\c@section=\count83
-\c@subsection=\count84
-\c@subsubsection=\count85
-\c@paragraph=\count86
-\c@subparagraph=\count87
-\scr@dte@chapter@maxnumwidth=\skip47
+\c@part=\count171
+\c@chapter=\count172
+\c@section=\count173
+\c@subsection=\count174
+\c@subsubsection=\count175
+\c@paragraph=\count176
+\c@subparagraph=\count177
+\scr@dte@chapter@maxnumwidth=\skip53
 Class scrbook Info: using compatibility default `afterindent=bysign'
-(scrbook)           for `\chapter on input line 5303.
-\scr@dte@section@maxnumwidth=\skip48
+(scrbook)           for `\chapter on input line 5625.
+\scr@dte@section@maxnumwidth=\skip54
 Class scrbook Info: using compatibility default `runin=bysign'
-(scrbook)           for `\section on input line 5313.
+(scrbook)           for `\section on input line 5636.
 Class scrbook Info: using compatibility default `afterindent=bysign'
-(scrbook)           for `\section on input line 5313.
-\scr@dte@part@maxnumwidth=\skip49
+(scrbook)           for `\section on input line 5636.
+\scr@dte@part@maxnumwidth=\skip55
 Class scrbook Info: using compatibility default `afterindent=true'
-(scrbook)           for `\part on input line 5322.
-\scr@dte@subsection@maxnumwidth=\skip50
+(scrbook)           for `\part on input line 5645.
+\scr@dte@subsection@maxnumwidth=\skip56
 Class scrbook Info: using compatibility default `runin=bysign'
-(scrbook)           for `\subsection on input line 5332.
+(scrbook)           for `\subsection on input line 5655.
 Class scrbook Info: using compatibility default `afterindent=bysign'
-(scrbook)           for `\subsection on input line 5332.
-\scr@dte@subsubsection@maxnumwidth=\skip51
+(scrbook)           for `\subsection on input line 5655.
+\scr@dte@subsubsection@maxnumwidth=\skip57
 Class scrbook Info: using compatibility default `runin=bysign'
-(scrbook)           for `\subsubsection on input line 5342.
+(scrbook)           for `\subsubsection on input line 5665.
 Class scrbook Info: using compatibility default `afterindent=bysign'
-(scrbook)           for `\subsubsection on input line 5342.
-\scr@dte@paragraph@maxnumwidth=\skip52
+(scrbook)           for `\subsubsection on input line 5665.
+\scr@dte@paragraph@maxnumwidth=\skip58
 Class scrbook Info: using compatibility default `runin=bysign'
-(scrbook)           for `\paragraph on input line 5352.
+(scrbook)           for `\paragraph on input line 5676.
 Class scrbook Info: using compatibility default `afterindent=bysign'
-(scrbook)           for `\paragraph on input line 5352.
-\scr@dte@subparagraph@maxnumwidth=\skip53
+(scrbook)           for `\paragraph on input line 5676.
+\scr@dte@subparagraph@maxnumwidth=\skip59
 Class scrbook Info: using compatibility default `runin=bysign'
-(scrbook)           for `\subparagraph on input line 5362.
+(scrbook)           for `\subparagraph on input line 5686.
 Class scrbook Info: using compatibility default `afterindent=bysign'
-(scrbook)           for `\subparagraph on input line 5362.
-\abovecaptionskip=\skip54
-\belowcaptionskip=\skip55
-\c@pti@nb@sid@b@x=\box28
-Package tocbasic Info: omitting babel extension for `lof'
-(tocbasic)             because of feature `nobabel' available
-(tocbasic)             for `lof' on input line 6617.
-\scr@dte@figure@maxnumwidth=\skip56
-\c@figure=\count88
-Package tocbasic Info: omitting babel extension for `lot'
-(tocbasic)             because of feature `nobabel' available
-(tocbasic)             for `lot' on input line 6638.
-\scr@dte@table@maxnumwidth=\skip57
-\c@table=\count89
-Class scrbook Info: Redefining `\numberline' on input line 6811.
-\bibindent=\dimen102
+(scrbook)           for `\subparagraph on input line 5686.
+\abovecaptionskip=\skip60
+\belowcaptionskip=\skip61
+\c@pti@nb@sid@b@x=\box47
+Package tocbasic Info: babel extension for `lof' omitted
+(tocbasic)             because of missing \bbl@set@language on input line 6929.
+
+\scr@dte@figure@maxnumwidth=\skip62
+\c@figure=\count178
+Package tocbasic Info: babel extension for `lot' omitted
+(tocbasic)             because of missing \bbl@set@language on input line 6950.
+
+\scr@dte@table@maxnumwidth=\skip63
+\c@table=\count179
+Class scrbook Info: Redefining `\numberline' on input line 7123.
+\bibindent=\dimen134
 )
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/colortbl\colo
-rtbl.sty"
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\colortbl
+.sty"
 Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
 
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\array.s
-ty"
-Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
-\col@sep=\dimen103
-\ar@mcellbox=\box29
-\extrarowheight=\dimen104
-\NC@list=\toks15
-\extratabsurround=\skip58
-\backup@length=\skip59
-\ar@cellbox=\box30
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty"
+Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
+\col@sep=\dimen135
+\ar@mcellbox=\box48
+\extrarowheight=\dimen136
+\NC@list=\toks16
+\extratabsurround=\skip64
+\backup@length=\skip65
+\ar@cellbox=\box49
 )
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\colo
-r.sty"
-Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.st
+y"
+Package: color 2019/11/23 v1.2a Standard LaTeX Color (DPC)
 
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\
-color.cfg"
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\colo
+r.cfg"
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: xetex.def on input line 147.
 
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-def\
-xetex.def"
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\xete
+x.def"
 File: xetex.def 2017/06/24 v5.0h Graphics/color driver for xetex
 ))
-\everycr=\toks16
-\minrowclearance=\skip60
+\everycr=\toks17
+\minrowclearance=\skip66
 )
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\tabular
-x.sty"
-Package: tabularx 2016/02/03 v2.11b `tabularx' package (DPC)
-\TX@col@width=\dimen105
-\TX@old@table=\dimen106
-\TX@old@col=\dimen107
-\TX@target=\dimen108
-\TX@delta=\dimen109
-\TX@cols=\count90
-\TX@ftn=\toks17
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.st
+y"
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+\TX@col@width=\dimen137
+\TX@old@table=\dimen138
+\TX@old@col=\dimen139
+\TX@target=\dimen140
+\TX@delta=\dimen141
+\TX@cols=\count180
+\TX@ftn=\toks18
 )
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geom
-etry.sty"
-Package: geometry 2018/04/16 v5.8 Page Geometry
-
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\if
-pdf.sty"
-Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
-)
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\if
-vtex.sty"
-Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
-Package ifvtex Info: VTeX not detected.
-)
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/ifxetex\ifx
-etex.sty"
-Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
-)
-\Gm@cnth=\count91
-\Gm@cntv=\count92
-\c@Gm@tempcnt=\count93
-\Gm@bindingoffset=\dimen110
-\Gm@wd@mp=\dimen111
-\Gm@odd@mp=\dimen112
-\Gm@even@mp=\dimen113
-\Gm@layoutwidth=\dimen114
-\Gm@layoutheight=\dimen115
-\Gm@layouthoffset=\dimen116
-\Gm@layoutvoffset=\dimen117
-\Gm@dimlist=\toks18
-
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/xelatex/xetexconfig
-\geometry.cfg"))
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/marginnote\ma
-rginnote.sty"
-Package: marginnote 2018/08/09 v1.4b non floating margin notes for LaTeX
-\c@mn@abspage=\count94
-)
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\grap
-hicx.sty"
-Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
-
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\grap
-hics.sty"
-Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
-
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\trig
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry
 .sty"
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.st
+y"
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+"
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+\Gm@cnth=\count181
+\Gm@cntv=\count182
+\c@Gm@tempcnt=\count183
+\Gm@bindingoffset=\dimen142
+\Gm@wd@mp=\dimen143
+\Gm@odd@mp=\dimen144
+\Gm@even@mp=\dimen145
+\Gm@layoutwidth=\dimen146
+\Gm@layoutheight=\dimen147
+\Gm@layouthoffset=\dimen148
+\Gm@layoutvoffset=\dimen149
+\Gm@dimlist=\toks19
+
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/xelatex/xetexconfig\geo
+metry.cfg"))
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/latex/marginnote\margin
+note.sty"
+Package: marginnote 2018/08/09 v1.4b non floating margin notes for LaTeX
+\c@mn@abspage=\count184
+)
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx
+.sty"
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics
+.sty"
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\
-graphics.cfg"
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\grap
+hics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: xetex.def on input line 99.
+Package graphics Info: Driver file: xetex.def on input line 105.
 )
-\Gin@req@height=\dimen118
-\Gin@req@width=\dimen119
+\Gin@req@height=\dimen150
+\Gin@req@width=\dimen151
 )
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/wasysym\wasys
-ym.sty"
-Package: wasysym 2003/10/30 v2.0 Wasy-2 symbol support package
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/latex/wasysym\wasysym.s
+ty"
+Package: wasysym 2020/01/19 v2.4 Wasy-2 symbol support package
 \symwasy=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
-(Font)                  U/wasy/m/n --> U/wasy/b/n on input line 90.
+(Font)                  U/wasy/m/n --> U/wasy/b/n on input line 93.
 )
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/sectsty\sects
-ty.sty"
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/latex/sectsty\sectsty.s
+ty"
 Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
 les
+
+
+LaTeX Warning: Command \underbar  has changed.
+               Check if current package is valid.
+
+
+LaTeX Warning: Command \underline  has changed.
+               Check if current package is valid.
+
 )
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xcolor\xcolor
-.sty"
+
+Class scrbook Warning: Incompatible package `sectsty' loaded!
+(scrbook)              Package `sectsty' up to version 2.0.2 is incompatible
+(scrbook)              with KOMA-Script from version 2.8e released in 2001.
+(scrbook)              You should avoid that package and configure the
+(scrbook)              section titles of your document using the KOMA-Script
+(scrbook)              user interface, e.g., \chapterlinesformat,
+(scrbook)              \RedeclareSectionCommand etc. or you should ask
+(scrbook)              the `sectsty' maintainer for a more compatible release.
+(scrbook)              Ignoring this warning could result in several error
+(scrbook)              messages and formatting issues after loading package
+(scrbook)              `sectsty' on input line 1.
+
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+"
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\
-color.cfg"
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\colo
+r.cfg"
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: xetex.def on input line 225.
@@ -293,364 +340,388 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/background\ba
-ckground.sty"
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/latex/background\backgr
+ound.sty"
 Package: background 2014/03/04 v2.1 background material
 
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xkeyval\xkeyv
-al.sty"
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.s
+ty"
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/xkeyval\xke
-yval.tex"
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/xkeyval\xkv
-utils.tex"
-\XKV@toks=\toks19
-\XKV@tempa@toks=\toks20
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval
+.tex"
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutil
+s.tex"
+\XKV@toks=\toks20
+\XKV@tempa@toks=\toks21
 )
-\XKV@depth=\count95
+\XKV@depth=\count185
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/frontendl
-ayer\tikz.sty"
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/basiclaye
-r\pgf.sty"
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/utilities
-\pgfrcs.sty"
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utiliti
-es\pgfutil-common.tex"
-\pgfutil@everybye=\toks21
-\pgfutil@tempdima=\dimen120
-\pgfutil@tempdimb=\dimen121
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer
+\tikz.sty"
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pg
+f.sty"
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgf
+rcs.sty"
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\p
+gfutil-common.tex"
+\pgfutil@everybye=\toks22
+\pgfutil@tempdima=\dimen152
+\pgfutil@tempdimb=\dimen153
 
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utiliti
-es\pgfutil-common-lists.tex"))
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utiliti
-es\pgfutil-latex.def"
-\pgfutil@abb=\box31
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\p
+gfutil-common-lists.tex"))
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\p
+gfutil-latex.def"
+\pgfutil@abb=\box50
 
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ms\everyshi.s
-ty"
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/latex/ms\everyshi.sty"
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utiliti
-es\pgfrcs.code.tex"
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf\pgf.rev
-ision.tex")
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\p
+gfrcs.code.tex"
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revisio
+n.tex")
 Package: pgfrcs 2020/01/08 v3.1.5b (3.1.5b)
 ))
 Package: pgf 2020/01/08 v3.1.5b (3.1.5b)
 
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/basiclaye
-r\pgfcore.sty"
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/systemlay
-er\pgfsys.sty"
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systeml
-ayer\pgfsys.code.tex"
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pg
+fcore.sty"
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\p
+gfsys.sty"
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer
+\pgfsys.code.tex"
 Package: pgfsys 2020/01/08 v3.1.5b (3.1.5b)
 
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utiliti
-es\pgfkeys.code.tex"
-\pgfkeys@pathtoks=\toks22
-\pgfkeys@temptoks=\toks23
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\p
+gfkeys.code.tex"
+\pgfkeys@pathtoks=\toks23
+\pgfkeys@temptoks=\toks24
 
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utiliti
-es\pgfkeysfiltered.code.tex"
-\pgfkeys@tmptoks=\toks24
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\p
+gfkeysfiltered.code.tex"
+\pgfkeys@tmptoks=\toks25
 ))
-\pgf@x=\dimen122
-\pgf@y=\dimen123
-\pgf@xa=\dimen124
-\pgf@ya=\dimen125
-\pgf@xb=\dimen126
-\pgf@yb=\dimen127
-\pgf@xc=\dimen128
-\pgf@yc=\dimen129
-\pgf@xd=\dimen130
-\pgf@yd=\dimen131
+\pgf@x=\dimen154
+\pgf@y=\dimen155
+\pgf@xa=\dimen156
+\pgf@ya=\dimen157
+\pgf@xb=\dimen158
+\pgf@yb=\dimen159
+\pgf@xc=\dimen160
+\pgf@yc=\dimen161
+\pgf@xd=\dimen162
+\pgf@yd=\dimen163
 \w@pgf@writea=\write3
-\r@pgf@reada=\read1
-\c@pgf@counta=\count96
-\c@pgf@countb=\count97
-\c@pgf@countc=\count98
-\c@pgf@countd=\count99
-\t@pgf@toka=\toks25
-\t@pgf@tokb=\toks26
-\t@pgf@tokc=\toks27
-\pgf@sys@id@count=\count100
+\r@pgf@reada=\read2
+\c@pgf@counta=\count186
+\c@pgf@countb=\count187
+\c@pgf@countc=\count188
+\c@pgf@countd=\count189
+\t@pgf@toka=\toks26
+\t@pgf@tokb=\toks27
+\t@pgf@tokc=\toks28
+\pgf@sys@id@count=\count190
 
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systeml
-ayer\pgf.cfg"
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer
+\pgf.cfg"
 File: pgf.cfg 2020/01/08 v3.1.5b (3.1.5b)
 )
 Driver file for pgf: pgfsys-xetex.def
 
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systeml
-ayer\pgfsys-xetex.def"
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer
+\pgfsys-xetex.def"
 File: pgfsys-xetex.def 2020/01/08 v3.1.5b (3.1.5b)
 
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systeml
-ayer\pgfsys-dvipdfmx.def"
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer
+\pgfsys-dvipdfmx.def"
 File: pgfsys-dvipdfmx.def 2020/01/08 v3.1.5b (3.1.5b)
 
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systeml
-ayer\pgfsys-common-pdf.def"
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer
+\pgfsys-common-pdf.def"
 File: pgfsys-common-pdf.def 2020/01/08 v3.1.5b (3.1.5b)
 )
-\pgfsys@objnum=\count101
+\pgfsys@objnum=\count191
 )))
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systeml
-ayer\pgfsyssoftpath.code.tex"
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer
+\pgfsyssoftpath.code.tex"
 File: pgfsyssoftpath.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfsyssoftpath@smallbuffer@items=\count102
-\pgfsyssoftpath@bigbuffer@items=\count103
+\pgfsyssoftpath@smallbuffer@items=\count192
+\pgfsyssoftpath@bigbuffer@items=\count193
 )
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systeml
-ayer\pgfsysprotocol.code.tex"
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer
+\pgfsysprotocol.code.tex"
 File: pgfsysprotocol.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 ))
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basicla
-yer\pgfcore.code.tex"
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\
+pgfcore.code.tex"
 Package: pgfcore 2020/01/08 v3.1.5b (3.1.5b)
 
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pg
-fmath.code.tex"
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pg
-fmathcalc.code.tex"
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pg
-fmathutil.code.tex")
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pg
-fmathparser.code.tex"
-\pgfmath@dimen=\dimen132
-\pgfmath@count=\count104
-\pgfmath@box=\box32
-\pgfmath@toks=\toks28
-\pgfmath@stack@operand=\toks29
-\pgfmath@stack@operation=\toks30
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmat
+h.code.tex"
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmat
+hcalc.code.tex"
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmat
+hutil.code.tex")
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmat
+hparser.code.tex"
+\pgfmath@dimen=\dimen164
+\pgfmath@count=\count194
+\pgfmath@box=\box51
+\pgfmath@toks=\toks29
+\pgfmath@stack@operand=\toks30
+\pgfmath@stack@operation=\toks31
 )
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pg
-fmathfunctions.code.tex"
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pg
-fmathfunctions.basic.code.tex")
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pg
-fmathfunctions.trigonometric.code.tex")
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pg
-fmathfunctions.random.code.tex")
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pg
-fmathfunctions.comparison.code.tex")
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pg
-fmathfunctions.base.code.tex")
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pg
-fmathfunctions.round.code.tex")
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pg
-fmathfunctions.misc.code.tex")
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pg
-fmathfunctions.integerarithmetics.code.tex")))
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pg
-fmathfloat.code.tex"
-\c@pgfmathroundto@lastzeros=\count105
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmat
+hfunctions.code.tex"
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmat
+hfunctions.basic.code.tex")
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmat
+hfunctions.trigonometric.code.tex")
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmat
+hfunctions.random.code.tex")
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmat
+hfunctions.comparison.code.tex")
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmat
+hfunctions.base.code.tex")
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmat
+hfunctions.round.code.tex")
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmat
+hfunctions.misc.code.tex")
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmat
+hfunctions.integerarithmetics.code.tex")))
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmat
+hfloat.code.tex"
+\c@pgfmathroundto@lastzeros=\count195
 ))
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pg
-fint.code.tex")
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basicla
-yer\pgfcorepoints.code.tex"
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint
+.code.tex")
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\
+pgfcorepoints.code.tex"
 File: pgfcorepoints.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@picminx=\dimen133
-\pgf@picmaxx=\dimen134
-\pgf@picminy=\dimen135
-\pgf@picmaxy=\dimen136
-\pgf@pathminx=\dimen137
-\pgf@pathmaxx=\dimen138
-\pgf@pathminy=\dimen139
-\pgf@pathmaxy=\dimen140
-\pgf@xx=\dimen141
-\pgf@xy=\dimen142
-\pgf@yx=\dimen143
-\pgf@yy=\dimen144
-\pgf@zx=\dimen145
-\pgf@zy=\dimen146
+\pgf@picminx=\dimen165
+\pgf@picmaxx=\dimen166
+\pgf@picminy=\dimen167
+\pgf@picmaxy=\dimen168
+\pgf@pathminx=\dimen169
+\pgf@pathmaxx=\dimen170
+\pgf@pathminy=\dimen171
+\pgf@pathmaxy=\dimen172
+\pgf@xx=\dimen173
+\pgf@xy=\dimen174
+\pgf@yx=\dimen175
+\pgf@yy=\dimen176
+\pgf@zx=\dimen177
+\pgf@zy=\dimen178
 )
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basicla
-yer\pgfcorepathconstruct.code.tex"
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\
+pgfcorepathconstruct.code.tex"
 File: pgfcorepathconstruct.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@path@lastx=\dimen147
-\pgf@path@lasty=\dimen148
+\pgf@path@lastx=\dimen179
+\pgf@path@lasty=\dimen180
 )
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basicla
-yer\pgfcorepathusage.code.tex"
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\
+pgfcorepathusage.code.tex"
 File: pgfcorepathusage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@shorten@end@additional=\dimen149
-\pgf@shorten@start@additional=\dimen150
+\pgf@shorten@end@additional=\dimen181
+\pgf@shorten@start@additional=\dimen182
 )
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basicla
-yer\pgfcorescopes.code.tex"
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\
+pgfcorescopes.code.tex"
 File: pgfcorescopes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfpic=\box33
-\pgf@hbox=\box34
-\pgf@layerbox@main=\box35
-\pgf@picture@serial@count=\count106
+\pgfpic=\box52
+\pgf@hbox=\box53
+\pgf@layerbox@main=\box54
+\pgf@picture@serial@count=\count196
 )
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basicla
-yer\pgfcoregraphicstate.code.tex"
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\
+pgfcoregraphicstate.code.tex"
 File: pgfcoregraphicstate.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgflinewidth=\dimen151
+\pgflinewidth=\dimen183
 )
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basicla
-yer\pgfcoretransformations.code.tex"
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\
+pgfcoretransformations.code.tex"
 File: pgfcoretransformations.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@pt@x=\dimen152
-\pgf@pt@y=\dimen153
-\pgf@pt@temp=\dimen154
+\pgf@pt@x=\dimen184
+\pgf@pt@y=\dimen185
+\pgf@pt@temp=\dimen186
 )
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basicla
-yer\pgfcorequick.code.tex"
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\
+pgfcorequick.code.tex"
 File: pgfcorequick.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basicla
-yer\pgfcoreobjects.code.tex"
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\
+pgfcoreobjects.code.tex"
 File: pgfcoreobjects.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basicla
-yer\pgfcorepathprocessing.code.tex"
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\
+pgfcorepathprocessing.code.tex"
 File: pgfcorepathprocessing.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basicla
-yer\pgfcorearrows.code.tex"
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\
+pgfcorearrows.code.tex"
 File: pgfcorearrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfarrowsep=\dimen155
+\pgfarrowsep=\dimen187
 )
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basicla
-yer\pgfcoreshade.code.tex"
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\
+pgfcoreshade.code.tex"
 File: pgfcoreshade.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@max=\dimen156
-\pgf@sys@shading@range@num=\count107
-\pgf@shadingcount=\count108
+\pgf@max=\dimen188
+\pgf@sys@shading@range@num=\count197
+\pgf@shadingcount=\count198
 )
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basicla
-yer\pgfcoreimage.code.tex"
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\
+pgfcoreimage.code.tex"
 File: pgfcoreimage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basicla
-yer\pgfcoreexternal.code.tex"
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\
+pgfcoreexternal.code.tex"
 File: pgfcoreexternal.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfexternal@startupbox=\box36
+\pgfexternal@startupbox=\box55
 ))
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basicla
-yer\pgfcorelayers.code.tex"
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\
+pgfcorelayers.code.tex"
 File: pgfcorelayers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basicla
-yer\pgfcoretransparency.code.tex"
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\
+pgfcoretransparency.code.tex"
 File: pgfcoretransparency.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basicla
-yer\pgfcorepatterns.code.tex"
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\
+pgfcorepatterns.code.tex"
 File: pgfcorepatterns.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basicla
-yer\pgfcorerdf.code.tex"
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\
+pgfcorerdf.code.tex"
 File: pgfcorerdf.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )))
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/modules
-\pgfmoduleshapes.code.tex"
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgf
+moduleshapes.code.tex"
 File: pgfmoduleshapes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfnodeparttextbox=\box37
+\pgfnodeparttextbox=\box56
 )
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/modules
-\pgfmoduleplot.code.tex"
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgf
+moduleplot.code.tex"
 File: pgfmoduleplot.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/compatibi
-lity\pgfcomp-version-0-65.sty"
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility
+\pgfcomp-version-0-65.sty"
 Package: pgfcomp-version-0-65 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@nodesepstart=\dimen157
-\pgf@nodesepend=\dimen158
+\pgf@nodesepstart=\dimen189
+\pgf@nodesepend=\dimen190
 )
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/compatibi
-lity\pgfcomp-version-1-18.sty"
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility
+\pgfcomp-version-1-18.sty"
 Package: pgfcomp-version-1-18 2020/01/08 v3.1.5b (3.1.5b)
 ))
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/utilities
-\pgffor.sty"
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/utilities
-\pgfkeys.sty"
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utiliti
-es\pgfkeys.code.tex"))
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/math\pgfm
-ath.sty"
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pg
-fmath.code.tex"))
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utiliti
-es\pgffor.code.tex"
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgf
+for.sty"
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgf
+keys.sty"
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\p
+gfkeys.code.tex"))
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.
+sty"
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmat
+h.code.tex"))
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\p
+gffor.code.tex"
 Package: pgffor 2020/01/08 v3.1.5b (3.1.5b)
 
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pg
-fmath.code.tex")
-\pgffor@iter=\dimen159
-\pgffor@skip=\dimen160
-\pgffor@stack=\toks31
-\pgffor@toks=\toks32
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmat
+h.code.tex")
+\pgffor@iter=\dimen191
+\pgffor@skip=\dimen192
+\pgffor@stack=\toks32
+\pgffor@toks=\toks33
 ))
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/fronten
-dlayer/tikz\tikz.code.tex"
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlay
+er/tikz\tikz.code.tex"
 Package: tikz 2020/01/08 v3.1.5b (3.1.5b)
 
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/librari
-es\pgflibraryplothandlers.code.tex"
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\p
+gflibraryplothandlers.code.tex"
 File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@plot@mark@count=\count109
-\pgfplotmarksize=\dimen161
+\pgf@plot@mark@count=\count199
+\pgfplotmarksize=\dimen193
 )
-\tikz@lastx=\dimen162
-\tikz@lasty=\dimen163
-\tikz@lastxsaved=\dimen164
-\tikz@lastysaved=\dimen165
-\tikz@lastmovetox=\dimen166
-\tikz@lastmovetoy=\dimen167
-\tikzleveldistance=\dimen168
-\tikzsiblingdistance=\dimen169
-\tikz@figbox=\box38
-\tikz@figbox@bg=\box39
-\tikz@tempbox=\box40
-\tikz@tempbox@bg=\box41
-\tikztreelevel=\count110
-\tikznumberofchildren=\count111
-\tikznumberofcurrentchild=\count112
-\tikz@fig@count=\count113
+\tikz@lastx=\dimen194
+\tikz@lasty=\dimen195
+\tikz@lastxsaved=\dimen196
+\tikz@lastysaved=\dimen197
+\tikz@lastmovetox=\dimen198
+\tikz@lastmovetoy=\dimen199
+\tikzleveldistance=\dimen256
+\tikzsiblingdistance=\dimen257
+\tikz@figbox=\box57
+\tikz@figbox@bg=\box58
+\tikz@tempbox=\box59
+\tikz@tempbox@bg=\box60
+\tikztreelevel=\count266
+\tikznumberofchildren=\count267
+\tikznumberofcurrentchild=\count268
+\tikz@fig@count=\count269
 
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/modules
-\pgfmodulematrix.code.tex"
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgf
+modulematrix.code.tex"
 File: pgfmodulematrix.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfmatrixcurrentrow=\count114
-\pgfmatrixcurrentcolumn=\count115
-\pgf@matrix@numberofcolumns=\count116
+\pgfmatrixcurrentrow=\count270
+\pgfmatrixcurrentcolumn=\count271
+\pgf@matrix@numberofcolumns=\count272
 )
-\tikz@expandcount=\count117
+\tikz@expandcount=\count273
 
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/fronten
-dlayer/tikz/libraries\tikzlibrarytopaths.code.tex"
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlay
+er/tikz/libraries\tikzlibrarytopaths.code.tex"
 File: tikzlibrarytopaths.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )))
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/everypage\eve
-rypage.sty"
-Package: everypage 2007/06/20 1.1 Hooks to run on every page
-)
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\afterpa
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/latex/everypage\everypa
 ge.sty"
+Package: everypage 2020/10/17 R2.0b Hooks to run on every page
+
+
+Package everypage Warning: Functionality similar to this package has recently
+(everypage)                been implemented in LaTeX. This package is now in
+(everypage)                legacy status.
+(everypage)                Please, don't use it in new documents and packages.
+
+
+Package everypage Warning: You appear to be running a version of LaTeX
+(everypage)                too old to provide the new functionality.
+(everypage)                Forcing fallback to `everypage-1x` that
+(everypage)                uses an older code base.
+
+
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/latex/everypage\everypa
+ge-1x.sty"
+Package: everypage-1x 2020/10/10 1.2 Hooks to run on every page
+))
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/latex/tools\afterpage.s
+ty"
 Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
-\AP@output=\toks33
-\AP@partial=\box42
-\AP@footins=\box43
+\AP@output=\toks34
+\AP@partial=\box61
+\AP@footins=\box62
 )) (calendar.aux)
 \openout1 = `calendar.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 1.
 LaTeX Font Info:    ... okay on input line 1.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 1.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 1.
 LaTeX Font Info:    ... okay on input line 1.
 LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 1.
 LaTeX Font Info:    ... okay on input line 1.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 1.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 1.
+LaTeX Font Info:    ... okay on input line 1.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 1.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
+.
+
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmr.fd"
+File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
 LaTeX Font Info:    ... okay on input line 1.
 LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 1.
 LaTeX Font Info:    ... okay on input line 1.
@@ -658,6 +729,9 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 1.
 LaTeX Font Info:    ... okay on input line 1.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 1.
 LaTeX Font Info:    ... okay on input line 1.
+Package scrbase Info: activating english \contentsname on input line 1.
+Package scrbase Info: activating english \listfigurename on input line 1.
+Package scrbase Info: activating english \listtablename on input line 1.
 
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -732,11 +806,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--1
 File: ocean_images/ap32_73_1.jpg Graphic file (type bmp)
 <ocean_images/ap32_73_1.jpg>
  [4]
-("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/wasysym\uwasy
-.fd")
+("C:\Users\Seth Alter\AppData\Local\Programs\MiKTeX\tex/latex/wasysym\uwasy.fd"
+)
 Package marginnote Info: Margin note 5.7 is on absolute page 5 on input line 2.
 
-Package marginnote Info: xpos seems to be 149.73738pt on input line 2.
+Package marginnote Info: xpos seems to be 149.73976pt on input line 2.
 File: plots/0.png Graphic file (type bmp)
 <plots/0.png>
 File: plots/1.png Graphic file (type bmp)
@@ -755,7 +829,7 @@ File: plots/7.png Graphic file (type bmp)
 <plots/7.png>
 Package marginnote Info: Margin note 5.8 is on absolute page 5 on input line 2.
 
-Package marginnote Info: xpos seems to be 225.33951pt on input line 2.
+Package marginnote Info: xpos seems to be 225.33931pt on input line 2.
 File: plots/8.png Graphic file (type bmp)
 <plots/8.png>
 File: plots/9.png Graphic file (type bmp)
@@ -770,7 +844,7 @@ File: plots/13.png Graphic file (type bmp)
 <plots/13.png>
 Package marginnote Info: Margin note 5.9 is on absolute page 5 on input line 2.
 
-Package marginnote Info: xpos seems to be 140.39732pt on input line 2.
+Package marginnote Info: xpos seems to be 140.40376pt on input line 2.
 File: plots/14.png Graphic file (type bmp)
 <plots/14.png>
 File: plots/15.png Graphic file (type bmp)
@@ -840,7 +914,7 @@ File: plots/41.png Graphic file (type bmp)
 <plots/41.png>
 Package marginnote Info: Margin note 7.3 is on absolute page 7 on input line 2.
 
-Package marginnote Info: xpos seems to be 118.50833pt on input line 2.
+Package marginnote Info: xpos seems to be 118.50775pt on input line 2.
 File: plots/42.png Graphic file (type bmp)
 <plots/42.png>
 File: plots/43.png Graphic file (type bmp)
@@ -930,7 +1004,7 @@ File: plots/79.png Graphic file (type bmp)
 <plots/79.png>
 Package marginnote Info: Margin note 9.3 is on absolute page 9 on input line 2.
 
-Package marginnote Info: xpos seems to be 424.65517pt on input line 2.
+Package marginnote Info: xpos seems to be 424.6664pt on input line 2.
 File: plots/80.png Graphic file (type bmp)
 <plots/80.png>
 File: plots/81.png Graphic file (type bmp)
@@ -939,6 +1013,8 @@ File: plots/82.png Graphic file (type bmp)
 <plots/82.png>
 File: plots/83.png Graphic file (type bmp)
 <plots/83.png>
+File: plots/84.png Graphic file (type bmp)
+<plots/84.png>
 
 Underfull \hbox (badness 10000) in paragraph at lines 2--2
 
@@ -950,8 +1026,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--2
 File: ocean_images/DP169651.jpg Graphic file (type bmp)
 <ocean_images/DP169651.jpg>
  [10]
-File: plots/84.png Graphic file (type bmp)
-<plots/84.png>
 File: plots/85.png Graphic file (type bmp)
 <plots/85.png>
 File: plots/86.png Graphic file (type bmp)
@@ -1049,7 +1123,7 @@ File: plots/126.png Graphic file (type bmp)
 <plots/126.png>
 Package marginnote Info: Margin note 13.3 is on absolute page 13 on input line 
 2.
-Package marginnote Info: xpos seems to be 221.6395pt on input line 2.
+Package marginnote Info: xpos seems to be 221.6353pt on input line 2.
 File: plots/127.png Graphic file (type bmp)
 <plots/127.png>
 File: plots/128.png Graphic file (type bmp)
@@ -1078,8 +1152,6 @@ File: plots/139.png Graphic file (type bmp)
 <plots/139.png>
 File: plots/140.png Graphic file (type bmp)
 <plots/140.png>
-File: plots/141.png Graphic file (type bmp)
-<plots/141.png>
 
 Underfull \hbox (badness 10000) in paragraph at lines 2--2
 
@@ -1091,6 +1163,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--2
 File: ocean_images/DP803996.jpg Graphic file (type bmp)
 <ocean_images/DP803996.jpg>
  [14]
+File: plots/141.png Graphic file (type bmp)
+<plots/141.png>
 File: plots/142.png Graphic file (type bmp)
 <plots/142.png>
 File: plots/143.png Graphic file (type bmp)
@@ -1115,11 +1189,11 @@ File: plots/152.png Graphic file (type bmp)
 <plots/152.png>
 File: plots/153.png Graphic file (type bmp)
 <plots/153.png>
-File: plots/154.png Graphic file (type bmp)
-<plots/154.png>
 Package marginnote Info: Margin note 15.3 is on absolute page 15 on input line 
 2.
-Package marginnote Info: xpos seems to be 203.40607pt on input line 2.
+Package marginnote Info: xpos seems to be 115.19576pt on input line 2.
+File: plots/154.png Graphic file (type bmp)
+<plots/154.png>
 File: plots/155.png Graphic file (type bmp)
 <plots/155.png>
 File: plots/156.png Graphic file (type bmp)
@@ -1191,7 +1265,7 @@ File: plots/183.png Graphic file (type bmp)
 <plots/183.png>
 Package marginnote Info: Margin note 17.3 is on absolute page 17 on input line 
 2.
-Package marginnote Info: xpos seems to be 321.39066pt on input line 2.
+Package marginnote Info: xpos seems to be 321.40285pt on input line 2.
 File: plots/184.png Graphic file (type bmp)
 <plots/184.png>
 File: plots/185.png Graphic file (type bmp)
@@ -1269,7 +1343,7 @@ File: plots/215.png Graphic file (type bmp)
 <plots/215.png>
 Package marginnote Info: Margin note 19.3 is on absolute page 19 on input line 
 2.
-Package marginnote Info: xpos seems to be 670.08395pt on input line 2.
+Package marginnote Info: xpos seems to be 670.08904pt on input line 2.
 File: plots/216.png Graphic file (type bmp)
 <plots/216.png>
 File: plots/217.png Graphic file (type bmp)
@@ -1292,8 +1366,6 @@ File: plots/225.png Graphic file (type bmp)
 <plots/225.png>
 File: plots/226.png Graphic file (type bmp)
 <plots/226.png>
-File: plots/227.png Graphic file (type bmp)
-<plots/227.png>
 
 Underfull \hbox (badness 10000) in paragraph at lines 2--2
 
@@ -1305,6 +1377,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--2
 File: ocean_images/DT1973.jpg Graphic file (type bmp)
 <ocean_images/DT1973.jpg>
  [20]
+File: plots/227.png Graphic file (type bmp)
+<plots/227.png>
 File: plots/228.png Graphic file (type bmp)
 <plots/228.png>
 File: plots/229.png Graphic file (type bmp)
@@ -1428,8 +1502,6 @@ File: plots/282.png Graphic file (type bmp)
 <plots/282.png>
 File: plots/283.png Graphic file (type bmp)
 <plots/283.png>
-File: plots/284.png Graphic file (type bmp)
-<plots/284.png>
 
 Underfull \hbox (badness 10000) in paragraph at lines 2--2
 
@@ -1441,6 +1513,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--2
 File: ocean_images/DT226485.jpg Graphic file (type bmp)
 <ocean_images/DT226485.jpg>
  [24]
+File: plots/284.png Graphic file (type bmp)
+<plots/284.png>
 File: plots/285.png Graphic file (type bmp)
 <plots/285.png>
 File: plots/286.png Graphic file (type bmp)
@@ -1455,11 +1529,11 @@ File: plots/290.png Graphic file (type bmp)
 <plots/290.png>
 File: plots/291.png Graphic file (type bmp)
 <plots/291.png>
-File: plots/292.png Graphic file (type bmp)
-<plots/292.png>
 Package marginnote Info: Margin note 25.3 is on absolute page 25 on input line 
 2.
-Package marginnote Info: xpos seems to be 662.12389pt on input line 2.
+Package marginnote Info: xpos seems to be 573.66548pt on input line 2.
+File: plots/292.png Graphic file (type bmp)
+<plots/292.png>
 File: plots/293.png Graphic file (type bmp)
 <plots/293.png>
 File: plots/294.png Graphic file (type bmp)
@@ -1571,18 +1645,14 @@ File: plots/341.png Graphic file (type bmp)
 <plots/341.png>
  [27
 
-] (calendar.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+] (calendar.aux) ) 
 Here is how much of TeX's memory you used:
- 15882 strings out of 427669
- 309868 string characters out of 3143938
- 497409 words of memory out of 3000000
- 19335 multiletter control sequences out of 15000+200000
- 7148 words of font info for 42 fonts, out of 3000000 for 9000
+ 17920 strings out of 414071
+ 355966 string characters out of 2893572
+ 713835 words of memory out of 3000000
+ 34945 multiletter control sequences out of 15000+200000
+ 535862 words of font info for 52 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
- 73i,19n,72p,89052b,723s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 73i,19n,90p,89069b,715s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 Output written on calendar.pdf (27 pages).

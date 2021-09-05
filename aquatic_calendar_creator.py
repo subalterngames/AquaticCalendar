@@ -1,6 +1,6 @@
 from os import devnull
 import pkg_resources
-from subprocess import call, check_output
+from subprocess import call, check_output, CalledProcessError
 from platform import system
 # Install missing Python modules.
 for package in ['requests', 'numpy', 'matplotlib', 'pylunar', 'python-dateutil']:
@@ -75,7 +75,7 @@ longitude = re.search(r"\s+Longitude\s+:\s+(.*)", resp).group(1)
 longitude = (int(longitude.split(".")[0]), int(longitude[-4:]), int(longitude[-2:]))
 # Load the lunar data.
 mi = pylunar.MoonInfo(latitude, longitude)
-mi_start = (int(start_day[:4]), int(start_day[4:6], int(start_day[6:8])), 0, 0, 0)
+mi_start = (int(start_day[:4]), int(start_day[4:6]), int(start_day[6:8]), 0, 0, 0)
 mi.update(mi_start)
 print("Got the lunar data.")
 
@@ -433,8 +433,12 @@ any_missing = False
 # Install missing LaTeX packages.
 for p in latex_packages:
     if system() == "Windows":
-        installed_latex = check_output(["findtexmf", p + ".sty"])
-        if installed_latex == b'':
+        try:
+            installed_latex = check_output(["findtexmf", p + ".sty"])
+            if installed_latex == b'':
+                call(["mpm", f"--install={p}"])
+                any_missing = True
+        except CalledProcessError:
             call(["mpm", f"--install={p}"])
             any_missing = True
     else:

@@ -48,6 +48,11 @@ This will generate a `calendar.pdf` file.
 
 # Changelog
 
+#### 5782
+
+- Updated the calendar for the year 5782.
+- Fixed a minor bug with setting the starting lunar state.
+
 #### 5781
 
 - Updated the calendar for the year 5781.
