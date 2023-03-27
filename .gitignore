@@ -2,3 +2,7 @@
 __pycache__/
 *.aux
 *.synctex.gz
+plots/
+*.tex
+*.log
+*.pdf

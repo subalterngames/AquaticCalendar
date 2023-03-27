@@ -3,7 +3,7 @@ import pkg_resources
 from subprocess import call, check_output, CalledProcessError
 from platform import system
 # Install missing Python modules.
-for package in ['requests', 'numpy', 'matplotlib', 'pylunar', 'python-dateutil']:
+for package in ['requests', 'numpy', 'matplotlib', 'pylunar', 'python-dateutil', 'pyluach']:
     try:
         pkg_resources.get_distribution(package)
     except pkg_resources.DistributionNotFound:
@@ -18,11 +18,10 @@ from dateutil.parser import parse
 from dateutil import tz
 from os import listdir
 from argparse import ArgumentParser
-from datetime import datetime, timedelta
-from json import loads
 from requests import get
 import pylunar
 import re
+from pyluach import dates
 
 
 # Parse arguments.
@@ -30,34 +29,15 @@ parser = ArgumentParser()
 parser.add_argument("-s", type=str, default="8443970", help="Tidal station ID")
 args = parser.parse_args()
 
-# Get the date of Rosh Hashanah.
-erev_rosh_hashanah = ""
-resp = loads(get("https://www.hebcal.com/hebcal?v=1&cfg=json&year=now&maj=on").content.decode("utf-8"))
-for item in resp["items"]:
-    if item["title"] == "Erev Rosh Hashana":
-        erev_rosh_hashanah = item["date"]
-        break
-assert erev_rosh_hashanah != "", "Couldn't get the date for Erev Rosh Hashana!"
-# Start a few days earlier to deal with apparent/absolute new moons.
-start_day = datetime.fromisoformat(erev_rosh_hashanah) - timedelta(days=4)
+today_he = dates.HebrewDate.today()
+# Get the Hebrew year.
+year_he = today_he.year
 # Get the secular year.
-secular_year = int(erev_rosh_hashanah.split("-")[0])
-print(f"Got the start day (secular): {start_day}")
-
-# Get the Jewish year.
-resp = loads(get(f"https://www.hebcal.com/converter?cfg=json&gy={secular_year}").content.decode("utf-8"))
-jewish_year = resp["hy"]
-print(f"Got the Jewish year: {jewish_year}")
-
-erev_rosh_hashanah = ""
-resp = loads(get(f"https://www.hebcal.com/hebcal?v=1&cfg=json&year={secular_year + 1}&maj=on").content.decode("utf-8"))
-for item in resp["items"]:
-    if item["title"] == "Erev Rosh Hashana":
-        erev_rosh_hashanah = item["date"]
-        break
-assert erev_rosh_hashanah != "", "Couldn't get the date for Erev Rosh Hashana (next year)!"
-end_day = datetime.fromisoformat(erev_rosh_hashanah) + timedelta(days=3)
-print(f"Got the end day (secular): {end_day}")
+year_gr = today_he.to_greg().year
+# Get the start and end day.
+rosh_hashana = dates.HebrewDate(year_he, 7, 1)
+start_day = rosh_hashana.to_greg()
+end_day = dates.HebrewDate(year_he + 1, 6, 29).to_greg()
 
 start_day = str(start_day).split(" ")[0].replace("-", "")
 end_day = str(end_day).split(" ")[0].replace("-", "")
@@ -116,7 +96,7 @@ tex = r"\documentclass[11pt,letterpaper,landscape,openany]{scrbook}\usepackage{c
       r"contents={\includegraphics[width=\paperwidth,height=\paperheight]{title_page.jpg}}}" \
       r"\begin{document}" \
       r"\BgThispage\begin{figure}\begin{center}\Huge\darkblue{\textbf{The Aquatic Jewish Calendar}}\end{center}" \
-      r"\begin{center}\Huge\darkblue{" + str(jewish_year) + r"}\end{center}\end{figure}\clearpage"
+      r"\begin{center}\Huge\darkblue{" + str(year_he) + r"}\end{center}\end{figure}\clearpage"
 
 # Append the introduction text.
 with open("intro.txt", "rt") as f:
