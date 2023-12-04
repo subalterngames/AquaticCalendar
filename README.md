@@ -48,6 +48,18 @@ This will generate a `calendar.pdf` file.
 
 # Changelog
 
+#### 5783
+
+- Updated the calendar for the year 5783.
+- Fixed: The hebcal API no longer works. Replaced with the pyluach Python module.
+- Removed calendar .tex, .pdf, and plot .pngs from the repo.
+- Changed my name
+
+#### 5782
+
+- Updated the calendar for the year 5782.
+- Fixed a minor bug with setting the starting lunar state.
+
 #### 5781
 
 - Updated the calendar for the year 5781.

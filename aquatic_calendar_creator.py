@@ -1,9 +1,9 @@
 from os import devnull
 import pkg_resources
-from subprocess import call, check_output
+from subprocess import call, check_output, CalledProcessError
 from platform import system
 # Install missing Python modules.
-for package in ['requests', 'numpy', 'matplotlib', 'pylunar', 'python-dateutil']:
+for package in ['requests', 'numpy', 'matplotlib', 'pylunar', 'python-dateutil', 'pyluach']:
     try:
         pkg_resources.get_distribution(package)
     except pkg_resources.DistributionNotFound:
@@ -18,11 +18,10 @@ from dateutil.parser import parse
 from dateutil import tz
 from os import listdir
 from argparse import ArgumentParser
-from datetime import datetime, timedelta
-from json import loads
 from requests import get
 import pylunar
 import re
+from pyluach import dates
 
 
 # Parse arguments.
@@ -30,6 +29,7 @@ parser = ArgumentParser()
 parser.add_argument("-s", type=str, default="8443970", help="Tidal station ID")
 args = parser.parse_args()
 
+<<<<<<< HEAD
 # Get the date of Rosh Hashanah.
 rosh_hashanah = ""
 resp = loads(get("https://www.hebcal.com/hebcal?v=1&cfg=json&year=now&maj=on").content.decode("utf-8"))
@@ -60,6 +60,17 @@ for item in resp["items"]:
 assert erev_rosh_hashanah != "", "Couldn't get the date for Erev Rosh Hashana (next year)!"
 end_day = datetime.fromisoformat(erev_rosh_hashanah) + timedelta(days=3)
 print(f"Got the end day (secular): {end_day}")
+=======
+today_he = dates.HebrewDate.today()
+# Get the Hebrew year.
+year_he = today_he.year
+# Get the secular year.
+year_gr = today_he.to_greg().year
+# Get the start and end day.
+rosh_hashana = dates.HebrewDate(year_he, 7, 1)
+start_day = rosh_hashana.to_greg()
+end_day = dates.HebrewDate(year_he + 1, 6, 29).to_greg()
+>>>>>>> 3032710d82174407806bcc739eb82cb3a1d1830e
 
 start_day = str(start_day).split(" ")[0].replace("-", "")
 end_day = str(end_day).split(" ")[0].replace("-", "")
@@ -77,7 +88,7 @@ longitude = re.search(r"\s+Longitude\s+:\s+(.*)", resp).group(1)
 longitude = (int(longitude.split(".")[0]), int(longitude[-4:]), int(longitude[-2:]))
 # Load the lunar data.
 mi = pylunar.MoonInfo(latitude, longitude)
-mi_start = (int(start_day[:4]), int(start_day[4:6], int(start_day[6:8])), 0, 0, 0)
+mi_start = (int(start_day[:4]), int(start_day[4:6]), int(start_day[6:8]), 0, 0, 0)
 mi.update(mi_start)
 print("Got the lunar data.")
 
@@ -118,7 +129,7 @@ tex = r"\documentclass[11pt,letterpaper,landscape,openany]{scrbook}\usepackage{c
       r"contents={\includegraphics[width=\paperwidth,height=\paperheight]{title_page.jpg}}}" \
       r"\begin{document}" \
       r"\BgThispage\begin{figure}\begin{center}\Huge\darkblue{\textbf{The Aquatic Jewish Calendar}}\end{center}" \
-      r"\begin{center}\Huge\darkblue{" + str(jewish_year) + r"}\end{center}\end{figure}\clearpage"
+      r"\begin{center}\Huge\darkblue{" + str(year_he) + r"}\end{center}\end{figure}\clearpage"
 
 # Append the introduction text.
 with open("intro.txt", "rt") as f:
@@ -435,8 +446,12 @@ any_missing = False
 # Install missing LaTeX packages.
 for p in latex_packages:
     if system() == "Windows":
-        installed_latex = check_output(["findtexmf", p + ".sty"])
-        if installed_latex == b'':
+        try:
+            installed_latex = check_output(["findtexmf", p + ".sty"])
+            if installed_latex == b'':
+                call(["mpm", f"--install={p}"])
+                any_missing = True
+        except CalledProcessError:
             call(["mpm", f"--install={p}"])
             any_missing = True
     else:
