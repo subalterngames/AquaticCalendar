@@ -31,21 +31,23 @@ parser.add_argument("-s", type=str, default="8443970", help="Tidal station ID")
 args = parser.parse_args()
 
 # Get the date of Rosh Hashanah.
-erev_rosh_hashanah = ""
+rosh_hashanah = ""
 resp = loads(get("https://www.hebcal.com/hebcal?v=1&cfg=json&year=now&maj=on").content.decode("utf-8"))
 for item in resp["items"]:
-    if item["title"] == "Erev Rosh Hashana":
-        erev_rosh_hashanah = item["date"]
+    if item["title"] == "Rosh Hashana II":
+        rosh_hashanah = item["date"]
         break
-assert erev_rosh_hashanah != "", "Couldn't get the date for Erev Rosh Hashana!"
+assert rosh_hashanah != "", "Couldn't get the date for Rosh Hashana!"
 # Start a few days earlier to deal with apparent/absolute new moons.
-start_day = datetime.fromisoformat(erev_rosh_hashanah) - timedelta(days=4)
+start_day = datetime.fromisoformat(rosh_hashanah) - timedelta(days=4)
 # Get the secular year.
-secular_year = int(erev_rosh_hashanah.split("-")[0])
+rosh_hashanah_split = rosh_hashanah.split("-")
+secular_year = int(rosh_hashanah_split[0])
+secular_month = int(rosh_hashanah_split[1])
+secular_day = int(rosh_hashanah_split[2])
 print(f"Got the start day (secular): {start_day}")
-
 # Get the Jewish year.
-resp = loads(get(f"https://www.hebcal.com/converter?cfg=json&gy={secular_year}").content.decode("utf-8"))
+resp = loads(get(f"https://www.hebcal.com/converter?cfg=json&gd={secular_day}&gm={secular_month}&gy={secular_year}").content.decode("utf-8"))
 jewish_year = resp["hy"]
 print(f"Got the Jewish year: {jewish_year}")
 

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7140 64-bit) (preloaded format=xelatex 2019.9.4)  20 SEP 2020 11:18
+This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7140 64-bit) (preloaded format=xelatex 2019.9.4)  3 DEC 2023 22:22
 entering extended mode
 **./calendar.tex
 (calendar.tex
@@ -736,7 +736,7 @@ File: ocean_images/ap32_73_1.jpg Graphic file (type bmp)
 .fd")
 Package marginnote Info: Margin note 5.7 is on absolute page 5 on input line 2.
 
-Package marginnote Info: xpos seems to be 149.73738pt on input line 2.
+Package marginnote Info: xpos seems to be 149.73976pt on input line 2.
 File: plots/0.png Graphic file (type bmp)
 <plots/0.png>
 File: plots/1.png Graphic file (type bmp)
@@ -755,7 +755,7 @@ File: plots/7.png Graphic file (type bmp)
 <plots/7.png>
 Package marginnote Info: Margin note 5.8 is on absolute page 5 on input line 2.
 
-Package marginnote Info: xpos seems to be 225.33951pt on input line 2.
+Package marginnote Info: xpos seems to be 225.33931pt on input line 2.
 File: plots/8.png Graphic file (type bmp)
 <plots/8.png>
 File: plots/9.png Graphic file (type bmp)
@@ -770,7 +770,7 @@ File: plots/13.png Graphic file (type bmp)
 <plots/13.png>
 Package marginnote Info: Margin note 5.9 is on absolute page 5 on input line 2.
 
-Package marginnote Info: xpos seems to be 140.39732pt on input line 2.
+Package marginnote Info: xpos seems to be 140.40376pt on input line 2.
 File: plots/14.png Graphic file (type bmp)
 <plots/14.png>
 File: plots/15.png Graphic file (type bmp)
@@ -840,7 +840,7 @@ File: plots/41.png Graphic file (type bmp)
 <plots/41.png>
 Package marginnote Info: Margin note 7.3 is on absolute page 7 on input line 2.
 
-Package marginnote Info: xpos seems to be 118.50833pt on input line 2.
+Package marginnote Info: xpos seems to be 118.50775pt on input line 2.
 File: plots/42.png Graphic file (type bmp)
 <plots/42.png>
 File: plots/43.png Graphic file (type bmp)
@@ -869,6 +869,8 @@ File: plots/54.png Graphic file (type bmp)
 <plots/54.png>
 File: plots/55.png Graphic file (type bmp)
 <plots/55.png>
+File: plots/56.png Graphic file (type bmp)
+<plots/56.png>
 
 Underfull \hbox (badness 10000) in paragraph at lines 2--2
 
@@ -880,8 +882,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--2
 File: ocean_images/DP161239.jpg Graphic file (type bmp)
 <ocean_images/DP161239.jpg>
  [8]
-File: plots/56.png Graphic file (type bmp)
-<plots/56.png>
 File: plots/57.png Graphic file (type bmp)
 <plots/57.png>
 File: plots/58.png Graphic file (type bmp)
@@ -928,17 +928,19 @@ File: plots/78.png Graphic file (type bmp)
 <plots/78.png>
 File: plots/79.png Graphic file (type bmp)
 <plots/79.png>
-Package marginnote Info: Margin note 9.3 is on absolute page 9 on input line 2.
-
-Package marginnote Info: xpos seems to be 424.65517pt on input line 2.
 File: plots/80.png Graphic file (type bmp)
 <plots/80.png>
+Package marginnote Info: Margin note 9.3 is on absolute page 9 on input line 2.
+
+Package marginnote Info: xpos seems to be 512.88194pt on input line 2.
 File: plots/81.png Graphic file (type bmp)
 <plots/81.png>
 File: plots/82.png Graphic file (type bmp)
 <plots/82.png>
 File: plots/83.png Graphic file (type bmp)
 <plots/83.png>
+File: plots/84.png Graphic file (type bmp)
+<plots/84.png>
 
 Underfull \hbox (badness 10000) in paragraph at lines 2--2
 
@@ -950,8 +952,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--2
 File: ocean_images/DP169651.jpg Graphic file (type bmp)
 <ocean_images/DP169651.jpg>
  [10]
-File: plots/84.png Graphic file (type bmp)
-<plots/84.png>
 File: plots/85.png Graphic file (type bmp)
 <plots/85.png>
 File: plots/86.png Graphic file (type bmp)
@@ -1008,6 +1008,8 @@ File: plots/111.png Graphic file (type bmp)
 <plots/111.png>
 File: plots/112.png Graphic file (type bmp)
 <plots/112.png>
+File: plots/113.png Graphic file (type bmp)
+<plots/113.png>
 
 Underfull \hbox (badness 10000) in paragraph at lines 2--2
 
@@ -1019,8 +1021,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--2
 File: ocean_images/DP801248.jpg Graphic file (type bmp)
 <ocean_images/DP801248.jpg>
  [12]
-File: plots/113.png Graphic file (type bmp)
-<plots/113.png>
 File: plots/114.png Graphic file (type bmp)
 <plots/114.png>
 File: plots/115.png Graphic file (type bmp)
@@ -1047,11 +1047,11 @@ File: plots/125.png Graphic file (type bmp)
 <plots/125.png>
 File: plots/126.png Graphic file (type bmp)
 <plots/126.png>
-Package marginnote Info: Margin note 13.3 is on absolute page 13 on input line 
-2.
-Package marginnote Info: xpos seems to be 221.6395pt on input line 2.
 File: plots/127.png Graphic file (type bmp)
 <plots/127.png>
+Package marginnote Info: Margin note 13.3 is on absolute page 13 on input line 
+2.
+Package marginnote Info: xpos seems to be 309.85085pt on input line 2.
 File: plots/128.png Graphic file (type bmp)
 <plots/128.png>
 File: plots/129.png Graphic file (type bmp)
@@ -1119,7 +1119,7 @@ File: plots/154.png Graphic file (type bmp)
 <plots/154.png>
 Package marginnote Info: Margin note 15.3 is on absolute page 15 on input line 
 2.
-Package marginnote Info: xpos seems to be 203.40607pt on input line 2.
+Package marginnote Info: xpos seems to be 203.4113pt on input line 2.
 File: plots/155.png Graphic file (type bmp)
 <plots/155.png>
 File: plots/156.png Graphic file (type bmp)
@@ -1150,6 +1150,8 @@ File: plots/168.png Graphic file (type bmp)
 <plots/168.png>
 File: plots/169.png Graphic file (type bmp)
 <plots/169.png>
+File: plots/170.png Graphic file (type bmp)
+<plots/170.png>
 
 Underfull \hbox (badness 10000) in paragraph at lines 2--2
 
@@ -1161,8 +1163,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--2
 File: ocean_images/DP804730.jpg Graphic file (type bmp)
 <ocean_images/DP804730.jpg>
  [16]
-File: plots/170.png Graphic file (type bmp)
-<plots/170.png>
 File: plots/171.png Graphic file (type bmp)
 <plots/171.png>
 File: plots/172.png Graphic file (type bmp)
@@ -1189,11 +1189,11 @@ File: plots/182.png Graphic file (type bmp)
 <plots/182.png>
 File: plots/183.png Graphic file (type bmp)
 <plots/183.png>
-Package marginnote Info: Margin note 17.3 is on absolute page 17 on input line 
-2.
-Package marginnote Info: xpos seems to be 321.39066pt on input line 2.
 File: plots/184.png Graphic file (type bmp)
 <plots/184.png>
+Package marginnote Info: Margin note 17.3 is on absolute page 17 on input line 
+2.
+Package marginnote Info: xpos seems to be 409.6184pt on input line 2.
 File: plots/185.png Graphic file (type bmp)
 <plots/185.png>
 File: plots/186.png Graphic file (type bmp)
@@ -1269,7 +1269,7 @@ File: plots/215.png Graphic file (type bmp)
 <plots/215.png>
 Package marginnote Info: Margin note 19.3 is on absolute page 19 on input line 
 2.
-Package marginnote Info: xpos seems to be 670.08395pt on input line 2.
+Package marginnote Info: xpos seems to be 670.08904pt on input line 2.
 File: plots/216.png Graphic file (type bmp)
 <plots/216.png>
 File: plots/217.png Graphic file (type bmp)
@@ -1292,8 +1292,6 @@ File: plots/225.png Graphic file (type bmp)
 <plots/225.png>
 File: plots/226.png Graphic file (type bmp)
 <plots/226.png>
-File: plots/227.png Graphic file (type bmp)
-<plots/227.png>
 
 Underfull \hbox (badness 10000) in paragraph at lines 2--2
 
@@ -1305,6 +1303,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--2
 File: ocean_images/DT1973.jpg Graphic file (type bmp)
 <ocean_images/DT1973.jpg>
  [20]
+File: plots/227.png Graphic file (type bmp)
+<plots/227.png>
 File: plots/228.png Graphic file (type bmp)
 <plots/228.png>
 File: plots/229.png Graphic file (type bmp)
@@ -1428,8 +1428,6 @@ File: plots/282.png Graphic file (type bmp)
 <plots/282.png>
 File: plots/283.png Graphic file (type bmp)
 <plots/283.png>
-File: plots/284.png Graphic file (type bmp)
-<plots/284.png>
 
 Underfull \hbox (badness 10000) in paragraph at lines 2--2
 
@@ -1441,6 +1439,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--2
 File: ocean_images/DT226485.jpg Graphic file (type bmp)
 <ocean_images/DT226485.jpg>
  [24]
+File: plots/284.png Graphic file (type bmp)
+<plots/284.png>
 File: plots/285.png Graphic file (type bmp)
 <plots/285.png>
 File: plots/286.png Graphic file (type bmp)
@@ -1455,11 +1455,11 @@ File: plots/290.png Graphic file (type bmp)
 <plots/290.png>
 File: plots/291.png Graphic file (type bmp)
 <plots/291.png>
-File: plots/292.png Graphic file (type bmp)
-<plots/292.png>
 Package marginnote Info: Margin note 25.3 is on absolute page 25 on input line 
 2.
-Package marginnote Info: xpos seems to be 662.12389pt on input line 2.
+Package marginnote Info: xpos seems to be 573.66548pt on input line 2.
+File: plots/292.png Graphic file (type bmp)
+<plots/292.png>
 File: plots/293.png Graphic file (type bmp)
 <plots/293.png>
 File: plots/294.png Graphic file (type bmp)
@@ -1567,22 +1567,16 @@ File: plots/339.png Graphic file (type bmp)
 <plots/339.png>
 File: plots/340.png Graphic file (type bmp)
 <plots/340.png>
-File: plots/341.png Graphic file (type bmp)
-<plots/341.png>
  [27
 
-] (calendar.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+] (calendar.aux) ) 
 Here is how much of TeX's memory you used:
- 15882 strings out of 427669
- 309868 string characters out of 3143938
- 497409 words of memory out of 3000000
- 19335 multiletter control sequences out of 15000+200000
+ 15878 strings out of 427669
+ 309809 string characters out of 3143938
+ 496697 words of memory out of 3000000
+ 19332 multiletter control sequences out of 15000+200000
  7148 words of font info for 42 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
- 73i,19n,72p,89052b,723s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 73i,19n,72p,88868b,723s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 Output written on calendar.pdf (27 pages).
